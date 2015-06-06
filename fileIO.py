@@ -1,3 +1,4 @@
+#!/usr/bin/python
 #csv=open("C:/Users/Derrick/Desktop/hapyaktest002/python program/hapyak002/csv file drop/elearningcsv001.csv","r")
 #csv=csv.read()
 #print len(csv)
