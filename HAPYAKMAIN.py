@@ -127,7 +127,7 @@ def timeout():
     print "Threadrestarteddue to error"
     
     #raise RuntimeError('this is the error message')#TimeExceededError, "Timed Out"
-    logging.debug("timeout, new thread made"+datetime.datetime.now())
+    logging.debug("timeout, new thread made"+str(datetime.datetime.now()))
     
 import subprocess
 class SheetCheckerThread(threading.Thread):
