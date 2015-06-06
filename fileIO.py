@@ -8,7 +8,7 @@ logging.basicConfig(filename='demomaker.log',level=logging.DEBUG)
 import traceback
 logging.debug("fileiowas imported")
 
-cwd='/home/ubuntu/web'#os.getcwd()
+cwd='/home/ubuntu/'#os.getcwd()
 
 print cwd
 
