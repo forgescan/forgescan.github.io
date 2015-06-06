@@ -4,7 +4,7 @@ from fileIO import *
 from HAPYAKFUNCTIONS import *
 
 import logging
-logging.basicConfig(filename='demomaker.log',level=logging.DEBUG)
+logging.basicConfig(filename='/home/ubuntu/forgescan.github.io/demomaker.log',level=logging.DEBUG)
 
 
 
