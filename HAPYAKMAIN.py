@@ -3,6 +3,10 @@
 from fileIO import *
 from HAPYAKFUNCTIONS import *
 
+import logging
+logging.basicConfig(filename='demomaker.log',level=logging.DEBUG)
+
+
 
 
 def SplitandReplace(keywords,firm, stringfile):
@@ -111,7 +115,7 @@ import traceback
 #w32 = ctypes.windll.kernel32
 
 THREAD_TERMINATE = 1 # Privilege level for termination
-
+import datetime
 def timeout():
     #global sheetchecker
     
@@ -123,6 +127,7 @@ def timeout():
     print "Threadrestarteddue to error"
     
     #raise RuntimeError('this is the error message')#TimeExceededError, "Timed Out"
+    logging.debug("timeout, new thread made"+datetime.datetime.now())
     
 import subprocess
 class SheetCheckerThread(threading.Thread):
