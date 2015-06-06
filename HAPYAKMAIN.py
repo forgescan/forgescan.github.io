@@ -119,15 +119,15 @@ import datetime
 def timeout():
     #global sheetchecker
     
-    global SheetChecker
-    SheetChecker.kill_thread(SheetChecker) #should kill the thread when it locks up
+    #global SheetChecker
+    #SheetChecker.kill_thread(SheetChecker) #should kill the thread when it locks up
     
-    SheetChecker = SheetCheckerThread()
-    SheetChecker.start()
-    print "Threadrestarteddue to error"
+    #SheetChecker = SheetCheckerThread()
+    #SheetChecker.start()
+    #print "Threadrestarteddue to error"
     
     #raise RuntimeError('this is the error message')#TimeExceededError, "Timed Out"
-    logging.debug("timeout, new thread made"+str(datetime.datetime.now()))
+    logging.debug("timeout, no new thread made"+str(datetime.datetime.now()))
     
 import subprocess
 class SheetCheckerThread(threading.Thread):
