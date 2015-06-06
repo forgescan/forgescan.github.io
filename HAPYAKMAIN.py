@@ -180,7 +180,7 @@ class SheetCheckerThread(threading.Thread):
                 print len(csv)
                 print self.sheetchecker.checkwhenupdated()
                 timerout.cancel()
-		raise 
+		#raise 
             except Exception:
                 print(traceback.format_exc())
                 print "exception happened"
