@@ -2,6 +2,10 @@
 #csv=csv.read()
 #print len(csv)
 import os
+import logging
+logging.basicConfig(filename='demomaker.log',level=logging.DEBUG)
+import traceback
+logging.debug("fileiowas imported")
 
 cwd=os.getcwd()
 
@@ -17,9 +21,13 @@ def hapyakfileOut(firm,typeoffile,stringfile):
     companyname=firm[0]
     directorydesired=cwd+"/web/"+companyname
     try:os.mkdir(cwd+"/web")
-    except:pass
+    except Exception:
+        logging.debug(str(traceback.format_exc()))
+	logging.debug("fileiowas broke")
     try:os.mkdir(directorydesired)
-    except:pass
+    except Exception:
+        logging.debug(str(traceback.format_exc()))
+	logging.debug("fileiowas broke")
     
     fileout=open(directorydesired+"/"+companyname+typeoffile,"w")
     fileout.write(stringfile)
@@ -61,7 +69,7 @@ def fileOut(relativeaddress,stringfile):
     fileout.write(stringfile)
     fileout.close()
     
-
+ 
 
 
 class Team:
