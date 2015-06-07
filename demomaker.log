@@ -2492,3 +2492,20 @@ DEBUG:root:i finished updated the demo pages2015-06-07 16:22:57.663924
 DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
 
 DEBUG:root:
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 202, in gitupdate
+    print outg
+NameError: global name 'outg' is not defined
+
+DEBUG:root:i finished updated the git2015-06-07 16:23:00.492422
+DEBUG:root:loggerdoer worked
+DEBUG:root:fileiowas imported
+DEBUG:root:heres the cwd/home/ubuntu/forgescan.github.io
+DEBUG:root:HERE I SHOULD BE LOGGING SOMTHING
+DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1433697803, 'iat': 1433694203}
+DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzM2OTc4MDMsImlhdCI6MTQzMzY5NDIwM30', u'D1X7x4CxVSGt3sb9BY9mhd4yQCvWtQJRENhASx345g3OlCeXDmYtxcNVgxGvea6drkeKCmHlBKQu054DPMR0DNCBOuvHs_U4NDVwsjC91ZTi6IeDsjEQ_3ScGU4VDRy-aFL9nWQFTTP4p4iyhYiqRkwq-w1X2QvvJzttWe7ENos']
+INFO:oauth2client.client:Refreshing access_token
+DEBUG:root:i finished updated the demo pages2015-06-07 16:23:42.896318
+DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
+
+DEBUG:root:
