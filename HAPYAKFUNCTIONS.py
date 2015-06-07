@@ -199,7 +199,7 @@ def gitupdate():
 
         p = subprocess.Popen(['git commit -a -m hapyak'],shell=True, stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
         out, err = p.communicate()
-        print out
+        print outg
         logging.debug(str(out))
         #logging.debug(str(traceback.format_exc()))
 
