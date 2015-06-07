@@ -190,13 +190,14 @@ class SheetCheckerThread(threading.Thread):
                 
                 if lastcheck!=self.sheetchecker.checkwhenupdated():
                     #spreadsheetmust be updated
+                    self.sheetchecker.UpdateURLsonSheet(csv)
                     csv= self.sheetchecker.getupdatedcsv()
                     demopageupdater(csv)
                     print "i finished updated the demo pages"
                     logging.debug("i finished updated the demo pages"+str(datetime.datetime.now()))
                     gitupdate()
                     logging.debug("i finished updated the git"+str(datetime.datetime.now()))
-                    self.sheetchecker.UpdateURLsonSheet(csv)
+
                     
 
                     #sheet must have been updated recently
