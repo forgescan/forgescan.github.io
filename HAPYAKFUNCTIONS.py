@@ -204,7 +204,7 @@ def gitupdate():
         #logging.debug(str(traceback.format_exc()))
 
         #os.system("git push -f")
-        p = subprocess.Popen(['git','push -f'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+        p = subprocess.Popen(['git','push','-f'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
         out, err = p.communicate()
         print out
         logging.debug(str(out))
