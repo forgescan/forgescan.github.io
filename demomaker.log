@@ -49,3 +49,5 @@ DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3
 DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzM2OTMyOTcsImlhdCI6MTQzMzY4OTY5N30', u'S2bb1ZlUByvaT6xmrGBDCOpwyeSK3vXc8FBZDPG7T5b5qNnmsPbgu2vU2zqUgUv08l3x2NnCDp-_UXzWSM_AC8cM6YinQbiYbUb-xdJgfXuFcrSNXtW08UJxtyjHMZvr7Sq1TkR6hxPiEsF6ynM735DpXuUE4DxrR2QzUPml-x8']
 INFO:oauth2client.client:Refreshing access_token
 DEBUG:root:i finished updated the demo pages2015-06-07 15:08:34.644531
+DEBUG:root:i finished updated the git2015-06-07 15:08:38.065358
+DEBUG:root:i finished updated the demo pages2015-06-07 15:09:04.069107
