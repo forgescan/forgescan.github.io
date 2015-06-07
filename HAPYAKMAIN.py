@@ -19,8 +19,8 @@ import traceback
 
 
 #import logging
-#logfile=open("/home/ubuntu/forgescan.github.io/demomaker.log","w")
-#logfile.close()
+logfile=open("/home/ubuntu/forgescan.github.io/demomaker.log","w")
+logfile.close()
 
 logging.basicConfig(filename='demomaker.log',level=logging.DEBUG)
 logging.debug("HERE I SHOULD BE LOGGING SOMTHING")
