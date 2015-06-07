@@ -188,7 +188,7 @@ class SheetCheckerThread(threading.Thread):
                                       
                     #subprocess.call(consoleinput)
                 
-                if lastcheck!=self.sheetchecker.checkwhenupdated():
+                if lastcheck!=self.sheetchecker.checkwhenupdated(): 
                     #spreadsheetmust be updated
 
                     csv= self.sheetchecker.getupdatedcsv()
