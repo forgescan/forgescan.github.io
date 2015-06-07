@@ -291,3 +291,20 @@ DEBUG:root:None
 
 DEBUG:root:None
 
+DEBUG:root:None
+
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 193, in gitupdate
+    p = subprocess.Popen(['git push -f'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:30:18.905626
+DEBUG:root:i finished updated the demo pages2015-06-07 15:30:52.204211
+DEBUG:root:None
+
+DEBUG:root:None
+
