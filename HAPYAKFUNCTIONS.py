@@ -3,6 +3,7 @@ import urllib
 import urllib, urllib2, cookielib
 import traceback
 import gspread002
+import logging
 
 
 
@@ -181,9 +182,17 @@ def gitupdate():
     try:
         #subprocess.call("cd C:\Users\Derrick\Documents\GitHub\forgescan.github.io",shell="3dTrue")
         os.system("cd /home/ubuntu/forgescan.github.io")
+        logging.debug(str(traceback.format_exc()))
         os.system("git add .")
+        logging.debug(str(traceback.format_exc()))
+
         os.system("git commit -a -m hapyak")
+        logging.debug(str(traceback.format_exc()))
+
         os.system("git push -f")
+        logging.debug(str(traceback.format_exc()))
+
+        logging.debug("got to end of git stuff")
 
         """subprocess.call("cd /home/ubuntu/forgescan.github.io/",shell="3dTrue")
 
