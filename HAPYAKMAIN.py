@@ -1,10 +1,29 @@
 #!/usr/bin/python
 # -*- coding: cp1252 -*-
-from fileIO import *
-from HAPYAKFUNCTIONS import *
+import os
+os.chdir("/home/ubuntu/forgescan.github.io/")
 
 import logging
-logging.basicConfig(filename='/home/ubuntu/forgescan.github.io/demomaker.log',level=logging.DEBUG)
+import loggerdoer
+
+from fileIO import *
+
+from HAPYAKFUNCTIONS import *
+import traceback
+
+
+#testfile=open("/home/ubuntu/forgescan.github.io/demomaker.log","w")
+#testfile.write(str(os.getcwd()))
+#testfile.close()
+
+
+
+#import logging
+#logfile=open("/home/ubuntu/forgescan.github.io/demomaker.log","w")
+#logfile.close()
+
+logging.basicConfig(filename='demomaker.log',level=logging.DEBUG)
+logging.debug("HERE I SHOULD BE LOGGING SOMTHING")
 
 
 
@@ -182,6 +201,7 @@ class SheetCheckerThread(threading.Thread):
                 timerout.cancel()
 		#raise 
             except Exception:
+                logging.debug(str(traceback.format_exc()))
                 print(traceback.format_exc())
                 print "exception happened"
                 timeout()

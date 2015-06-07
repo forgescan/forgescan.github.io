@@ -4,11 +4,15 @@
 #print len(csv)
 import os
 import logging
-logging.basicConfig(filename='demomaker.log',level=logging.DEBUG)
+
+#here i changed it remotely
+
+#logging.basicConfig(filename='demomaker.log',level=logging.DEBUG)
 import traceback
 logging.debug("fileiowas imported")
+logging.debug("heres the cwd"+str(os.getcwd()))
 
-cwd='/home/ubuntu/'#os.getcwd()
+cwd='/home/ubuntu/forgescan.github.io'#os.getcwd()
 
 print cwd
 
@@ -23,16 +27,18 @@ def hapyakfileOut(firm,typeoffile,stringfile):
     directorydesired=cwd+"/web/"+companyname
     try:os.mkdir(cwd+"/web")
     except Exception:
-        logging.debug(str(traceback.format_exc()))
-	logging.debug("fileiowas broke")
+        pass
+        #logging.debug(str(traceback.format_exc()))
+	#logging.debug("fileiowas broke")
     try:os.mkdir(directorydesired)
     except Exception:
-        logging.debug(str(traceback.format_exc()))
-	logging.debug("fileiowas broke")
+        pass
+        #logging.debug(str(traceback.format_exc()))
+	#logging.debug("fileiowas broke")
     
     fileout=open(directorydesired+"/"+companyname+typeoffile,"w")
     fileout.write(stringfile)
-    fileout.close
+    fileout.close()
 """
 def hapyakfileOut(filename,stringfile):
     companyname=filename.split(".")[0]

@@ -156,6 +156,7 @@ def demopageupdater(csv):
                 pass
 
     except Exception:
+        logging.debug(str(traceback.format_exc()))
         print(traceback.format_exc())
 #on windows pops up console for every command 
 """
@@ -178,7 +179,9 @@ def gitupdate():
         su.wShowWindow = subprocess.SW_HIDE
         kwargs['startupinfo'] = su
     try:
-        subprocess.call("cd C:\Users\Derrick\Documents\GitHub\forgescan.github.io",shell="3dTrue")
+        #subprocess.call("cd C:\Users\Derrick\Documents\GitHub\forgescan.github.io",shell="3dTrue")
+        subprocess.call("cd /home/ubuntu/forgescan.github.io/",shell="3dTrue")
+
         subprocess.call("git add .",shell="3dTrue")
         subprocess.call("git commit -a -m hapyak",shell="3dTrue")
         subprocess.call("git push -f",shell="3dTrue")
@@ -189,6 +192,7 @@ def gitupdate():
         subprocess.Popen(['git',"push","-f"], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
         """    
     except Exception:
+        logging.debug("git fail"+str(traceback.format_exc()))
         print(traceback.format_exc())
         print "failedtoupdate"
 

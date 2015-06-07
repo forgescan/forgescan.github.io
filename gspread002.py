@@ -21,7 +21,7 @@ class GoogleDocsSession():
         
         self.cwd=os.getcwd()
         #self.json_key=json.load(open('C:/hapyakdemomaker-3bd41eed62f1.json'))#change path to whereever key is stored
-	self.json_key=json.load(open('/home/ubuntu/hapyakdemomaker-3bd41eed62f1.json'))#change path to whereever key is stored      
+        self.json_key=json.load(open('/home/ubuntu/hapyakdemomaker-3bd41eed62f1.json'))#change path to whereever key is stored
         self.scope = ['https://spreadsheets.google.com/feeds']
         self.client_email="205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com"
         self.credentials = SignedJwtAssertionCredentials(self.json_key['client_email'], self.json_key['private_key'], self.scope)

@@ -1,4 +1,4 @@
 #!/bin/bash
 # hapyak starter
-python HAPYAKMAIN.py
+sudo python HAPYAKMAIN.py
 
