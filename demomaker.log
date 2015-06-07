@@ -920,3 +920,369 @@ DEBUG:root:None
 
 DEBUG:root:None
 
+DEBUG:root:None
+
+DEBUG:root:usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   checkout   Checkout a branch or paths to the working tree
+   clone      Clone a repository into a new directory
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   fetch      Download objects and refs from another repository
+   grep       Print lines matching a pattern
+   init       Create an empty Git repository or reinitialize an existing one
+   log        Show commit logs
+   merge      Join two or more development histories together
+   mv         Move or rename a file, a directory, or a symlink
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+   rebase     Forward-port local commits to the updated upstream head
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+   show       Show various types of objects
+   status     Show the working tree status
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+'git help -a' and 'git help -g' lists available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+DEBUG:root:got to end of git stuff
+DEBUG:root:i finished updated the git2015-06-07 15:40:58.753656
+DEBUG:root:loggerdoer worked
+DEBUG:root:fileiowas imported
+DEBUG:root:heres the cwd/home/ubuntu/forgescan.github.io
+DEBUG:root:HERE I SHOULD BE LOGGING SOMTHING
+DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1433695290, 'iat': 1433691690}
+DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzM2OTUyOTAsImlhdCI6MTQzMzY5MTY5MH0', u'PsQ95oVaDL_8QaK0mNutxBCOICZjs3Dcz6prPetPOp-DAy9W0omqi16IrxrpQA-j0jN7NZOs9Dq4SlL1JR_g9HJ8XZVYvFmypScxPIWrgp1n4V3cTikPq8rjYCTRmZ7dLc7MpbpGtB69-qdrx4VB5DkD7Dv_cVzo3dXOeQAldCE']
+INFO:oauth2client.client:Refreshing access_token
+DEBUG:root:i finished updated the demo pages2015-06-07 15:41:53.754711
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['cd','/home/ubuntu/forgescan.github.io'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:41:53.795778
+DEBUG:root:i finished updated the demo pages2015-06-07 15:42:27.005310
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['cd','/home/ubuntu/forgescan.github.io'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:42:27.048323
+DEBUG:root:i finished updated the demo pages2015-06-07 15:43:00.459984
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['cd','/home/ubuntu/forgescan.github.io'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:43:00.540078
+DEBUG:root:i finished updated the demo pages2015-06-07 15:43:34.543688
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['cd','/home/ubuntu/forgescan.github.io'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:43:34.590433
+DEBUG:root:i finished updated the demo pages2015-06-07 15:44:05.030262
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['cd','/home/ubuntu/forgescan.github.io'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:44:05.094040
+DEBUG:root:i finished updated the demo pages2015-06-07 15:44:32.355316
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['cd','/home/ubuntu/forgescan.github.io'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:44:32.390595
+DEBUG:root:i finished updated the demo pages2015-06-07 15:44:59.402372
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['cd','/home/ubuntu/forgescan.github.io'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:44:59.436923
+DEBUG:root:i finished updated the demo pages2015-06-07 15:45:27.368079
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['cd','/home/ubuntu/forgescan.github.io'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:45:27.407063
+DEBUG:root:i finished updated the demo pages2015-06-07 15:45:54.928496
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['cd','/home/ubuntu/forgescan.github.io'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:45:54.963012
+DEBUG:root:i finished updated the demo pages2015-06-07 15:46:22.241459
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['cd','/home/ubuntu/forgescan.github.io'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:46:22.303792
+DEBUG:root:i finished updated the demo pages2015-06-07 15:46:51.321811
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['cd /home/ubuntu/forgescan.github.io'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:46:51.385674
+DEBUG:root:loggerdoer worked
+DEBUG:root:fileiowas imported
+DEBUG:root:heres the cwd/home/ubuntu/forgescan.github.io
+DEBUG:root:HERE I SHOULD BE LOGGING SOMTHING
+DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1433695623, 'iat': 1433692023}
+DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzM2OTU2MjMsImlhdCI6MTQzMzY5MjAyM30', u'c0ASnSrwYlM8JUp0adK72sVDLSMh6HNnkLId7X-DBktpcUOcJddfDK_R9BT4EdPFHO5x2RYB1MNCjHQYMH5zs2vRPHEKe4Cn9oMvdkPMZso0QkHH3G1LlziZoEsaPx3kSs3ObsJ5LV6c_xBn02rWtPfCjfpWFW_Wst4JOqRsfdc']
+INFO:oauth2client.client:Refreshing access_token
+DEBUG:root:i finished updated the demo pages2015-06-07 15:47:23.269844
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['cd /home/ubuntu/forgescan.github.io'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:47:23.403453
+DEBUG:root:i finished updated the demo pages2015-06-07 15:47:51.370548
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['cd /home/ubuntu/forgescan.github.io'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:47:51.402255
+DEBUG:root:i finished updated the demo pages2015-06-07 15:48:23.448923
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['cd /home/ubuntu/forgescan.github.io'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:48:23.511265
+DEBUG:root:i finished updated the demo pages2015-06-07 15:48:50.432251
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['pwd'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:48:50.494686
+DEBUG:root:i finished updated the demo pages2015-06-07 15:49:22.494675
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['pwd'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:49:22.537100
+DEBUG:root:i finished updated the demo pages2015-06-07 15:49:55.392913
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['pwd'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:49:55.435224
+DEBUG:root:i finished updated the demo pages2015-06-07 15:50:28.560402
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['pwd'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:50:28.602503
+DEBUG:root:i finished updated the demo pages2015-06-07 15:51:01.166047
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['usr/bin/pwd'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:51:01.244696
+DEBUG:root:i finished updated the demo pages2015-06-07 15:51:34.100418
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['usr/bin/pwd'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:51:34.178866
+DEBUG:root:i finished updated the demo pages2015-06-07 15:52:07.312003
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['usr/bin/pwd'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:52:07.392173
+DEBUG:root:loggerdoer worked
+DEBUG:root:fileiowas imported
+DEBUG:root:heres the cwd/home/ubuntu/forgescan.github.io
+DEBUG:root:HERE I SHOULD BE LOGGING SOMTHING
+DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1433695936, 'iat': 1433692336}
+DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzM2OTU5MzYsImlhdCI6MTQzMzY5MjMzNn0', u'r1gaWxg7VFVbKezu78W_DN4lXfnenZDXpynjUpKR4RzFBmMnqLovL1lfM120spVegpXmKATu9SK8SamBiWf7hQMPw4rreBO_qCOddpQUHr0Rog02XqkzfgutMLF6vfriBFRkQAo6DbD1EIV-wLuOINJJ0ytzssMzTjCG7X7D7a8']
+INFO:oauth2client.client:Refreshing access_token
+DEBUG:root:i finished updated the demo pages2015-06-07 15:52:39.176189
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['usr/bin/pwd'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:52:39.254734
+DEBUG:root:i finished updated the demo pages2015-06-07 15:53:12.061969
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['usr/bin/pwd'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:53:12.104405
+DEBUG:root:i finished updated the demo pages2015-06-07 15:53:46.329424
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['usr/bin/pwd'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:53:46.410056
+DEBUG:root:i finished updated the demo pages2015-06-07 15:54:19.963912
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['usr/bin/pwd'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:54:20.006026
+DEBUG:root:i finished updated the demo pages2015-06-07 15:54:52.735017
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['usr/bin/pwd'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:54:52.813752
+DEBUG:root:i finished updated the demo pages2015-06-07 15:55:25.951067
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 185, in gitupdate
+    p = subprocess.Popen(['usr/bin/pwd'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+
+DEBUG:root:i finished updated the git2015-06-07 15:55:25.993398
+DEBUG:root:loggerdoer worked
+DEBUG:root:fileiowas imported
+DEBUG:root:heres the cwd/home/ubuntu/forgescan.github.io
+DEBUG:root:HERE I SHOULD BE LOGGING SOMTHING
+DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1433696148, 'iat': 1433692548}
+DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzM2OTYxNDgsImlhdCI6MTQzMzY5MjU0OH0', u'DkNDCwo1AXy0LK8NpyXjp7klxGq-3llg9Ti2pPgDnPAJQER4Jet9w6QZ9uDGkflbVdNfQn-B0OtBF_ASN7QnWNO6DD9bwQmvQ-rGzRFPXj1hOAjoD3bOR5ewq2gt5v-LsgzlU_2GkTgrPQ9y67KO2SAu-hvRHIr9r9rD-usGnGo']
+INFO:oauth2client.client:Refreshing access_token
+DEBUG:root:i finished updated the demo pages2015-06-07 15:56:12.011867
+DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
+
+DEBUG:root:

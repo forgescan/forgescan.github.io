@@ -181,16 +181,30 @@ def gitupdate():
         kwargs['startupinfo'] = su
     try:
         #subprocess.call("cd C:\Users\Derrick\Documents\GitHub\forgescan.github.io",shell="3dTrue")
-        os.system("cd /home/ubuntu/forgescan.github.io")
-        logging.debug(str(traceback.format_exc()))
-        os.system("git add .")
-        logging.debug(str(traceback.format_exc()))
+        #os.system("cd /home/ubuntu/forgescan.github.io")
+        p = subprocess.Popen(['pwd'],shell=True, stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+        out, err = p.communicate()
+        print out
+        logging.debug("heres the currentworkingderectory"+str(out))
 
-        os.system("git commit -a -m hapyak")
-        logging.debug(str(traceback.format_exc()))
 
-        os.system("git push -f")
-        p = subprocess.Popen(['git'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+        #os.system("git add .")
+        p = subprocess.Popen(['git','add','.'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+        out, err = p.communicate()
+        print out
+        logging.debug(str(out))
+
+
+        #os.system("git commit -a -m hapyak")
+
+        p = subprocess.Popen(['git','commit','-a','-m','hapyak'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
+        out, err = p.communicate()
+        print out
+        logging.debug(str(out))
+        #logging.debug(str(traceback.format_exc()))
+
+        #os.system("git push -f")
+        p = subprocess.Popen(['git','push -f'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
         out, err = p.communicate()
         print out
         logging.debug(str(out))
