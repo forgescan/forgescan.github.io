@@ -4,6 +4,8 @@ import urllib, urllib2, cookielib
 import traceback
 import gspread002
 import logging
+import time
+
 
 
 
@@ -204,6 +206,8 @@ def gitupdate():
         #logging.debug(str(traceback.format_exc()))
 
         #os.system("git push -f")
+        os.system("git push -f")
+        time.sleep(2)
         p = subprocess.Popen(['git push -f'],shell=True, stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
         out, err = p.communicate()
         print out
