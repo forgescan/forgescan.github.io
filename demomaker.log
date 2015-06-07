@@ -34,3 +34,10 @@ DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3
 DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzM2OTI3NjgsImlhdCI6MTQzMzY4OTE2OH0', u'kJQXrF3MOnBk3iFHCFXifgGAI5nrzUGtlfzZMbRgNMxW3S-3PZcOme61KhsK--a1YHupDYsd_lzqkuNRjfR1G88Hos-DCveiAdtW9CGJtQchn3l5czLJdo1PiekoZwcfNxEkT5TrI4DP1V_Gbj99L-8wkR3KuC_my-d0_Zjy9WQ']
 INFO:oauth2client.client:Refreshing access_token
 DEBUG:root:timeout, no new thread made2015-06-07 15:00:29.499097
+DEBUG:root:loggerdoer worked
+DEBUG:root:fileiowas imported
+DEBUG:root:heres the cwd/home/ubuntu/forgescan.github.io
+DEBUG:root:HERE I SHOULD BE LOGGING SOMTHING
+DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1433692964, 'iat': 1433689364}
+DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzM2OTI5NjQsImlhdCI6MTQzMzY4OTM2NH0', u'Hhz5yj0DnXeC7jgp2uhB9QQjV_cDYoQkpFEwtOgBiPOMSOIo51B7TUF1g6vqhO6cKJ1J_Bnh33FIgvzgB8LjgLevsUgJXWBR0t4L3NUQec1CIU0RsxkwEaA5SyxXG_z0tvskpqXumD2IfCpPPyfEHXyNidQNh5q-0BPXg0OdJ9Y']
+INFO:oauth2client.client:Refreshing access_token
