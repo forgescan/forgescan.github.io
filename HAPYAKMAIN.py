@@ -186,20 +186,23 @@ class SheetCheckerThread(threading.Thread):
                     consoleinput=consoleinput.replace("<Cell R2C22 '","")
                     consoleinput=consoleinput.replace("'>","")
                                       
-                    subprocess.call(consoleinput)
+                    #subprocess.call(consoleinput)
                 
                 if lastcheck!=self.sheetchecker.checkwhenupdated():
                     #spreadsheetmust be updated
                     csv= self.sheetchecker.getupdatedcsv()
                     demopageupdater(csv)
+                    print "i finished updated the demo pages"
+                    logging.debug("i finished updated the demo pages"+str(datetime.datetime.now()))
                     gitupdate()
+                    logging.debug("i finished updated the git"+str(datetime.datetime.now()))
                     self.sheetchecker.UpdateURLsonSheet(csv)
                     
 
                     #sheet must have been updated recently
                     
-                print len(csv)
-                print self.sheetchecker.checkwhenupdated()
+                #print len(csv)
+                #print self.sheetchecker.checkwhenupdated()
                 timerout.cancel()
 		#raise 
             except Exception:
