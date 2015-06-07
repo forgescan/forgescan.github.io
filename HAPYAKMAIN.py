@@ -171,7 +171,7 @@ class SheetCheckerThread(threading.Thread):
                 
                 
                 lastcheck=self.sheetchecker.lastworksheetupdate
-                self.sheetchecker.updatecell("U2",str(lastcheck))
+                #self.sheetchecker.updatecell("U2",str(lastcheck))
                 consoleinput=str(self.sheetchecker.currentworksheet.acell("v2"))
                 if consoleinput!="<Cell R2C22 ''>":
                     self.sheetchecker.updatecell("V2",str("Command Recieved"))
@@ -190,8 +190,9 @@ class SheetCheckerThread(threading.Thread):
                 
                 if lastcheck!=self.sheetchecker.checkwhenupdated():
                     #spreadsheetmust be updated
-                    self.sheetchecker.UpdateURLsonSheet(csv)
+
                     csv= self.sheetchecker.getupdatedcsv()
+                    self.sheetchecker.UpdateURLsonSheet(csv)
                     demopageupdater(csv)
                     print "i finished updated the demo pages"
                     logging.debug("i finished updated the demo pages"+str(datetime.datetime.now()))
