@@ -171,7 +171,7 @@ class SheetCheckerThread(threading.Thread):
                 
                 
                 lastcheck=self.sheetchecker.lastworksheetupdate
-                #self.sheetchecker.updatecell("U2",str(lastcheck))
+                self.sheetchecker.updatecell("U2",str(lastcheck))
                 consoleinput=str(self.sheetchecker.currentworksheet.acell("v2"))
                 if consoleinput!="<Cell R2C22 ''>":
                     self.sheetchecker.updatecell("V2",str("Command Recieved"))
@@ -188,7 +188,7 @@ class SheetCheckerThread(threading.Thread):
                                       
                     #subprocess.call(consoleinput)
                 
-                if lastcheck!=self.sheetchecker.checkwhenupdated(): 
+                if lastcheck!=self.sheetchecker.checkwhenupdated():
                     #spreadsheetmust be updated
 
                     csv= self.sheetchecker.getupdatedcsv()
