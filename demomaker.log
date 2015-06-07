@@ -2706,3 +2706,13 @@ DEBUG:root:i finished updated the demo pages2015-06-07 16:29:26.530772
 DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
 
 DEBUG:root:
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 205, in gitupdate
+    logging.debug(str(out,err))
+TypeError: str() takes at most 1 argument (2 given)
+
+DEBUG:root:i finished updated the git2015-06-07 16:29:29.916077
+DEBUG:root:i finished updated the demo pages2015-06-07 16:30:02.753817
+DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
+
+DEBUG:root:
