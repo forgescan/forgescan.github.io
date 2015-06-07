@@ -4096,3 +4096,255 @@ DEBUG:root:i finished updated the demo pages2015-06-07 18:18:25.979851
 DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
 
 DEBUG:root:
+DEBUG:root:[master 60d4371] hapyak
+ Committer: root <root@ip-172-31-18-114.us-west-2.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 430 files changed, 373341 insertions(+), 891 deletions(-)
+ create mode 100644 web/3M Company/3M Company.css
+ create mode 100644 web/3M Company/3M Company.html
+ create mode 100644 web/AbbVie Inc/AbbVie Inc.css
+ create mode 100644 web/AbbVie Inc/AbbVie Inc.html
+ create mode 100644 web/Abbott Laboratories/Abbott Laboratories.css
+ create mode 100644 web/Abbott Laboratories/Abbott Laboratories.html
+ create mode 100644 web/Aetna Inc/Aetna Inc.css
+ create mode 100644 web/Aetna Inc/Aetna Inc.html
+ create mode 100644 web/Aflac Incorporated/Aflac Incorporated.css
+ create mode 100644 web/Aflac Incorporated/Aflac Incorporated.html
+ create mode 100644 web/Alcoa Inc/Alcoa Inc.css
+ create mode 100644 web/Alcoa Inc/Alcoa Inc.html
+ create mode 100644 web/Altria Group/Altria Group.css
+ create mode 100644 web/Altria Group/Altria Group.html
+ create mode 100644 web/American Airlines Group Inc/American Airlines Group Inc.css
+ create mode 100644 web/American Airlines Group Inc/American Airlines Group Inc.html
+ create mode 100644 web/American Express Company/American Express Company.css
+ create mode 100644 web/American Express Company/American Express Company.html
+ create mode 100644 web/American International Group/American International Group.css
+ create mode 100644 web/American International Group/American International Group.html
+ create mode 100644 web/Amgen Inc/Amgen Inc.css
+ create mode 100644 web/Amgen Inc/Amgen Inc.html
+ create mode 100644 web/Baker Hughes Incorporated/Baker Hughes Incorporated.css
+ create mode 100644 web/Baker Hughes Incorporated/Baker Hughes Incorporated.html
+ create mode 100644 web/Best Buy Co/Best Buy Co.css
+ create mode 100644 web/Best Buy Co/Best Buy Co.html
+ create mode 100644 web/CHS Inc/CHS Inc.css
+ create mode 100644 web/CHS Inc/CHS Inc.html
+ create mode 100644 web/CIGNA Corporation/CIGNA Corporation.css
+ create mode 100644 web/CIGNA Corporation/CIGNA Corporation.html
+ create mode 100644 web/Capital One Financial Corporation/Capital One Financial Corporation.css
+ create mode 100644 web/Capital One Financial Corporation/Capital One Financial Corporation.html
+ create mode 100644 web/Chesapeake Energy Corporation/Chesapeake Energy Corporation.css
+ create mode 100644 web/Chesapeake Energy Corporation/Chesapeake Energy Corporation.html
+ create mode 100644 web/Costco Wholesale/Costco Wholesale.css
+ create mode 100644 web/Costco Wholesale/Costco Wholesale.html
+ create mode 100644 web/Deere & Company/Deere & Company.css
+ create mode 100644 web/Deere & Company/Deere & Company.html
+ create mode 100644 web/Dollar General Corporation/Dollar General Corporation.css
+ create mode 100644 web/Dollar General Corporation/Dollar General Corporation.html
+ create mode 100644 web/Duke Energy Corporation/Duke Energy Corporation.css
+ create mode 100644 web/Duke Energy Corporation/Duke Energy Corporation.html
+ create mode 100644 web/EI du Pont de Nemours and Company/EI du Pont de Nemours and Company.css
+ create mode 100644 web/EI du Pont de Nemours and Company/EI du Pont de Nemours and Company.html
+ create mode 100644 web/EMC Corporation/EMC Corporation.css
+ create mode 100644 web/EMC Corporation/EMC Corporation.html
+ create mode 100644 web/Eli Lilly and Company/Eli Lilly and Company.css
+ create mode 100644 web/Eli Lilly and Company/Eli Lilly and Company.html
+ create mode 100644 web/Emerson Electric Co/Emerson Electric Co.css
+ create mode 100644 web/Emerson Electric Co/Emerson Electric Co.html
+ create mode 100644 web/Energy Transfer Equity/Energy Transfer Equity.css
+ create mode 100644 web/Energy Transfer Equity/Energy Transfer Equity.html
+ create mode 100644 web/Enterprise Products Partners LP/Enterprise Products Partners LP.css
+ create mode 100644 web/Enterprise Products Partners LP/Enterprise Products Partners LP.html
+ create mode 100644 web/Exelon Corporation/Exelon Corporation.css
+ create mode 100644 web/Exelon Corporation/Exelon Corporation.html
+ create mode 100644 web/Express Scripts Holding/Express Scripts Holding.css
+ create mode 100644 web/Express Scripts Holding/Express Scripts Holding.html
+ create mode 100644 web/FedEx Corporation/FedEx Corporation.css
+ create mode 100644 web/FedEx Corporation/FedEx Corporation.html
+ create mode 100644 web/Fluor Corporation/Fluor Corporation.css
+ create mode 100644 web/Fluor Corporation/Fluor Corporation.html
+ create mode 100644 web/Freeport-McMoRan Copper & Gold Inc/Freeport-McMoRan Copper & Gold Inc.css
+ create mode 100644 web/Freeport-McMoRan Copper & Gold Inc/Freeport-McMoRan Copper & Gold Inc.html
+ create mode 100644 web/General Dynamics Corporation/General Dynamics Corporation.css
+ create mode 100644 web/General Dynamics Corporation/General Dynamics Corporation.html
+ create mode 100644 web/Global Partners LP/Global Partners LP.css
+ create mode 100644 web/Global Partners LP/Global Partners LP.html
+ create mode 100644 web/HCA Holdings/HCA Holdings.css
+ create mode 100644 web/HCA Holdings/HCA Holdings.html
+ create mode 100644 web/Halliburton Company/Halliburton Company.css
+ create mode 100644 web/Halliburton Company/Halliburton Company.html
+ create mode 100644 web/Hess Corporation/Hess Corporation.css
+ create mode 100644 web/Hess Corporation/Hess Corporation.html
+ create mode 100644 web/HollyFrontier Corporation/HollyFrontier Corporation.css
+ create mode 100644 web/HollyFrontier Corporation/HollyFrontier Corporation.html
+ create mode 100644 web/Honeywell International Inc/Honeywell International Inc.css
+ create mode 100644 web/Honeywell International Inc/Honeywell International Inc.html
+ create mode 100644 web/Humana Inc/Humana Inc.css
+ create mode 100644 web/Humana Inc/Humana Inc.html
+ create mode 100644 web/INTL FCStone Inc/INTL FCStone Inc.css
+ create mode 100644 web/INTL FCStone Inc/INTL FCStone Inc.html
+ create mode 100644 web/Icahn Enterprises LP/Icahn Enterprises LP.css
+ create mode 100644 web/Icahn Enterprises LP/Icahn Enterprises LP.html
+ create mode 100644 web/Ingram Micro Inc/Ingram Micro Inc.css
+ create mode 100644 web/Ingram Micro Inc/Ingram Micro Inc.html
+ create mode 100644 web/Intel Corporation/Intel Corporation.css
+ create mode 100644 web/Intel Corporation/Intel Corporation.html
+ create mode 100644 web/International Business Machines/International Business Machines.css
+ create mode 100644 web/International Business Machines/International Business Machines.html
+ create mode 100644 web/International Paper Company/International Paper Company.css
+ create mode 100644 web/International Paper Company/International Paper Company.html
+ create mode 100644 web/JP Morgan Chase & Co/JP Morgan Chase & Co.css
+ create mode 100644 web/JP Morgan Chase & Co/JP Morgan Chase & Co.html
+ create mode 100644 web/Jabil Circuit/Jabil Circuit.css
+ create mode 100644 web/Jabil Circuit/Jabil Circuit.html
+ create mode 100644 web/Kimberly-Clark Corporation/Kimberly-Clark Corporation.css
+ create mode 100644 web/Kimberly-Clark Corporation/Kimberly-Clark Corporation.html
+ create mode 100644 web/Kohl's Corporation/Kohl's Corporation.css
+ create mode 100644 web/Kohl's Corporation/Kohl's Corporation.html
+ create mode 100644 web/Kraft Foods Group/Kraft Foods Group.css
+ create mode 100644 web/Kraft Foods Group/Kraft Foods Group.html
+ create mode 100644 web/Liberty Mutual Holding Company Inc/Liberty Mutual Holding Company Inc.css
+ create mode 100644 web/Liberty Mutual Holding Company Inc/Liberty Mutual Holding Company Inc.html
+ create mode 100644 web/Lockheed Martin Corporation/Lockheed Martin Corporation.css
+ create mode 100644 web/Lockheed Martin Corporation/Lockheed Martin Corporation.html
+ create mode 100644 web/Lowe's Companies/Lowe's Companies.css
+ create mode 100644 web/Lowe's Companies/Lowe's Companies.html
+ create mode 100644 web/ManpowerGroup Inc/ManpowerGroup Inc.css
+ create mode 100644 web/ManpowerGroup Inc/ManpowerGroup Inc.html
+ create mode 100644 web/Massachusetts Mutual Life Insurance Company/Massachusetts Mutual Life Insurance Company.css
+ create mode 100644 web/Massachusetts Mutual Life Insurance Company/Massachusetts Mutual Life Insurance Company.html
+ create mode 100644 web/McDonald's Corporation/McDonald's Corporation.css
+ create mode 100644 web/McDonald's Corporation/McDonald's Corporation.html
+ create mode 100644 web/Merck & Co/Merck & Co.css
+ create mode 100644 web/Merck & Co/Merck & Co.html
+ create mode 100644 web/Nationwide Mutual Insurance Co/Nationwide Mutual Insurance Co.css
+ create mode 100644 web/Nationwide Mutual Insurance Co/Nationwide Mutual Insurance Co.html
+ create mode 100644 web/New York Life Insurance Company/New York Life Insurance Company.css
+ create mode 100644 web/New York Life Insurance Company/New York Life Insurance Company.html
+ create mode 100644 web/Northrop Grumman Corporation/Northrop Grumman Corporation.css
+ create mode 100644 web/Northrop Grumman Corporation/Northrop Grumman Corporation.html
+ create mode 100644 web/Northwestern Mutual Life Insurance Company/Northwestern Mutual Life Insurance Company.css
+ create mode 100644 web/Northwestern Mutual Life Insurance Company/Northwestern Mutual Life Insurance Company.html
+ create mode 100644 web/Nucor Corporation/Nucor Corporation.css
+ create mode 100644 web/Nucor Corporation/Nucor Corporation.html
+ create mode 100644 web/Occidental Petroleum Corporation/Occidental Petroleum Corporation.css
+ create mode 100644 web/Occidental Petroleum Corporation/Occidental Petroleum Corporation.html
+ create mode 100644 web/Oracle Corporation/Oracle Corporation.css
+ create mode 100644 web/Oracle Corporation/Oracle Corporation.html
+ create mode 100644 web/PBF Energy Inc/PBF Energy Inc.css
+ create mode 100644 web/PBF Energy Inc/PBF Energy Inc.html
+ create mode 100644 web/Philip Morris International Inc/Philip Morris International Inc.css
+ create mode 100644 web/Philip Morris International Inc/Philip Morris International Inc.html
+ create mode 100644 web/Plains GP Holdings/Plains GP Holdings.css
+ create mode 100644 web/Plains GP Holdings/Plains GP Holdings.html
+ create mode 100644 web/Prudential Financial/Prudential Financial.css
+ create mode 100644 web/Prudential Financial/Prudential Financial.html
+ create mode 100644 web/Publix Super Markets/Publix Super Markets.css
+ create mode 100644 web/Publix Super Markets/Publix Super Markets.html
+ create mode 100644 web/Qualcomm Incorporated/Qualcomm Incorporated.css
+ create mode 100644 web/Qualcomm Incorporated/Qualcomm Incorporated.html
+ create mode 100644 web/Raytheon Company/Raytheon Company.css
+ create mode 100644 web/Raytheon Company/Raytheon Company.html
+ create mode 100644 web/Rite Aid Corporation/Rite Aid Corporation.css
+ create mode 100644 web/Rite Aid Corporation/Rite Aid Corporation.html
+ create mode 100644 web/Safeway Inc/Safeway Inc.css
+ create mode 100644 web/Safeway Inc/Safeway Inc.html
+ create mode 100644 web/Sears Holdings Corporation/Sears Holdings Corporation.css
+ create mode 100644 web/Sears Holdings Corporation/Sears Holdings Corporation.html
+ create mode 100644 web/Southwest Airlines Co/Southwest Airlines Co.css
+ create mode 100644 web/Southwest Airlines Co/Southwest Airlines Co.html
+ create mode 100644 web/State Farm Insurance Cos/State Farm Insurance Cos.css
+ create mode 100644 web/State Farm Insurance Cos/State Farm Insurance Cos.html
+ create mode 100644 web/Supervalu Inc/Supervalu Inc.css
+ create mode 100644 web/Supervalu Inc/Supervalu Inc.html
+ create mode 100644 web/Sysco Corporation/Sysco Corporation.css
+ create mode 100644 web/Sysco Corporation/Sysco Corporation.html
+ create mode 100644 web/Tech Data Corporation/Tech Data Corporation.css
+ create mode 100644 web/Tech Data Corporation/Tech Data Corporation.html
+ create mode 100644 web/Tesoro Corporation/Tesoro Corporation.css
+ create mode 100644 web/Tesoro Corporation/Tesoro Corporation.html
+ create mode 100644 web/The Allstate Corporation/The Allstate Corporation.css
+ create mode 100644 web/The Allstate Corporation/The Allstate Corporation.html
+ create mode 100644 web/The Coca-Cola Company/The Coca-Cola Company.css
+ create mode 100644 web/The Coca-Cola Company/The Coca-Cola Company.html
+ create mode 100644 web/The Goldman Sachs Group/The Goldman Sachs Group.css
+ create mode 100644 web/The Goldman Sachs Group/The Goldman Sachs Group.html
+ create mode 100644 web/The Goodyear Tire & Rubber Company/The Goodyear Tire & Rubber Company.css
+ create mode 100644 web/The Goodyear Tire & Rubber Company/The Goodyear Tire & Rubber Company.html
+ create mode 100644 web/The Hartford Financial Services Group/The Hartford Financial Services Group.css
+ create mode 100644 web/The Hartford Financial Services Group/The Hartford Financial Services Group.html
+ create mode 100644 web/The Progressive Corporation/The Progressive Corporation.css
+ create mode 100644 web/The Progressive Corporation/The Progressive Corporation.html
+ create mode 100644 web/The TJX Companies/The TJX Companies.css
+ create mode 100644 web/The TJX Companies/The TJX Companies.html
+ create mode 100644 web/The Walt Disney Company/The Walt Disney Company.css
+ create mode 100644 web/The Walt Disney Company/The Walt Disney Company.html
+ create mode 100644 web/Time Warner Cable Inc/Time Warner Cable Inc.css
+ create mode 100644 web/Time Warner Cable Inc/Time Warner Cable Inc.html
+ create mode 100644 web/Time Warner Inc/Time Warner Inc.css
+ create mode 100644 web/Time Warner Inc/Time Warner Inc.html
+ create mode 100644 web/Union Pacific Corporation/Union Pacific Corporation.css
+ create mode 100644 web/Union Pacific Corporation/Union Pacific Corporation.html
+ create mode 100644 web/United Continental Holdings/United Continental Holdings.css
+ create mode 100644 web/United Continental Holdings/United Continental Holdings.html
+ create mode 100644 web/United Parcel Service/United Parcel Service.css
+ create mode 100644 web/United Parcel Service/United Parcel Service.html
+ create mode 100644 web/United Services Automobile Association/United Services Automobile Association.css
+ create mode 100644 web/United Services Automobile Association/United Services Automobile Association.html
+ create mode 100644 web/UnitedHealth Group/UnitedHealth Group.css
+ create mode 100644 web/UnitedHealth Group/UnitedHealth Group.html
+ create mode 100644 web/Verizon Communications/Verizon Communications.css
+ create mode 100644 web/Verizon Communications/Verizon Communications.html
+ create mode 100644 web/Walgreen Co/Walgreen Co.css
+ create mode 100644 web/Walgreen Co/Walgreen Co.html
+ create mode 100644 web/Walmart/Walmart.css
+ create mode 100644 web/Walmart/Walmart.html
+ create mode 100644 web/Whirlpool Corporation/Whirlpool Corporation.css
+ create mode 100644 web/Whirlpool Corporation/Whirlpool Corporation.html
+ create mode 100644 web/World Fuel Services Corporation/World Fuel Services Corporation.css
+ create mode 100644 web/World Fuel Services Corporation/World Fuel Services Corporation.html
+ create mode 100644 web/Xerox Corporation/Xerox Corporation.css
+ create mode 100644 web/Xerox Corporation/Xerox Corporation.html
+
+DEBUG:root:
+DEBUG:root:/home/ubuntu/forgescan.github.io
+
+DEBUG:root:warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+To https://github.com/forgescan/forgescan.github.io.git
+   8399d80..60d4371  master -> master
+
+DEBUG:root:got to end of git stuff
+DEBUG:root:i finished updated the git2015-06-07 18:18:52.306360
+DEBUG:root:i finished updated the demo pages2015-06-07 18:19:06.587990
+DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
+
+DEBUG:root:
