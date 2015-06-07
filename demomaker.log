@@ -1418,3 +1418,32 @@ DEBUG:root:i finished updated the demo pages2015-06-07 15:59:46.130045
 DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
 
 DEBUG:root:
+DEBUG:root:[master b511c29] hapyak
+ Committer: root <root@ip-172-31-18-114.us-west-2.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 23 insertions(+), 1 deletion(-)
+
+DEBUG:root:
+DEBUG:root:got to end of git stuff
+DEBUG:root:i finished updated the git2015-06-07 15:59:48.879657
+DEBUG:root:loggerdoer worked
+DEBUG:root:fileiowas imported
+DEBUG:root:heres the cwd/home/ubuntu/forgescan.github.io
+DEBUG:root:HERE I SHOULD BE LOGGING SOMTHING
+DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1433696399, 'iat': 1433692799}
+DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzM2OTYzOTksImlhdCI6MTQzMzY5Mjc5OX0', u'YM9zEUhzoohmiAyrbw89ac88lTjavUZHU_MWbyhva_GhsBvFagR366FMSmMdKL-pjG0cMWCt63Vk_84m_WBjkFxz-um604VNEzOReLvoiHe1iSIMKRcuhn-WQPxLvgYOloE1Lk6srx-KNjyK5flYcZwkXbca5-dX5xY0U_XI0fc']
+INFO:oauth2client.client:Refreshing access_token
+DEBUG:root:i finished updated the demo pages2015-06-07 16:00:18.595394
+DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
+
+DEBUG:root:
