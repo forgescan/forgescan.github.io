@@ -2462,3 +2462,13 @@ DEBUG:root:i finished updated the demo pages2015-06-07 16:21:26.388793
 DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
 
 DEBUG:root:
+DEBUG:root:git failTraceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 202, in gitupdate
+    print outg
+NameError: global name 'outg' is not defined
+
+DEBUG:root:i finished updated the git2015-06-07 16:21:29.002789
+DEBUG:root:i finished updated the demo pages2015-06-07 16:21:56.344511
+DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
+
+DEBUG:root:
