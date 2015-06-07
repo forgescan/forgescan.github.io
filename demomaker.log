@@ -19,3 +19,10 @@ DEBUG:root:HERE I SHOULD BE LOGGING SOMTHING
 DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1433690161, 'iat': 1433686561}
 DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzM2OTAxNjEsImlhdCI6MTQzMzY4NjU2MX0', u'VQF2iJhXgeE88KVYl7D9MRE6NPedHpTAm5iZeMW-wiLieiEncD2JUc0-fOK7lE-zvh1mrv1en4E5Rb_WQp9H8urwlnC5O9Ueh7TYu_8bJeEXgqo6kj2zyFIVu2IMse3Fd0w43e3BhXWOt6Sk-xWFpaE9GLi_4HSl8AaMmjDk8eg']
 INFO:oauth2client.client:Refreshing access_token
+DEBUG:root:loggerdoer worked
+DEBUG:root:fileiowas imported
+DEBUG:root:heres the cwd/home/ubuntu/forgescan.github.io
+DEBUG:root:HERE I SHOULD BE LOGGING SOMTHING
+DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1433692506, 'iat': 1433688906}
+DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzM2OTI1MDYsImlhdCI6MTQzMzY4ODkwNn0', u'KcPxo1ULBMguX7cwwZQDixVBJP4dnnVMLqc7zav5uttSSLyJnMF0I6f9nuS0vdxtpVdFANFob76LHtNuJvq2Zh-epC2kmnwPUhihBknAfV3zEBGhZqQZE143e8xMlTlqZ3fH6Jj_NJ7A1x-5cEwxTuZhHWqOWQfRvCm3ZJVQpRU']
+INFO:oauth2client.client:Refreshing access_token

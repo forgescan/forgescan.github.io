@@ -180,11 +180,16 @@ def gitupdate():
         kwargs['startupinfo'] = su
     try:
         #subprocess.call("cd C:\Users\Derrick\Documents\GitHub\forgescan.github.io",shell="3dTrue")
-        subprocess.call("cd /home/ubuntu/forgescan.github.io/",shell="3dTrue")
+        os.system("cd /home/ubuntu/forgescan.github.io")
+        os.system("git add .")
+        os.system("git commit -a -m hapyak")
+        os.system("git push -f")
+
+        """subprocess.call("cd /home/ubuntu/forgescan.github.io/",shell="3dTrue")
 
         subprocess.call("git add .",shell="3dTrue")
         subprocess.call("git commit -a -m hapyak",shell="3dTrue")
-        subprocess.call("git push -f",shell="3dTrue")
+        subprocess.call("git push -f",shell="3dTrue")"""
         """
         #subprocess.Popen(['cd','C:\Users\Derrick\Documents\GitHub\forgescan.github.io'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
         subprocess.Popen(['git',"add","."], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
