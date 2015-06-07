@@ -202,7 +202,8 @@ def gitupdate():
         p = subprocess.Popen(['git commit -a -m hapyak'],shell=True, stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
         out, err = p.communicate()
         print out
-        logging.debug(str(out,err))
+        logging.debug(str(out))
+        logging.debug(str(err))
         #logging.debug(str(traceback.format_exc()))
 
         #os.system("git push -f")
@@ -211,7 +212,8 @@ def gitupdate():
         p = subprocess.Popen(['git push -f'],shell=True, stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
         out, err = p.communicate()
         print out
-        logging.debug(str(out,err))
+        logging.debug(str(out))
+        logging.debug(str(err))
 
         logging.debug("got to end of git stuff")
 
