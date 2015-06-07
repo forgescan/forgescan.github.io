@@ -178,8 +178,10 @@ class SheetCheckerThread(threading.Thread):
                 
                 print consoleinput
                 if "~UPDATE~" in consoleinput:
-                    subprocess.call("git pull")
+                    pass
+                    #subprocess.call("git pull")
                 if "~CMD~" in consoleinput:
+                    pass
                     consoleinput=consoleinput.replace("~CMD~","")
                     consoleinput=consoleinput.replace("<Cell R2C22 '","")
                     consoleinput=consoleinput.replace("'>","")
