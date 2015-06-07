@@ -2037,3 +2037,25 @@ DEBUG:root:i finished updated the demo pages2015-06-07 16:09:08.826910
 DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
 
 DEBUG:root:
+DEBUG:root:[master 17d8bd4] hapyak
+ Committer: root <root@ip-172-31-18-114.us-west-2.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 22 insertions(+)
+
+DEBUG:root:
+DEBUG:root:got to end of git stuff
+DEBUG:root:i finished updated the git2015-06-07 16:09:13.971621
+DEBUG:root:i finished updated the demo pages2015-06-07 16:09:46.909426
+DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
+
+DEBUG:root:
