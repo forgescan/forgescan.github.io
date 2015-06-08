@@ -1528,3 +1528,81 @@ DEBUG:root:i finished updated the demo pages2015-06-08 17:05:31.190843
 DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
 
 DEBUG:root:
+DEBUG:root:[master 4050695] hapyak
+ Committer: root <root@ip-172-31-18-114.us-west-2.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 54 insertions(+)
+
+DEBUG:root:
+DEBUG:root:/home/ubuntu/forgescan.github.io
+
+DEBUG:root:warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+To https://github.com/forgescan/forgescan.github.io.git
+   786ae09..4050695  master -> master
+
+DEBUG:root:got to end of git stuff
+DEBUG:root:i finished updated the git2015-06-08 17:05:35.393228
+DEBUG:root:loadingworksheet
+DEBUG:root:checkwhenupdated
+DEBUG:root:loadingworksheet
+DEBUG:root:geting updated csv
+DEBUG:root:loadingworksheet
+DEBUG:root:updating urls on sheet
+DEBUG:root:Traceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/gspread002.py", line 90, in UpdateURLsonSheet
+    self.currentworksheet.update_cells(cell_list)
+  File "/usr/local/lib/python2.7/dist-packages/gspread/models.py", line 483, in update_cells
+    self.client.post_cells(self, ElementTree.tostring(feed))
+  File "/usr/local/lib/python2.7/dist-packages/gspread/client.py", line 307, in post_cells
+    r = self.session.post(url, data, headers=headers)
+  File "/usr/local/lib/python2.7/dist-packages/gspread/httpsession.py", line 85, in post
+    return self.request('POST', url, data=data, headers=headers)
+  File "/usr/local/lib/python2.7/dist-packages/gspread/httpsession.py", line 75, in request
+    raise HTTPError("%s: %s" % (response.status, response.read()))
+HTTPError: 502: <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/errors/logo_sm_2.png) no-repeat}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/errors/logo_sm_2_hr.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/errors/logo_sm_2_hr.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/errors/logo_sm_2_hr.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:55px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+
+DEBUG:root:i finished updated the demo pages2015-06-08 17:09:51.287622
+DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
+
+DEBUG:root:
