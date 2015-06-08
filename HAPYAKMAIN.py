@@ -189,11 +189,11 @@ class SheetCheckerThread():#multiprocessing.Process):
             #spreadsheetmust be updated
 
             csv= self.sheetchecker.getupdatedcsv()
-            self.sheetchecker.UpdateURLsonSheet(csv)
-            demopageupdater(csv)
+            #self.sheetchecker.UpdateURLsonSheet(csv)
+            #demopageupdater(csv)
             print "i finished updated the demo pages"
             logging.debug("i finished updated the demo pages"+str(datetime.datetime.now()))
-            gitupdate()
+            #gitupdate()
             logging.debug("i finished updated the git"+str(datetime.datetime.now()))
 
 
