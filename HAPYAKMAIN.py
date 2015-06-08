@@ -156,7 +156,7 @@ class SheetCheckerThread(threading.Thread):
         threading.Thread.__init__(self)
 
         self.setDaemon(1)
-        self.sheetchecker=gspread002.GoogleDocsSession()
+        self.sheetchecker=gspread002.GoogleDocsSession() 
         print self.sheetchecker.checkwhenupdated()
 
     def run(self):
