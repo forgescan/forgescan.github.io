@@ -202,7 +202,7 @@ class SheetCheckerThread():#multiprocessing.Process):
 
         #print len(csv)
         #print self.sheetchecker.checkwhenupdated()
-        timerout.cancel()
+
 
     """def run(self):
 
