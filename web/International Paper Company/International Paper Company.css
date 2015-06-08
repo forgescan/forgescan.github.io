@@ -82,7 +82,7 @@
 /*1A75CF  17D*/      
   color: ~Major Hex~;
   background-color: rgba(26, 117, 207, .5);
-  border-top: solid 4px ~Minor Hex~ !important;
+  border-top: solid 4px #header headerlogo{background-image:url( !important;
 }
 
 /*        RADIUS        */
@@ -208,7 +208,7 @@
 
 /*        QUIZ BUTTONS  */
 .hapyak-player .hapyak-quiz-builder .btn {
-  /*background: ~Minor Hex~;*/
+  /*background: #header headerlogo{background-image:url(;*/
   background: #202020;
   
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdlYzhmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNTc0ZTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -240,7 +240,7 @@
 }
 
 .hapyak-player .hapyak-quiz-builder .btn:hover {
-  /*background: ~Minor Hex~;*/
+  /*background: #header headerlogo{background-image:url(;*/
   background: #202020;
 
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdlYzhmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNTc0ZTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -372,7 +372,7 @@ div.full-frame-image[style] {
 
 .welcome-text {
   color: ~Major Hex~ !important;
-  background: ~Minor Hex~ !important;
+  background: #header headerlogo{background-image:url( !important;
   /*color: #202020 !important;
   background: none !important;*/
 }
@@ -388,7 +388,7 @@ background-color: ~Major Hex~; /*change to passed in main color*/
 border-radius: 10px;
 
 /*
-  background-color: ~Minor Hex~ !important;
+  background-color: #header headerlogo{background-image:url( !important;
   /*background-color: #202020 !important;*/
   width: 135px !important;
   height: 90px;
