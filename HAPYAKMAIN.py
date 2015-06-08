@@ -294,6 +294,9 @@ if __name__ == "__main__":
     #print "threadshouldbedead"
     
     #time.sleep(5)
+    dailyreboot=Timer(600*24,reboot)
+    dailyreboot.start()
+
     while 1:
         reboottimer=Timer(600,reboot) #### do not change this number under 600
         reboottimer.start()
