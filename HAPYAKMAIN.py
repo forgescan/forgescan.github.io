@@ -58,7 +58,7 @@ from threading import Thread
 
 import threading
 
-theVar = 1
+
 """
 class MyThread ( threading.Thread ):
 
@@ -149,17 +149,62 @@ def timeout():
     logging.debug("timeout, no new thread made"+str(datetime.datetime.now()))
     
 import subprocess
-class SheetCheckerThread(threading.Thread):
+#from multiprocessing import Process
+import multiprocessing
+
+print "program got further"
+import sys
+def makeproc():
+    process=Process(target=writetolog)
+    process.start()
+class SheetCheckerThread():#multiprocessing.Process):
 
     def __init__(self):
 
-        threading.Thread.__init__(self)
-
-        self.setDaemon(1)
-        self.sheetchecker=gspread002.GoogleDocsSession() 
+        #multiprocessing.Process.__init__(self)
+        #self.setDaemon(1)
+        self.sheetchecker=gspread002.GoogleDocsSession()
         print self.sheetchecker.checkwhenupdated()
 
-    def run(self):
+    def checksheet(self):
+        lastcheck=self.sheetchecker.lastworksheetupdate
+        self.sheetchecker.updatecell("U2",str(lastcheck))
+        consoleinput=str(self.sheetchecker.currentworksheet.acell("v2"))
+        if consoleinput!="<Cell R2C22 ''>":
+            self.sheetchecker.updatecell("V2",str("Command Recieved"))
+
+        print consoleinput
+        if "~UPDATE~" in consoleinput:
+            pass
+            #subprocess.call("git pull")
+        if "~CMD~" in consoleinput:
+            pass
+            consoleinput=consoleinput.replace("~CMD~","")
+            consoleinput=consoleinput.replace("<Cell R2C22 '","")
+            consoleinput=consoleinput.replace("'>","")
+
+            #subprocess.call(consoleinput)
+
+        if lastcheck!=self.sheetchecker.checkwhenupdated():
+            #spreadsheetmust be updated
+
+            csv= self.sheetchecker.getupdatedcsv()
+            self.sheetchecker.UpdateURLsonSheet(csv)
+            demopageupdater(csv)
+            print "i finished updated the demo pages"
+            logging.debug("i finished updated the demo pages"+str(datetime.datetime.now()))
+            gitupdate()
+            logging.debug("i finished updated the git"+str(datetime.datetime.now()))
+
+
+
+            #sheet must have been updated recently
+
+        #print len(csv)
+        #print self.sheetchecker.checkwhenupdated()
+        timerout.cancel()
+
+    """def run(self):
 
         #self.tid = w32.GetCurrentThreadId()
 
@@ -211,12 +256,12 @@ class SheetCheckerThread(threading.Thread):
                 logging.debug(str(traceback.format_exc()))
                 print(traceback.format_exc())
                 print "exception happened"
-                timeout()
+                timeout()"""
             
             
             
             
-
+"""
     def kill_thread(self,threadobj):
 	pass
 
@@ -229,13 +274,14 @@ class SheetCheckerThread(threading.Thread):
 
         #return result
 
+"""
 if __name__ == "__main__":
 
     print 'Starting SheetCheckerthread...'
 
     SheetChecker = SheetCheckerThread()
 
-    SheetChecker.start()
+    #SheetChecker.start()
 
     #time.sleep(5)
 
@@ -247,7 +293,16 @@ if __name__ == "__main__":
     
     #time.sleep(5)
     while 1:
-        pass
+        try:
+            SheetChecker.checksheet()
+        except Exception:
+
+            logging.debug(str(traceback.format_exc()))
+            logging.debug("exception in main try occured")
+            SheetChecker = SheetCheckerThread()
+            print "sheetchecker broke"
+
+
 
 print 'Exiting'
 

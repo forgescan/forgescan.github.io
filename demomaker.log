@@ -1,57 +1,8 @@
 DEBUG:root:HERE I SHOULD BE LOGGING SOMTHING
-DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1433776845, 'iat': 1433773245}
-DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzM3NzY4NDUsImlhdCI6MTQzMzc3MzI0NX0', u'ghNuwCMdJPhTi_t3_jqhYTbsmXhmxufRR2GiHEGIZ1HJvTO8NhTetWjIkcb3XpSGY936kyj0bs5V7DqyXwY7A2gYJf0-roU0y3oYJ6h0GJ-aYKf7LLGCaqvVx8q4gsJBe0csipEoSpYGHPNOD5Y9ZSPAIYnxNU_1uyM1WLuTEnI']
+DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1433782004, 'iat': 1433778404}
+DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzM3ODIwMDQsImlhdCI6MTQzMzc3ODQwNH0', u'lCTmI6NMUFAzY3Rk1srM7KYsmtNQbbC6keO5fHL-ts1YCLaMdGkaN4ayVx2bpnuK9P1367Ty9dVQ5c_5Y-6u7f1o6P0DEutWUTWlqo_CRFX4dihR-5nqWda-6xzXnKC7LXIXV6z20Rz-5PYHaezF1pOQbP-SSXH5fiIuDZtnykk']
 INFO:oauth2client.client:Refreshing access_token
-DEBUG:root:i finished updated the demo pages2015-06-08 14:21:30.294830
-DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
-
-DEBUG:root:
-DEBUG:root:[master 92b4871] hapyak
- Committer: root <root@ip-172-31-18-114.us-west-2.compute.internal>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly:
-
-    git config --global user.name "Your Name"
-    git config --global user.email you@example.com
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 2 files changed, 9 insertions(+), 24188 deletions(-)
- rewrite demomaker.log (99%)
-
-DEBUG:root:
-DEBUG:root:/home/ubuntu/forgescan.github.io
-
-DEBUG:root:warning: push.default is unset; its implicit value is changing in
-Git 2.0 from 'matching' to 'simple'. To squelch this message
-and maintain the current behavior after the default changes, use:
-
-  git config --global push.default matching
-
-To squelch this message and adopt the new behavior now, use:
-
-  git config --global push.default simple
-
-When push.default is set to 'matching', git will push local branches
-to the remote branches that already exist with the same name.
-
-In Git 2.0, Git will default to the more conservative 'simple'
-behavior, which only pushes the current branch to the corresponding
-remote branch that 'git pull' uses to update the current branch.
-
-See 'git help config' and search for 'push.default' for further information.
-(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
-'current' instead of 'simple' if you sometimes use older versions of Git)
-
-To https://github.com/forgescan/forgescan.github.io.git
-   04f2054..92b4871  master -> master
-
-DEBUG:root:got to end of git stuff
-DEBUG:root:i finished updated the git2015-06-08 14:21:42.061838
-DEBUG:root:i finished updated the demo pages2015-06-08 14:22:12.708259
+DEBUG:root:i finished updated the demo pages2015-06-08 15:47:19.967766
 DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
 
 DEBUG:root:
