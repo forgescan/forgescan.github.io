@@ -275,6 +275,8 @@ class SheetCheckerThread():#multiprocessing.Process):
         #return result
 
 """
+def reboot():
+    os.system("sudo reboot")
 if __name__ == "__main__":
 
     print 'Starting SheetCheckerthread...'
@@ -293,6 +295,8 @@ if __name__ == "__main__":
     
     #time.sleep(5)
     while 1:
+        reboottimer=Timer(600,reboot) #### do not change this number under 600
+        reboottime.start()
         try:
             SheetChecker.checksheet()
         except Exception:
@@ -301,7 +305,7 @@ if __name__ == "__main__":
             logging.debug("exception in main try occured")
             SheetChecker = SheetCheckerThread()
             print "sheetchecker broke"
-
+        reboottimer.cancel()
 
 
 print 'Exiting'
