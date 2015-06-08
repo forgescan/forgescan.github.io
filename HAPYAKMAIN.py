@@ -170,13 +170,13 @@ class SheetCheckerThread():#multiprocessing.Process):
         lastcheck=self.sheetchecker.lastworksheetupdate
         self.sheetchecker.updatecell("U2",str(lastcheck))
         consoleinput=str(self.sheetchecker.currentworksheet.acell("v2"))
-        if consoleinput!="<Cell R2C22 ''>":
+        if consoleinput!="<Cell R2C22 'Command Recieved'>":
             self.sheetchecker.updatecell("V2",str("Command Recieved"))
 
         print consoleinput
         if "~UPDATE~" in consoleinput:
             pass
-            #subprocess.call("git pull")
+
         if "~CMD~" in consoleinput:
             pass
             consoleinput=consoleinput.replace("~CMD~","")
@@ -189,11 +189,11 @@ class SheetCheckerThread():#multiprocessing.Process):
             #spreadsheetmust be updated
 
             csv= self.sheetchecker.getupdatedcsv()
-            #self.sheetchecker.UpdateURLsonSheet(csv)
-            #demopageupdater(csv)
+            self.sheetchecker.UpdateURLsonSheet(csv)
+            demopageupdater(csv)
             print "i finished updated the demo pages"
             logging.debug("i finished updated the demo pages"+str(datetime.datetime.now()))
-            #gitupdate()
+            gitupdate()
             logging.debug("i finished updated the git"+str(datetime.datetime.now()))
 
 
