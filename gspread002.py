@@ -6,6 +6,8 @@ import os
 from oauth2client.client import SignedJwtAssertionCredentials
 import urllib
 import traceback
+import logging
+
 
 
 class GoogleDocsSession():
@@ -35,11 +37,14 @@ class GoogleDocsSession():
     def login(self):
         self.session= gspread.authorize(self.credentials)
     def getupdatedcsv(self):
+        logging.debug("geting updated csv")
+
         self.login()
         self.loadworksheet()
         self.currentcsv=self.currentworksheet.export(format='csv').read()
         return self.currentcsv
     def loadworksheet(self):#,currentworksheet):
+        logging.debug("loadingworksheet")
         self.currentworksheet=self.session.open("Copy of Template Videos").sheet1  #lazy cludge fix later
         #return self.session.open(self.current
     def updatecell(self,cell,string):
@@ -47,12 +52,14 @@ class GoogleDocsSession():
         self.loadworksheet()
         self.currentworksheet.update_acell(cell,string)#requires cell as string "A5"
     def checkwhenupdated(self):
+        logging.debug("checkwhenupdated")
         self.login()
         self.loadworksheet()
         updatedtime=self.currentworksheet.updated
         self.lastworksheetupdate=updatedtime
         return self.lastworksheetupdate
     def UpdateURLsonSheet(self,csv):
+        logging.debug("updating urls on sheet")
         firms=csv.split("\n")
         firmcount=-1
         self.firmlength=len(firms) #so it doesnt keep adding forever
@@ -81,7 +88,9 @@ class GoogleDocsSession():
                     cell_list[i].value = val    #use the index on cell_list and the val from cell_values
             except: pass#Exception:print(traceback.format_exc())
             self.currentworksheet.update_cells(cell_list)
-        except Exception:print(traceback.format_exc())
+        except Exception:
+            logging.debug(str(traceback.format_exc()))
+            print(traceback.format_exc())
 """            
         
 session=GoogleDocsSession()
