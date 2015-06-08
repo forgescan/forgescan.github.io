@@ -296,7 +296,7 @@ if __name__ == "__main__":
     #time.sleep(5)
     while 1:
         reboottimer=Timer(600,reboot) #### do not change this number under 600
-        reboottime.start()
+        reboottimer.start()
         try:
             SheetChecker.checksheet()
         except Exception:
