@@ -1,8 +1,8 @@
 DEBUG:root:HERE I SHOULD BE LOGGING SOMTHING
-DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1433782004, 'iat': 1433778404}
-DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzM3ODIwMDQsImlhdCI6MTQzMzc3ODQwNH0', u'lCTmI6NMUFAzY3Rk1srM7KYsmtNQbbC6keO5fHL-ts1YCLaMdGkaN4ayVx2bpnuK9P1367Ty9dVQ5c_5Y-6u7f1o6P0DEutWUTWlqo_CRFX4dihR-5nqWda-6xzXnKC7LXIXV6z20Rz-5PYHaezF1pOQbP-SSXH5fiIuDZtnykk']
+DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1433782483, 'iat': 1433778883}
+DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzM3ODI0ODMsImlhdCI6MTQzMzc3ODg4M30', u'EWy_swbnTztLZqsMPp-10R3JrNd63nKC6ELIM4K0mlD36ZjBVGXEcvR1nHSGvNvdlJ36XkexcaWOlGOtHCZp4paeAJ0CHRw3pcy2xZ-Rkx7ccb33FeN8efiLmEYvIb8W02vFmuWFSsUi3LOBBXtvawgXQwp4W3NHlRN5C4bZlnk']
 INFO:oauth2client.client:Refreshing access_token
-DEBUG:root:i finished updated the demo pages2015-06-08 15:47:19.967766
+DEBUG:root:i finished updated the demo pages2015-06-08 15:54:56.728650
 DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
 
 DEBUG:root:
