@@ -276,6 +276,8 @@ class SheetCheckerThread():#multiprocessing.Process):
 
 """
 
+
+
 if __name__ == "__main__":
 
     print 'Starting SheetCheckerthread...'
@@ -294,19 +296,25 @@ if __name__ == "__main__":
     
     #time.sleep(5)
 
+def timeoutexception():
+    raise
 
     while 1:
+        timerout=Timer(600,timeoutexception)
+        timerout.start()
 
         try:
             SheetChecker.checksheet()
         except Exception:
-
-            logging.debug(str(traceback.format_exc()))
-            logging.debug("exception in main try occured")
-            SheetChecker = SheetCheckerThread()
-            print "sheetchecker broke"
-
-
+            try:
+                logging.debug(str(traceback.format_exc()))
+                logging.debug("exception in main try occured")
+                SheetChecker = SheetCheckerThread()
+                print "sheetchecker broke"
+            except:
+                pass
+            
+        timerout.cancel()
 
 print 'Exiting'
 
