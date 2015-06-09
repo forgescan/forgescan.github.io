@@ -152,7 +152,7 @@ import subprocess
 #from multiprocessing import Process
 import multiprocessing
 
-print "program got further"
+#print "program got further"
 import sys
 def makeproc():
     process=Process(target=writetolog)
@@ -276,7 +276,8 @@ class SheetCheckerThread():#multiprocessing.Process):
 
 """
 
-
+def timeoutexception():
+    raise
 
 if __name__ == "__main__":
 
@@ -296,25 +297,24 @@ if __name__ == "__main__":
     
     #time.sleep(5)
 
-def timeoutexception():
-    raise
+
 
     while 1:
-        timerout=Timer(600,timeoutexception)
-        timerout.start()
+        
+        #timerout=Timer(600,timeoutexception)
+        #timerout.start()
 
         try:
             SheetChecker.checksheet()
         except Exception:
-            try:
-                logging.debug(str(traceback.format_exc()))
-                logging.debug("exception in main try occured")
-                SheetChecker = SheetCheckerThread()
-                print "sheetchecker broke"
-            except:
-                pass
-            
-        timerout.cancel()
+
+            logging.debug(str(traceback.format_exc()))
+            logging.debug("exception in main try occured")
+            SheetChecker = SheetCheckerThread()
+            print "sheetchecker broke"
+
+
+        #timerout.cancel()
 
 print 'Exiting'
 
