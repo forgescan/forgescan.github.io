@@ -108,7 +108,7 @@ class googledocschecker ( threading.Thread ):
 
 #p = Process(target=f, args=('bob',))
 #sheetchecker=gspread002.GoogleDocsSession()
-sheetchecker=gspread002.GoogleDocsSession
+#sheetchecker=gspread002.GoogleDocsSession
 
 
 """
@@ -275,8 +275,7 @@ class SheetCheckerThread():#multiprocessing.Process):
         #return result
 
 """
-def reboot():
-    os.system("sudo reboot")
+
 if __name__ == "__main__":
 
     print 'Starting SheetCheckerthread...'
@@ -294,12 +293,10 @@ if __name__ == "__main__":
     #print "threadshouldbedead"
     
     #time.sleep(5)
-    dailyreboot=Timer(600*24,reboot)
-    dailyreboot.start()
+
 
     while 1:
-        reboottimer=Timer(600,reboot) #### do not change this number under 600
-        reboottimer.start()
+
         try:
             SheetChecker.checksheet()
         except Exception:
@@ -308,7 +305,7 @@ if __name__ == "__main__":
             logging.debug("exception in main try occured")
             SheetChecker = SheetCheckerThread()
             print "sheetchecker broke"
-        reboottimer.cancel()
+
 
 
 print 'Exiting'
