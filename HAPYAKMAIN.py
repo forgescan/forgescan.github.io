@@ -300,9 +300,9 @@ if __name__ == "__main__":
 
 
     while 1:
-        
-        #timerout=Timer(600,timeoutexception)
-        #timerout.start()
+
+        timerout=Timer(600,timeoutexception)
+        timerout.start()
 
         try:
             SheetChecker.checksheet()
@@ -314,7 +314,7 @@ if __name__ == "__main__":
             print "sheetchecker broke"
 
 
-        #timerout.cancel()
+        timerout.cancel()
 
 print 'Exiting'
 

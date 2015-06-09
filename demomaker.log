@@ -1,6 +1,6 @@
 DEBUG:root:HERE I SHOULD BE LOGGING SOMTHING
-DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1433867046, 'iat': 1433863446}
-DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzM4NjcwNDYsImlhdCI6MTQzMzg2MzQ0Nn0', u'JBAw8if83dXXlsbl_Ha3mF4EyIEbuoJJ1nXiOJborqkuRW6MY7ITzFWJqBSPJ5kn8mqXh0qjQjKxb6sM1X1-5acfCIbJSwTlK2aUDSIxRW3M1eVIODP7lchuM7uLCyOOBliuEFliAP2f-9y7wGIcqKOByvKEXAq5Za2yg_VSuDY']
+DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1433867094, 'iat': 1433863494}
+DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzM4NjcwOTQsImlhdCI6MTQzMzg2MzQ5NH0', u'j4FF1Qs5WiT7g3ORJU-7O_uGpVma9g5am7SYIVZvn7yqSSjonynvYHAoC6fZdgGtBgZmFOQs6LAKXcButOy85LXQ5frG7Be-qummk1idMsmCTEgsu7SqkCPvHBl2t_WhkWCi7KsBe7I6_I_CUB7NqKtemFH4DC9GWwFwCmwnmjY']
 INFO:oauth2client.client:Refreshing access_token
 DEBUG:root:checkwhenupdated
 DEBUG:root:loadingworksheet
@@ -10,7 +10,7 @@ DEBUG:root:loadingworksheet
 DEBUG:root:geting updated csv
 DEBUG:root:loadingworksheet
 DEBUG:root:updating urls on sheet
-DEBUG:root:i finished updated the demo pages2015-06-09 15:24:16.085552
+DEBUG:root:i finished updated the demo pages2015-06-09 15:25:04.221331
 DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
 
 DEBUG:root:
