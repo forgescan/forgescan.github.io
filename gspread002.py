@@ -114,7 +114,7 @@ class GoogleDocsSession():
                     #print LandingPageURL
             except Exception:print(traceback.format_exc())
         try:
-            cell_list = self.currentworksheet.range('Q2:Q'+str(self.firmlength-10))#was q1
+            cell_list = self.currentworksheet.range('R2:R'+str(self.firmlength-10))#was q1
             #print cell_list
             cell_values = self.urllandingpages
             try:
