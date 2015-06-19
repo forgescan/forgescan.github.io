@@ -61,7 +61,7 @@ class GoogleDocsSession():
     def UpdateURLsonSheet(self,csv):
         logging.debug("updating urls on sheet")
         firms=csv.split("\n")
-        firmcount=-1
+        firmcount=0  #-1
         self.firmlength=len(firms) #so it doesnt keep adding forever
         print self.firmlength
         self.urllandingpages=[]
