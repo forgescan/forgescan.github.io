@@ -190,6 +190,7 @@ class SheetCheckerThread():#multiprocessing.Process):
 
             csv= self.sheetchecker.getupdatedcsv()
             self.sheetchecker.UpdateURLsonSheet(csv)
+            self.sheetchecker.UpdateScreenshotURLsonSheet(csv)
             demopageupdater(csv)
             print "i finished updated the demo pages"
             logging.debug("i finished updated the demo pages"+str(datetime.datetime.now()))

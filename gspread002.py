@@ -91,6 +91,40 @@ class GoogleDocsSession():
         except Exception:
             logging.debug(str(traceback.format_exc()))
             print(traceback.format_exc())
+
+    def UpdateScreenshotURLsonSheet(self,csv):
+        logging.debug("updating urls on sheet")
+        firms=csv.split("\n")
+        firmcount=1  #-1
+        self.firmlength=len(firms) #so it doesnt keep adding forever
+        print self.firmlength
+        self.urllandingpages=[]
+
+        for firm in firms:
+            firmcount+=1
+            try:
+                firm=firm.replace('"',"") #get rid of unwanted characters here
+                firm=firm.replace(".","")
+                firm=firm.split(",")
+                if len(firm)>2 and firmcount>0:
+                    #print firm
+                    LandingPageURL="http://forgescan.github.io/web/"+urllib.quote(firm[0])+"/"+urllib.quote(firm[0])+".png"
+                    self.urllandingpages.append(str(LandingPageURL))
+                    #self.updatecell("Q"+str(firmcount),str(LandingPageURL))
+                    #print LandingPageURL
+            except Exception:print(traceback.format_exc())
+        try:
+            cell_list = self.currentworksheet.range('Q2:Q'+str(self.firmlength-10))#was q1
+            #print cell_list
+            cell_values = self.urllandingpages
+            try:
+                for i, val in enumerate(cell_values):  #gives us a tuple of an index and value
+                    cell_list[i].value = val    #use the index on cell_list and the val from cell_values
+            except: pass#Exception:print(traceback.format_exc())
+            self.currentworksheet.update_cells(cell_list)
+        except Exception:
+            logging.debug(str(traceback.format_exc()))
+            print(traceback.format_exc())
 """            
         
 session=GoogleDocsSession()
