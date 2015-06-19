@@ -106,7 +106,7 @@ class GoogleDocsSession():
                 firm=firm.replace('"',"") #get rid of unwanted characters here
                 firm=firm.replace(".","")
                 firm=firm.split(",")
-                if len(firm)>2 and firmcount>0:
+                if len(firm)>2 and firmcount>1:
                     #print firm
                     LandingPageURL="http://forgescan.github.io/web/"+urllib.quote(firm[0])+"/"+urllib.quote(firm[0])+".png"
                     self.urllandingpages.append(str(LandingPageURL))
