@@ -61,7 +61,7 @@ class GoogleDocsSession():
     def UpdateURLsonSheet(self,csv):
         logging.debug("updating urls on sheet")
         firms=csv.split("\n")
-        firmcount=0  #-1
+        firmcount=1  #-1
         self.firmlength=len(firms) #so it doesnt keep adding forever
         print self.firmlength
         self.urllandingpages=[]
@@ -80,7 +80,8 @@ class GoogleDocsSession():
                     #print LandingPageURL
             except Exception:print(traceback.format_exc())
         try:
-            cell_list = self.currentworksheet.range('Q1:Q'+str(self.firmlength-10))
+            del self.urllandingpages[0]
+            cell_list = self.currentworksheet.range('Q2:Q'+str(self.firmlength-10))
             #print cell_list
             cell_values = self.urllandingpages
             try:
