@@ -113,7 +113,9 @@ class GoogleDocsSession():
                     #self.updatecell("Q"+str(firmcount),str(LandingPageURL))
                     #print LandingPageURL
             except Exception:print(traceback.format_exc())
+
         try:
+            del self.urllandingpages[0]
             cell_list = self.currentworksheet.range('R2:R'+str(self.firmlength-10))#was q1
             #print cell_list
             cell_values = self.urllandingpages
