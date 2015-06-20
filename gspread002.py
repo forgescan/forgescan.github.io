@@ -42,6 +42,12 @@ class GoogleDocsSession():
         self.login()
         self.loadworksheet()
         self.currentcsv=self.currentworksheet.export(format='csv').read()
+        ###### save csv locally
+        cwd='/home/ubuntu/forgescan.github.io/'
+        fileout=open(cwd+"HAPYAKCSV.csv","w")
+        fileout.write(self.currentcsv)
+        fileout.close()
+
         return self.currentcsv
     def loadworksheet(self):#,currentworksheet):
         logging.debug("loadingworksheet")
