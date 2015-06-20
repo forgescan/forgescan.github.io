@@ -15,3 +15,323 @@ DEBUG:root:i finished updated the demo pages2015-06-20 17:38:07.805489
 DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
 
 DEBUG:root:
+DEBUG:root:[master d143999] hapyak
+ Committer: root <root@ip-172-31-21-56.us-west-2.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 264 files changed, 311825 insertions(+), 3404 deletions(-)
+ create mode 100644 HAPYAKCSV.csv
+ create mode 100755 Hartford-0.png
+ create mode 100755 Hartford-1.png
+ create mode 100755 Hartford-2.png
+ create mode 100755 Hathaway-0.png
+ create mode 100755 Hathaway-1.png
+ create mode 100755 Hathaway-2.png
+ create mode 100755 Health-0.png
+ create mode 100755 Health-1.png
+ create mode 100755 Health-2.png
+ create mode 100755 Healthcare-0.png
+ create mode 100755 Healthcare-1.png
+ create mode 100755 Healthcare-2.png
+ create mode 100755 Holdings-0.png
+ create mode 100755 Holdings-1.png
+ create mode 100755 Holdings-2.png
+ create mode 100755 Holdings-3.png
+ create mode 100755 Holdings-4.png
+ create mode 100755 Hotels
+ create mode 100755 Hughes-0.png
+ create mode 100755 Hughes-1.png
+ create mode 100755 Hughes-2.png
+ rename hapyaktest12.com.png => Inc-2.png (100%)
+ mode change 100644 => 100755
+ create mode 100755 Inc-3.png
+ create mode 100755 Inc-4.png
+ create mode 100755 Inc-5.png
+ create mode 100755 Inc-6.png
+ create mode 100755 Inc-7.png
+ create mode 100755 Inc-8.png
+ create mode 100755 Incorporated-0.png
+ create mode 100755 Incorporated-1.png
+ create mode 100755 Incorporated-2.png
+ create mode 100755 Incorporated-3.png
+ create mode 100755 Incorporated-4.png
+ create mode 100755 Incorporated-5.png
+ create mode 100755 Incorporated-6.png
+ create mode 100755 Incorporated-7.png
+ create mode 100755 Incorporated-8.png
+ create mode 100755 International-0.png
+ create mode 100755 International-1.png
+ create mode 100755 International-2.png
+ create mode 100755 International-3.png
+ create mode 100755 International-4.png
+ create mode 100755 LP-4.png
+ create mode 100755 LP-5.png
+ create mode 100755 LP-6.png
+ create mode 100755 Lilly-0.png
+ create mode 100755 Lilly-1.png
+ create mode 100755 Lilly-2.png
+ create mode 100755 Lots-0.png
+ create mode 100755 Lots-1.png
+ create mode 100755 Lots-2.png
+ create mode 100755 Machines-0.png
+ create mode 100755 Machines-1.png
+ create mode 100755 Machines-2.png
+ create mode 100755 Machines-3.png
+ create mode 100755 Machines-4.png
+ create mode 100755 Markets-0.png
+ create mode 100755 Markets-1.png
+ create mode 100755 Markets-2.png
+ create mode 100755 Markets-3.png
+ create mode 100755 Markets-4.png
+ create mode 100755 Martin-0.png
+ create mode 100755 Martin-1.png
+ create mode 100755 Martin-2.png
+ create mode 100755 Medical-0.png
+ create mode 100755 Medical-1.png
+ create mode 100755 Medical-2.png
+ create mode 100755 Medical-3.png
+ create mode 100755 Medical-4.png
+ create mode 100755 Midland-0.png
+ create mode 100755 Midland-1.png
+ create mode 100755 Midland-2.png
+ create mode 100755 Midland-3.png
+ create mode 100755 Midland-4.png
+ create mode 100755 Morgan-0.png
+ create mode 100755 Morgan-1.png
+ create mode 100755 Morgan-2.png
+ create mode 100755 Mutual-0.png
+ create mode 100755 Mutual-1.png
+ create mode 100755 Mutual-2.png
+ create mode 100755 One-0.png
+ create mode 100755 One-1.png
+ create mode 100755 One-2.png
+ create mode 100755 Pantry-0.png
+ create mode 100755 Pantry-1.png
+ create mode 100755 Pantry-2.png
+ create mode 100755 Paper-0.png
+ create mode 100755 Paper-1.png
+ create mode 100755 Paper-2.png
+ create mode 100755 Partners-0.png
+ create mode 100755 Partners-1.png
+ create mode 100755 Partners-2.png
+ create mode 100755 Partners-3.png
+ create mode 100755 Partners-4.png
+ create mode 100755 Partners-5.png
+ create mode 100755 Partners-6.png
+ create mode 100755 Petroleum-0.png
+ create mode 100755 Petroleum-1.png
+ create mode 100755 Petroleum-2.png
+ create mode 100755 Processing-0.png
+ create mode 100755 Processing-1.png
+ create mode 100755 Processing-2.png
+ create mode 100755 Processing-3.png
+ create mode 100755 Processing-4.png
+ create mode 100755 Rentals-0.png
+ create mode 100755 Rentals-1.png
+ create mode 100755 Rentals-2.png
+ create mode 100755 Resorts-0.png
+ create mode 100755 Resorts-1.png
+ create mode 100755 Resorts-2.png
+ create mode 100755 Resources-0.png
+ create mode 100755 Resources-1.png
+ create mode 100755 Resources-2.png
+ create mode 100755 Restaurants-0.png
+ create mode 100755 Restaurants-1.png
+ create mode 100755 Restaurants-2.png
+ create mode 100755 Sachs-0.png
+ create mode 100755 Sachs-1.png
+ create mode 100755 Sachs-2.png
+ create mode 100755 Sciences-0.png
+ create mode 100755 Sciences-1.png
+ create mode 100755 Sciences-2.png
+ create mode 100755 Services-0.png
+ create mode 100755 Services-1.png
+ create mode 100755 Services-2.png
+ create mode 100755 Steel
+ create mode 100755 Stores-0.png
+ create mode 100755 Stores-1.png
+ create mode 100755 Stores-2.png
+ create mode 100755 Stores-3.png
+ create mode 100755 Stores-4.png
+ create mode 100755 Systems-0.png
+ create mode 100755 Systems-1.png
+ create mode 100755 Systems-2.png
+ create mode 100755 Systems-3.png
+ create mode 100755 Systems-4.png
+ create mode 100755 Technology-0.png
+ create mode 100755 Technology-1.png
+ create mode 100755 Technology-2.png
+ create mode 100755 Tire
+ create mode 100755 Transfer-0.png
+ create mode 100755 Transfer-1.png
+ create mode 100755 Transfer-2.png
+ create mode 100755 Tree-0.png
+ create mode 100755 Tree-1.png
+ create mode 100755 Tree-2.png
+ create mode 100755 Utilities-0.png
+ create mode 100755 Utilities-1.png
+ create mode 100755 Utilities-2.png
+ create mode 100755 Varco-0.png
+ create mode 100755 Varco-1.png
+ create mode 100755 Varco-2.png
+ create mode 100755 Varco-3.png
+ create mode 100755 Varco-4.png
+ rewrite demomaker.log (99%)
+ mode change 100644 => 100755 hapyak
+ rewrite hapyaktest12.com.png (96%)
+ mode change 100644 => 100755
+ mode change 100644 => 100755 screenshottaker.py
+ create mode 100755 web/#VALUE!/#VALUE!.png
+ create mode 100644 web/.png
+ create mode 100755 web/3M/3M.png
+ create mode 100755 web/AT
+ create mode 100755 web/AbbVie/AbbVie.png
+ create mode 100755 web/Abbott/Abbott.png
+ create mode 100755 web/Aetna/Aetna.png
+ create mode 100755 web/Aflac/Aflac.png
+ create mode 100755 web/Airgas/Airgas.png
+ create mode 100755 web/Allergan/Allergan.png
+ create mode 100755 web/Altria/Altria.png
+ create mode 100755 web/Amazoncom/Amazoncom.png
+ create mode 100755 web/AmerisourceBergen/AmerisourceBergen.png
+ create mode 100755 web/Amgen/Amgen.png
+ create mode 100755 web/Apple/Apple.png
+ create mode 100755 web/Assurant/Assurant.png
+ create mode 100755 web/Autoliv/Autoliv.png
+ create mode 100755 web/BB
+ create mode 100755 web/Becton/Becton.png
+ create mode 100644 web/Berkshire Hathaway/Berkshire Hathaway.png
+ create mode 100755 web/BlackRock/BlackRock.png
+ create mode 100755 web/Boeing/Boeing.png
+ create mode 100755 web/CHS/CHS.png
+ create mode 100644 web/Calpine Corporation/Calpine Corporation.png
+ create mode 100755 web/CarMax/CarMax.png
+ create mode 100755 web/CenturyLink/CenturyLink.png
+ create mode 100644 web/Chevron/Chevron.png
+ create mode 100755 web/Coca-Cola/Coca-Cola.png
+ create mode 100755 web/Costco/Costco.png
+ create mode 100755 web/DIRECTV/DIRECTV.png
+ create mode 100755 web/Deere/Deere.png
+ create mode 100755 web/EMC/EMC.png
+ create mode 100755 web/Emerson/Emerson.png
+ create mode 100644 web/Exxon Mobil/Exxon Mobil.png
+ create mode 100755 web/FedEx/FedEx.png
+ create mode 100755 web/Fluor/Fluor.png
+ create mode 100644 web/Ford Motor/Ford Motor.png
+ create mode 100644 web/General Electric/General Electric.png
+ create mode 100644 web/General Motors/General Motors.png
+ create mode 100755 web/Goodyear/Goodyear.png
+ create mode 100755 web/Google/Google.png
+ create mode 100755 web/HCA/HCA.png
+ create mode 100755 web/Halliburton/Halliburton.png
+ create mode 100755 web/Hess/Hess.png
+ create mode 100755 web/Hewlett-Packard/Hewlett-Packard.png
+ create mode 100755 web/IBM/IBM.png
+ mode change 100644 => 100755 web/Investopedia/Investopedia.css
+ mode change 100644 => 100755 web/Investopedia/Investopedia.html
+ mode change 100644 => 100755 web/Investopia/Investopia.css
+ mode change 100644 => 100755 web/Investopia/Investopia.html
+ create mode 100755 web/Investopia/Investopia.png
+ create mode 100755 web/Jabil/Jabil.png
+ create mode 100755 web/KBR/KBR.png
+ create mode 100755 web/KKR
+ create mode 100755 web/Kraft/Kraft.png
+ create mode 100755 web/Lorillard/Lorillard.png
+ create mode 100755 web/Microsoft/Microsoft.png
+ mode change 100644 => 100755 web/Navy Federal Credit Union/Navy Federal Credit Union.css
+ mode change 100644 => 100755 web/Navy Federal Credit Union/Navy Federal Credit Union.html
+ create mode 100755 web/Nordstrom/Nordstrom.png
+ create mode 100755 web/ONEOK/ONEOK.png
+ create mode 100755 web/Omnicare/Omnicare.png
+ create mode 100755 web/Oracle/Oracle.png
+ create mode 100755 web/PG
+ create mode 100755 web/PennWell/PennWell.png
+ create mode 100755 web/PetSmart/PetSmart.png
+ create mode 100644 web/Phillips 66/Phillips 66.png
+ create mode 100755 web/Praxair/Praxair.png
+ create mode 100755 web/Publix/Publix.png
+ create mode 100755 web/Raytheon/Raytheon.png
+ create mode 100755 web/Southwest/Southwest.png
+ create mode 100755 web/Staples/Staples.png
+ create mode 100755 web/Sysco/Sysco.png
+ create mode 100755 web/TIAA-CREF/TIAA-CREF.png
+ create mode 100755 web/TJX/TJX.png
+ create mode 100755 web/Target/Target.png
+ create mode 100755 web/USAA/USAA.png
+ create mode 100755 web/UnitedHealth/UnitedHealth.png
+ create mode 100755 web/Verizon/Verizon.png
+ create mode 100644 web/Wal-Mart/Wal-Mart.png
+ create mode 100755 web/Walgreen/Walgreen.png
+ create mode 100755 web/Walmart/Walmart.png
+ create mode 100755 web/WellPoint/WellPoint.png
+ create mode 100755 web/Whirlpool/Whirlpool.png
+ create mode 100755 web/Xerox/Xerox.png
+ create mode 100755 web/aba/aba.png
+ mode change 100644 => 100755 web/dffdsfsdf/dffdsfsdf.css
+ mode change 100644 => 100755 web/dffdsfsdf/dffdsfsdf.html
+ create mode 100755 web/duPont/duPont.png
+ create mode 100755 web/fdafdsafdsf/fdafdsafdsf.png
+ create mode 100755 web/fdfasdfsdafsd/fdfasdfsdafsd.png
+ create mode 100755 web/fdfsdfsdfdsfsdfsdfsdf/fdfsdfsdfdsfsdfsdfsdf.png
+ create mode 100755 web/fdsafdsfa/fdsafdsfa.png
+ create mode 100755 web/fdsfdsfsd/fdsfdsfsd.png
+ create mode 100755 web/fjdfkfjdskljfkl/fjdfkfjdskljfkl.png
+ create mode 100755 web/gfdsgdfgfsd/gfdsgdfgfsd.png
+ create mode 100755 web/hapyaktest12.com.png
+ create mode 100755 web/xfa/xfa.png
+ create mode 100755 web/xfd/xfd.png
+ create mode 100755 web/xfdafd/xfdafd.png
+ create mode 100755 web/zcooby/zcooby.png
+ create mode 100755 web/zhhjkhkhkhhjk/zhhjkhkhkhhjk.png
+ create mode 100755 web/zzzzzzzzzzzzzzz/zzzzzzzzzzzzzzz.png
+
+DEBUG:root:
+DEBUG:root:/home/ubuntu/forgescan.github.io
+
+DEBUG:root:warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+warning: unable to access '/home/ubuntu/.config/git/attributes': Permission denied
+To https://github.com/forgescan/forgescan.github.io
+   eba363e..d143999  master -> master
+
+DEBUG:root:got to end of git stuff
+DEBUG:root:i finished updated the git2015-06-20 17:38:18.970825
+DEBUG:root:loadingworksheet
+DEBUG:root:checkwhenupdated
+DEBUG:root:loadingworksheet
+DEBUG:root:geting updated csv
+DEBUG:root:loadingworksheet
+DEBUG:root:updating urls on sheet
+DEBUG:root:updating urls on sheet
+DEBUG:root:i finished updated the demo pages2015-06-20 17:38:50.846341
+DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
+
+DEBUG:root:
