@@ -22,10 +22,12 @@ try:
     for i in range(1000):
         firm=firms[i]
         try:
-            os.system("sudo Xvfb :5 -screen 0 720x464x24 & ") #initiate virtual display buffer
+            #os.system("sudo Xvfb :5 -screen 0 720x464x24 & ") #initiate virtual display buffer
+            pass
         except:pass
 
         firm=firm.split(',')
+        print firm[2]
         if firm[2]!="":
             print firm[2]
             """
