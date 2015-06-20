@@ -19,7 +19,7 @@ try:
     #for testing purposes
     #firms=[firms[1],firms[2],firms[3],firms[4]] #remove later
     #try:
-    for i in range(100):
+    for i in range(1000):
         firm=firms[i]
         try:
             os.system("sudo Xvfb :5 -screen 0 720x464x24 & ") #initiate virtual display buffer
