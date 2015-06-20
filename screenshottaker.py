@@ -28,7 +28,7 @@ try:
 
         firm=firm.split(',')
         #print firm
-        if firm[2]!='':
+        if firm[2]!='' and firm[3]!='':
             print firm[2]
             """
             EmbeddedVideoURL=HAPYAKFUNCTIONS.URLbuilder(firm)
