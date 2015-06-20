@@ -27,7 +27,7 @@ try:
         except:pass
 
         firm=firm.split(',')
-        print firm
+        #print firm
         if firm[2]!='':
             print firm[2]
             """
