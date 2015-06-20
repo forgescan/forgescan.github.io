@@ -174,6 +174,8 @@ class SheetCheckerThread():#multiprocessing.Process):
             self.sheetchecker.updatecell("V2",str("Command Recieved"))
 
         print consoleinput
+        if "~UPDATESCREENSHOTS" in consoleinput:
+            os.system("sudo python screenshottaker.py &")
         if "~UPDATE~" in consoleinput:
             pass
 
