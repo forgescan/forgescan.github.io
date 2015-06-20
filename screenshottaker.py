@@ -19,18 +19,18 @@ try:
     #for testing purposes
     #firms=[firms[1],firms[2],firms[3],firms[4]] #remove later
     #try:
-    for i in range(1000):
+    for i in range(len(firms)-10):
         firm=firms[i]
         try:
-            #os.system("sudo Xvfb :5 -screen 0 720x464x24 & ") #initiate virtual display buffer
+            os.system("sudo Xvfb :5 -screen 0 720x464x24 & ") #initiate virtual display buffer
             pass
         except:pass
 
         firm=firm.split(',')
         #print firm
-        if firm[2]!='' and firm[3]!='':
+        if firm[2]!='' and firm[3]!='': #commas in company names screw everything up
             print firm[2]
-            """
+
             EmbeddedVideoURL=HAPYAKFUNCTIONS.URLbuilder(firm)
 
             firm=firm[0]
@@ -51,9 +51,9 @@ try:
             os.system("sudo DISPLAY=:5 import -window root '"+cwd+"web/"+firm+"/"+firm+".png'")
             print "sudo DISPLAY=:5 google-chrome  --kiosk --window-size=720,464 --window-position=0,0 '"+EmbeddedVideoURL+ "'&"
             print "sudo DISPLAY=:5 import -window root "+cwd+"web/"+firm+"/"+firm+".png"
-            time.sleep(3)  """
+            time.sleep(3)
 
-        #os.system("sudo killall Xvfb")
+        os.system("sudo killall Xvfb")
 
 
 
