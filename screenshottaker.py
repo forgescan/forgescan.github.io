@@ -53,7 +53,7 @@ try:
             print "sudo DISPLAY=:5 import -window root "+cwd+"web/"+firm+"/"+firm+".png"
             time.sleep(3)  """
 
-        os.system("sudo killall Xvfb")
+        #os.system("sudo killall Xvfb")
 
 
 
