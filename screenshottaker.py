@@ -47,9 +47,8 @@ try:
             os.system("sudo DISPLAY=:5 import -window root '"+cwd+"web/"+firm+"/"+firm+".png'")
             print "sudo DISPLAY=:5 google-chrome  --kiosk --window-size=720,464 --window-position=0,0 '"+EmbeddedVideoURL+ "'&"
             print "sudo DISPLAY=:5 import -window root "+cwd+"/web/"+firm+"/"+firm+".png"
-            os.system("sudo killall Xvfb")
             time.sleep(3)
-
+            os.system("sudo killall Xvfb")
 
 
 
