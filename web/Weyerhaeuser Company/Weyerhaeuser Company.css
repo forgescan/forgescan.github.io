@@ -80,7 +80,7 @@
 /*        COLORS        */
 .popcorn-contents .popcorn-contents-title {
 /*1A75CF  17D*/      
-  color: ~Major Hex~;
+  color: #008147;
   background-color: rgba(26, 117, 207, .5);
   border-top: solid 4px ~Minor Hex~ !important;
 }
@@ -102,7 +102,7 @@
 /*        COLORS        */
 .hapyak-contents-column1.expanded {
   /*background: rgba(0, 0, 0, 0.6);*/
-  color: ~Major Hex~;
+  color: #008147;
   background-color: rgba(26, 117, 207, .5);
 }
 
@@ -110,7 +110,7 @@
 .hapyak-contents-column1 .popcorn-contents-close {
   top: 0px;
   background-color: rgba(26, 117, 207, .5);
-  color: ~Major Hex~;
+  color: #008147;
   padding: 15px 16px 6px 8px;
   height: 33px;
 }
@@ -122,7 +122,7 @@
 /*        LIST COLORS AND BULLETS  */
 .hapyak-contents-column1 .popcorn-contents-list > li:hover,
 .hapyak-contents-column1 .popcorn-contents-list > li.active {
-  color: ~Major Hex~;
+  color: #008147;
   /*list-style-image: none */
 }
 
@@ -141,7 +141,7 @@
   /*border-radius: 0px;*/
   /*cursor: default;*/
   /*margin-bottom: 27px;*/
-  color: ~Major Hex~;
+  color: #008147;
 }
 
 /* ------------------------------------------------------------ */
@@ -164,7 +164,7 @@
   /*padding: 9px 12px;*/
   /*text-align: center;*/
   /*FDBB30  is code recorded*/
-  color: ~Major Hex~;
+  color: #008147;
 }
 
 /* ------------------------------------------------------------ */
@@ -173,7 +173,7 @@
 /*        HOT LINK SETTINGS  */
 .popcorn-hotlink {
   background-color: rgba(26, 117, 207, .5);
-  color: ~Major Hex~;
+  color: #008147;
   /*background: none;*/
 }
 
@@ -198,7 +198,7 @@
 
 /*        QUIZ FONT COLOR  */
 .hapyak-player .hapyak-quiz-builder {
-  color: ~Major Hex~;
+  color: #008147;
 }
 
 /*        SET ALIGNMENT OF QUIZ TEXT  */
@@ -235,7 +235,7 @@
   -webkit-user-select: none;
   -o-user-select: none;
   user-select: none;
-  /*color: ~Major Hex~;*/
+  /*color: #008147;*/
   /*text-shadow: 0 -1px 0 #3574E3;*/
 }
 
@@ -264,7 +264,7 @@ button.btn.btn-large.btn-primary.submit-answers.disabled {
   /*background-image: url("//hapyak_demos.s3.amazonaws.com/img/logo_microsoft.gif") !important;*/
   
   /*background-image: url("http://upload.wikimedia.org/wikipedia/commons/thumb/7/76/New_Walmart_Logo.svg/1280px-New_Walmart_Logo.svg.png");*/
-  background-image: url("image/logogif") !important;
+  background-image: url("https://uploadwikimediaorg/wikipedia/en/thumb/4/47/Weyerhaeusersvg/640px-Weyerhaeusersvgpng") !important;
   
   background-repeat: no-repeat;
   background-position: 50% 18px;
@@ -329,12 +329,12 @@ div.full-frame-image[style] {
 /* ------------------------------------------------------------ */
 /*        HIGHLIGHT ANNTOATION  */
 .btn-border {
-  border: 2px solid #~Major Hex~ !important;
+  border: 2px solid ##008147 !important;
   transition: 0.2s ease;
 }
 
 .btn-border:active {
-  border: 3px solid #~Major Hex~ !important;
+  border: 3px solid ##008147 !important;
   transition: 0.2s ease;
 }
 
@@ -342,7 +342,7 @@ div.full-frame-image[style] {
 .company-logo {
   /*background-image: url("//hapyak_demos.s3.amazonaws.com/img/logo_microsoft.gif") !important; */
   /*background-image: url("http://upload.wikimedia.org/wikipedia/commons/thumb/7/76/New_Walmart_Logo.svg/1280px-New_Walmart_Logo.svg.png") !important;*/
-  background-image: url("image/logogif") !important;
+  background-image: url("https://uploadwikimediaorg/wikipedia/en/thumb/4/47/Weyerhaeusersvg/640px-Weyerhaeusersvgpng") !important;
   
 
   background-repeat: no-repeat;
@@ -358,7 +358,7 @@ div.full-frame-image[style] {
 .company-logo-large {
   /*background-image: url("//hapyak_demos.s3.amazonaws.com/img/logo_microsoft.gif") !important;*/
   /*background-image: url("http://upload.wikimedia.org/wikipedia/commons/thumb/7/76/New_Walmart_Logo.svg/1280px-New_Walmart_Logo.svg.png") !important;*/
-  background-image: url("image/logogif") !important;
+  background-image: url("https://uploadwikimediaorg/wikipedia/en/thumb/4/47/Weyerhaeusersvg/640px-Weyerhaeusersvgpng") !important;
 
   background-repeat: no-repeat;
   background-size: 300px !important;
@@ -371,7 +371,7 @@ div.full-frame-image[style] {
 }
 
 .welcome-text {
-  color: ~Major Hex~ !important;
+  color: #008147 !important;
   background: ~Minor Hex~ !important;
   /*color: #202020 !important;
   background: none !important;*/
@@ -382,7 +382,7 @@ div.full-frame-image[style] {
 /* Style for Play Button BG */
 width: 100px;
 height: 50px;
-background-color: ~Major Hex~; /*change to passed in main color*/
+background-color: #008147; /*change to passed in main color*/
 -moz-border-radius: 10px;
 -webkit-border-radius: 10px;
 border-radius: 10px;
