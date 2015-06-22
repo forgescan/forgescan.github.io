@@ -6578,3 +6578,59 @@ DEBUG:root:i finished updated the demo pages2015-06-22 20:02:26.251799
 DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
 
 DEBUG:root:
+DEBUG:root:[master ca46f2d] hapyak
+ Committer: root <root@ip-172-31-21-56.us-west-2.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 57 insertions(+), 1 deletion(-)
+
+DEBUG:root:
+DEBUG:root:/home/ubuntu/forgescan.github.io
+
+DEBUG:root:warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+warning: unable to access '/home/ubuntu/.config/git/attributes': Permission denied
+To https://github.com/forgescan/forgescan.github.io
+   1d1f194..ca46f2d  master -> master
+
+DEBUG:root:got to end of git stuff
+DEBUG:root:i finished updated the git2015-06-22 20:02:30.516695
+DEBUG:root:loadingworksheet
+DEBUG:root:checkwhenupdated
+DEBUG:root:loadingworksheet
+DEBUG:root:geting updated csv
+DEBUG:root:loadingworksheet
+DEBUG:root:updating urls on sheet
+DEBUG:root:updating urls on sheet
+DEBUG:root:i finished updated the demo pages2015-06-22 20:02:58.570881
+DEBUG:root:heres the currentworkingderectory/home/ubuntu/forgescan.github.io
+
+DEBUG:root:
