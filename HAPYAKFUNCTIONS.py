@@ -35,7 +35,7 @@ def minorhextoRGBA(firm):
     except: #so if for any reason it fails this heres where the default minorhex value goes
         return "26, 117, 207, .5"
 def URLbuilder(firm):
-    URLtemplate="""http://www.hapyak.com/?embed=true&edit=false&startInEditMode=false&track=137995&project=19052&key=7f4e59105b08445b9394&source=youtube&source_id=8KZ8m4cpnyk&css=http%3A%2F%2Fforgescan.github.io%2Fstylesheets%2Fmicro2.css&external=true&reset_variables=true&is_template=false&autoplay=true&captions=false&hapyak_username=walmart&companyName=walmartinc"""
+    #URLtemplate="""http://www.hapyak.com/?embed=true&edit=false&startInEditMode=false&track=137995&project=19052&key=7f4e59105b08445b9394&source=youtube&source_id=8KZ8m4cpnyk&css=http%3A%2F%2Fforgescan.github.io%2Fstylesheets%2Fmicro2.css&external=true&reset_variables=true&is_template=false&autoplay=true&captions=false&hapyak_username=walmart&companyName=walmartinc"""
 
     try:URLCOMPANY=urllib.quote(firm[0])
     except:URLCOMPANY="default"
@@ -54,14 +54,7 @@ def URLbuilder(firm):
     
     URLtemplate="""http://www.hapyak.com/?embed=true&edit=false&startInEditMode=false&track="""+URLTRACK+"""&project="""+URLPROJECT+"""&key=7f4e59105b08445b9394&source=youtube&source_id="""+URLVIDEO+"""&css="""+URLCSS+"""&external=true&reset_variables=true&is_template=false&autoplay=false&captions=false&hapyak_username="""+URLUSERID+"""&companyName="""+URLCOMPANY
 
-    
-    
-
     return URLtemplate
-
-    
-
-
 
 def SplitandReplace(keywords,firm, stringfile):
 
@@ -161,17 +154,6 @@ def demopageupdater(csv):
     except Exception:
         logging.debug(str(traceback.format_exc()))
         print(traceback.format_exc())
-#on windows pops up console for every command  
-"""
-def gitupdate():
-    try:
-        os.system("cd C:\Users\Derrick\Documents\GitHub\forgescan.github.io")
-        os.system("git add .")
-        os.system("git commit -a -m hapyak")
-        os.system("git push -f")
-    except:
-        print "failedtoupdate"
-"""
 
 def gitupdate():
     import subprocess
@@ -182,12 +164,10 @@ def gitupdate():
         su.wShowWindow = subprocess.SW_HIDE
         kwargs['startupinfo'] = su
     try:
-        #subprocess.call("cd C:\Users\Derrick\Documents\GitHub\forgescan.github.io",shell="3dTrue")
-        #os.system("cd /home/ubuntu/forgescan.github.io")
         p = subprocess.Popen(['pwd'],shell=True, stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
         out, err = p.communicate()
         print out
-        logging.debug("heres the currentworkingderectory"+str(out))
+        logging.debug("heres the CWD"+str(out))
 
 
         #os.system("git add .")
@@ -217,30 +197,11 @@ def gitupdate():
 
         logging.debug("got to end of git stuff")
 
-        """subprocess.call("cd /home/ubuntu/forgescan.github.io/",shell="3dTrue")
 
-        subprocess.call("git add .",shell="3dTrue")
-        subprocess.call("git commit -a -m hapyak",shell="3dTrue")
-        subprocess.call("git push -f",shell="3dTrue")"""
-        """
-        #subprocess.Popen(['cd','C:\Users\Derrick\Documents\GitHub\forgescan.github.io'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
-        subprocess.Popen(['git',"add","."], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
-        subprocess.Popen(['git',"commit","-a","-m","hapyak"], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
-        subprocess.Popen(['git',"push","-f"], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
-        """    
     except Exception:
         logging.debug("git fail"+str(traceback.format_exc()))
         print(traceback.format_exc())
         print "failedtoupdate"
 
     
-#p = subprocess.Popen(['git'], stdout=subprocess.PIPE,stderr=subprocess.PIPE,**kwargs)
-#out, err = p.communicate()
-#print out
 
-        
-
-
-#updatefirmlist(firm)
-#convertfirmlisttocsv(firmlist)
-#gitupdate()
