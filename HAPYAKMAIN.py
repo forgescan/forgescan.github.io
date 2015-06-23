@@ -24,14 +24,6 @@ logging.basicConfig(filename='demomaker.log',level=logging.DEBUG)
 logging.debug("Logging Started")
 
 
-
-
-
-
-
-
-
-
 class SheetCheckerThread():
 
     def __init__(self):
