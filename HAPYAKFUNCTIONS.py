@@ -11,9 +11,32 @@ from oauth2client.client import SignedJwtAssertionCredentials
 import logging
 
 
+cwd='/home/ubuntu/forgescan.github.io'
 
 
+def fileIn(relativeaddress):
+    filein=open(str(relativeaddress),"r")
+    filein=filein.read()
+    return filein
 
+
+def hapyakfileOut(firm,typeoffile,stringfile):
+    companyname=firm[0]
+    directorydesired=cwd+"/web/"+companyname
+    try:os.mkdir(cwd+"/web")
+    except Exception:
+        pass
+        #logging.debug(str(traceback.format_exc()))
+	#logging.debug("fileiowas broke")
+    try:os.mkdir(directorydesired)
+    except Exception:
+        pass
+        #logging.debug(str(traceback.format_exc()))
+	#logging.debug("fileiowas broke")
+
+    fileout=open(directorydesired+"/"+companyname+typeoffile,"w")
+    fileout.write(stringfile)
+    fileout.close()
 specialcommands=[""]
 #'~COMPANY~',None,None,'~Logo~','~Major Hex~','~Minor Hex~'
 
