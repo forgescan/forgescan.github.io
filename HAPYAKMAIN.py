@@ -9,12 +9,13 @@ import subprocess
 import datetime
 import time
 from threading import Timer
+
 from fileIO import *
 from HAPYAKFUNCTIONS import *
 import gspread002
 
 
-os.chdir("/home/ubuntu/forgescan.github.io/")#important when running as service cwd is /
+os.chdir("/home/ubuntu/forgescan.github.io/")#important because when running as service cwd is /
 
 logfile=open("/home/ubuntu/forgescan.github.io/demomaker.log","w") #on restart make a new log
 logfile.close()
@@ -65,9 +66,8 @@ class SheetCheckerThread():
             self.sheetchecker.UpdateURLsonSheet(csv)
             self.sheetchecker.UpdateScreenshotURLsonSheet(csv)
             demopageupdater(csv)
-            print "i finished updated the demo pages"
             logging.debug("i finished and updated the demo pages"+str(datetime.datetime.now()))
-            gitupdate()
+            gitupdate() #performs the git push
             logging.debug("I Pushed to git"+str(datetime.datetime.now()))
 
 def timeoutexception():
@@ -80,31 +80,33 @@ def timeoutexception():
 
 
 
-
-
+#############################################################################################################################
+#main loop below
 if __name__ == "__main__":
 
-    print 'Starting SheetCheckerthread...'
-
-    SheetChecker = SheetCheckerThread()
+    SheetChecker = SheetCheckerThread() #makes new instance of Sheetcheckerthread
 
     while 1:
 
         timerout=Timer(600,timeoutexception)
         timerout.start()
+        #if the process gets stuck for more than 10 minutes timeoutexception raises an exception
+        # which gets caught and a new instance of the sheet checker is initiated
+
 
         try:
             SheetChecker.checksheet()
         except Exception:
 
             logging.debug(str(traceback.format_exc()))
-            logging.debug("exception in main try occured")
+            logging.debug("exception in main loop occured")
             SheetChecker = SheetCheckerThread()
             print "sheetchecker broke"
 
 
         timerout.cancel()
 
-print 'Exiting'
+logging.debug("Exiting")
+
 
 
