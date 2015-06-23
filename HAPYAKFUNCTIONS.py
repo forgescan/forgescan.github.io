@@ -11,7 +11,7 @@ import time
 
 
 specialcommands=[""]
-#'~COMPANY~',None,None,'~Logo~','~Major Hex~','~Minor Hex~' 
+#'~COMPANY~',None,None,'~Logo~','~Major Hex~','~Minor Hex~'
 
 #keywordsfunctions 
 def majorhextoRGBA(firm):
@@ -161,7 +161,7 @@ def demopageupdater(csv):
     except Exception:
         logging.debug(str(traceback.format_exc()))
         print(traceback.format_exc())
-#on windows pops up console for every command 
+#on windows pops up console for every command  
 """
 def gitupdate():
     try:
