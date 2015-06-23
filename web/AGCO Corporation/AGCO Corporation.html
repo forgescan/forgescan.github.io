@@ -2,334 +2,192 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Interactive Video</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-  <style text/css>
-    #logo{
-      margin-top: -10px;
-      margin-left: 0px;
-      color: #168BB6;
-    }
-    .demo-page-header{
-      width: 100%;
-      height: 50px;
-      font-size: 24px;
-      color: #168BB6;
-      padding: 20px;
-    }
-    h1, h2, h3, a {
-      color: #168BB6;
-    }
-    p{
-      color: #666;
-    }
-    a{
-      text-decoration: none !important;
-    }
-    #about-us{
-      width: 100%;
-      color: #168BB6;
-      padding-left: 60px;
-      font-size: 42px;
-      padding-top: 40px;
-      text-align: center;
-    }
-    .container{
-      width: 1200px;
-      height: 400px;
-      background: none;
-      margin-top: 5px;
-    }
-    .demo-container{
-      width: 360px;
-      height: 360px;
-      background-color: #f9f9f9;
-      padding: 20px;
-      display: inline-block;
-      vertical-align: top;
-      margin-top: 5px;
-    }
-    .company-title{
-      height: 280px;
-      width: 100%;
-      background-color: #FFF;
-      text-align: center;
-      position: relative;
-    }
-    .company-title-text{
-      text-align: center;
-      font-weight: bold;
-      padding: 10px;
-    }
-    .info-text{
-      width: 100%;
-      height: 60px;
-    }
-    .info-box{
-      height: 40px;
-      width: 320px;
-      background: #FFF;
-      padding: 5px;
-    }
-    .company-logo{
-      padding: 10px 0px;
-      background: #FFF;
-      text-align: center;
-    }
-    .text-box{
-      width: 320px;
-      height: 0px;
-      background-color: #FFF;
-      font-size: 18px;
-      margin-bottom: 5px;
-      padding: 0px 20px;
-    }
-    .text{
-      display: none;
-      text-align: left;
-    }
-    .btn {
-      width: 100px;
-      background: #F26C4F;
-      background-image: -webkit-linear-gradient(top, #F26C4F, #F26C4F);
-      background-image: -moz-linear-gradient(top, #F26C4F, #F26C4F);
-      background-image: -ms-linear-gradient(top, #F26C4F, #F26C4F);
-      background-image: -o-linear-gradient(top, #F26C4F, #F26C4F);
-      background-image: linear-gradient(to bottom, #F26C4F, #F26C4F);
-      -webkit-border-radius: 28;
-      -moz-border-radius: 28;
-      border-radius: 28px;
-      font-family: Arial;
-      color: #ffffff;
-      font-size: 20px;
-      padding: 0px 20px;
-      text-decoration: none;
-      margin-left: 110px !important;
-      text-align: center;
-    }
-    .btn:hover {
-      background: #e05c41;
-      background-image: -webkit-linear-gradient(top, #e05c41, #cc4b31);
-      background-image: -moz-linear-gradient(top, #e05c41, #cc4b31);
-      background-image: -ms-linear-gradient(top, #e05c41, #cc4b31);
-      background-image: -o-linear-gradient(top, #e05c41, #cc4b31);
-      background-image: linear-gradient(to bottom, #e05c41, #cc4b31);
-      text-decoration: none;
-      cursor: pointer;
-      color: #FFF;
-    }
-    #footer{
-      height: 300px;
-      width: 700px;
-    }
-    .section{
-      margin-top: 50px;
-    }
-    .tab{
-      width: 160px;
-      padding: 10px 0px;
-      background: #428BCA;
-      background-image: -webkit-linear-gradient(top, #428BCA, #18619e);
-      background-image: -moz-linear-gradient(top, #428BCA, #18619e);
-      background-image: -ms-linear-gradient(top, #428BCA, #18619e);
-      background-image: -o-linear-gradient(top, #428BCA, #18619e);
-      background-image: linear-gradient(to bottom, #428BCA, #18619e);
-      -webkit-border-radius: 9;
-      -moz-border-radius: 9;
-      border-radius: 0px 0px 9px 9px;
-      color: #ffffff;
-      font-size: 1em;
-      text-decoration: none;
-      margin-left: 3px;
-      float:right;
-      display: inline-block;
-      vertical-align: top;
-      text-align: center;
-    }
-    .tab:hover{
-      background: #428BCA;
-      background-image: -webkit-linear-gradient(top, #428BCA, #0b4575);
-      background-image: -moz-linear-gradient(top, #428BCA, #0b4575);
-      background-image: -ms-linear-gradient(top, #428BCA, #0b4575);
-      background-image: -o-linear-gradient(top, #428BCA, #0b4575);
-      background-image: linear-gradient(to bottom, #428BCA, #0b4575);
-      cursor: pointer;
-    }
-    .tab:active{
-      background: #428BCA;
-      background-image: -webkit-linear-gradient(top, #428BCA, #022744);
-      background-image: -moz-linear-gradient(top, #428BCA, #022744);
-      background-image: -ms-linear-gradient(top, #428BCA, #022744);
-      background-image: -o-linear-gradient(top, #428BCA, #022744);
-      background-image: linear-gradient(to bottom, #428BCA, #022744);
-      cursor: pointer;
-    }
-    #tab-container{
-      width: 980px;
-      margin: auto;
-      position: fixed;
-      top: 70px;
-      z-index: 1000;
-    }
-    .get-started-btn {
-      background: #F26C4F;
-      background-image: -webkit-linear-gradient(top, #F26C4F, #F26C4F);
-      background-image: -moz-linear-gradient(top, #F26C4F, #F26C4F);
-      background-image: -ms-linear-gradient(top, #F26C4F, #F26C4F);
-      background-image: -o-linear-gradient(top, #F26C4F, #F26C4F);
-      background-image: linear-gradient(to bottom, #F26C4F, #F26C4F);
-      -webkit-border-radius: 5;
-      -moz-border-radius: 5;
-      border-radius: 5px;
-      -webkit-box-shadow: 0px 1px 3px #666666;
-      -moz-box-shadow: 0px 1px 3px #666666;
-      box-shadow: 0px 1px 3px #666666;
-      font-family: Arial;
-      color: #ffffff;
-      font-size: 20px;
-      padding: 10px 20px 10px 20px;
-      text-decoration: none;
-      margin-right: 20px;
-    }
-
-    .get-started-btn:hover {
-      background: #e05c41;
-      background-image: -webkit-linear-gradient(top, #e05c41, #cc4b31);
-      background-image: -moz-linear-gradient(top, #e05c41, #cc4b31);
-      background-image: -ms-linear-gradient(top, #e05c41, #cc4b31);
-      background-image: -o-linear-gradient(top, #e05c41, #cc4b31);
-      background-image: linear-gradient(to bottom, #e05c41, #cc4b31);
-      text-decoration: none;
-    }
-    .header-container{
-      height: 70px;
-    }
-    #page-container{
-      margin-top: 100px;
-    }
-    .preview-text-container{
-      z-index: 1000;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-    }
-    .preview-text{
-      text-align: center;
-      right: 50%;
-      position: relative;
-      font-weight: bold;
-    }
-    .push-down{
-      margin-top: 40px;
-    }
-    #body-content {
-      width: 80%;
-      margin:auto;
-    }
-    #company-video {
-      width: 90%;
-      margin: auto;
-    }
-    .about-us {
-      padding: 20px 30px;
-      color: #747474;
-    }
-
-    ul.hapyak-info{
-      line-height: 1.8em;
-    }
-    #welcome-text {
-      font-size: 2em;
-      padding-bottom: 10px;
-      text-align: center;
-    }
-
-  </style>
+  <title>Sales Template</title>
+  <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Homenaje' rel='stylesheet' type='text/css'>
 </head>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background-image: url("https://hapyak_demos.s3.amazonaws.com/Sales%20Tool/ChevronWebsite.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .pulse-button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 200px;
+      height: 60px;
+      margin: 40px;
+      background-color: #1892BF;
+      border-radius: 30px;
+      border: none;
+      box-shadow: 0 0 0 0 rgba(0, 106, 149, 0.7);
+      background-size: cover;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      -webkit-animation: pulse 1.25s 3 cubic-bezier(0.66, 0, 0, 1);
+      -moz-animation: pulse 1.25s 3 cubic-bezier(0.66, 0, 0, 1);
+      -ms-animation: pulse 1.25s 3 cubic-bezier(0.66, 0, 0, 1);
+      animation: pulse 1.25s 3 cubic-bezier(0.66, 0, 0, 1);
+  }
+
+  .pulse-button:hover {
+      -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  }
+
+  @-webkit-keyframes pulse {
+    to {
+      box-shadow: 0 0 0 45px rgba(0, 106, 149, 0);
+    }
+  }
+
+  @-moz-keyframes pulse {
+    to {
+      box-shadow: 0 0 0 45px rgba(0, 106, 149, 0);
+    }
+  }
+
+  @-ms-keyframes pulse {
+    to {
+      box-shadow: 0 0 0 45px rgba(0, 106, 149, 0);
+    }
+  }
+
+  @keyframes pulse {
+    to {
+      box-shadow: 0 0 0 45px rgba(0, 106, 149, 0);
+    }
+  }
+  
+  .pulse-button h1 {
+    font-family: 'Homenaje', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+  }
+
+  .pulse-button a {
+    text-decoration: none;
+  }
+
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: white;
+    font-weight: 300;
+    text-align: center
+  }
+  #subheader {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+  }
+  .header-container {
+    display: block;
+    text-align: center;
+    height: 130px;
+  }
+
+  .schedule-demo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+  }
+  .video-container {
+    margin-top: 20px;
+  }
+  .modal-box {
+    height: 1000px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .logo {
+    height: 60px;
+    padding: 10px
+  }
+/*  #why-hapyak {
+    display: none;
+  }*/
+  th, td {
+    width: 20%;
+    vertical-align: top;
+    text-align: center;
+    padding: 10px;
+  }
+</style>
 <body>
-
-<div id="page-container">
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="modal-box">
     <div class="header-container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        </button>
-        <a class="navbar-brand" href="#">
-          <div id="logo">
-            <img src="https://www.hapyak.com/css/images/logo-hapyak-gfxonly.svg" width="50"> HapYak
-          </div>
-        </a>
+      <div class="pulse-button">
+      <a href="https://calendly.com/jpl/new-user-demo/" target="_blank"><h1>SCHEDULE A DEMO</h1></a>
       </div>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://corp.hapyak.com/service-plans/">
-          <div class="get-started-btn">
-            Get Started
-          </div>
-        </a></li>
-      </ul>
-      </div><!--/.nav-collapse -->
-  </nav>
-
-  <div id="body-content">
-  <div id="welcome-text">
-
+      <div class="header">
+        <img class="logo" src="https://hapyak_demos.s3.amazonaws.com/Sales%20Tool/HapYak-logo-white11.png" alt="hapyak logo" />
+        <h1>Kickstart your video strategy</h1>
+      </div>
+    </div>
+    <div class="video-container">
+      <center>
+        <iframe src="http://www.hapyak.com/?embed=true&edit=false&startInEditMode=false&track=137995&project=19052&key=7f4e59105b08445b9394&source=youtube&source_id=&css=http%3A//forgescan.github.io/web/AGCO%20Corporation/AGCO%20Corporation.css&external=true&reset_variables=true&is_template=false&autoplay=false&captions=false&hapyak_username=&companyName=AGCO%20Corporation" width="720" height="464" marginwidth="0" marginheight="0" frameborder="no" scrolling="no"></iframe>
+      </center>
+    </div>
+    <div id="why-hapyak">
+      <div style="padding: 20px;">
+        <h1 id="subheader">What makes HapYak so effective</h1>
+      </div>
+      <table style="width:100%">
+        <tr>
+          <td><i class="fa fa-line-chart" style="font-size: 50px; color: white;"></i></td>
+          <td><i class="fa fa-connectdevelop" style="font-size: 50px; color: white;"></i></td> 
+          <td><i class="fa fa-html5" style="font-size: 50px; color: white;"></i></td>
+          <td><i class="fa fa-pie-chart" style="font-size: 50px; color: white;"></i></td>
+          <td><i class="fa fa-pied-piper" style="font-size: 50px; color: white;"></i></td>
+        </tr>
+        <tr>
+          <td><h2>A platform built for scaling your video strategy</h2></td>
+          <td><h2>Integration with the largest CMS, LMS, and Analytic Systems</h2></td> 
+          <td><h2>Simple tools allow immediate productivity, yet extensible enough to meet your needs into the future</h2></td>
+          <td><h2>In-depth video analytics and metrics to support your business value propositions</h2></td>
+          <td><h2>Industry leaders are using HapYak, gaining valueable user analytics to increase sales and lower costs</h2></td>
+        </tr>
+      </table>
+    </div>
   </div>
-    <div id="company-video">
-<center>
-<object data="http://www.hapyak.com/?embed=true&edit=false&startInEditMode=false&track=137995&project=19052&key=7f4e59105b08445b9394&source=youtube&source_id=&css=http%3A//forgescan.github.io/web/AGCO%20Corporation/AGCO%20Corporation.css&external=true&reset_variables=true&is_template=false&autoplay=false&captions=false&hapyak_username=&companyName=AGCO%20Corporation" width="720" height="464" marginwidth="0" marginheight="0" frameborder="no" scrolling="no"></object>
-</center>
 
 <script type="text/javascript" src="//d2qrdklrsxowl2.cloudfront.net/js/hapyak.js"></script>
 <script type="text/javascript" src="//d2qrdklrsxowl2.cloudfront.net/js/hapyak.api.js"></script>
-
-
-    </div>
-    <div class="about-us">
-
-      <h1> Why HapYak? </h1>
-
-      <ul class="hapyak-info">
-        <li>Our platform is built for scaling your video strategy </li>
-        <li>We integrate with the worlds largest CMS, LMS, and Analytic systems  </li>
-        <li>Our tools are simple enough to be immediately productive yet extensible enough to meet your needs into the future. </li>
-        <li>We provide you with indepth video analytics and metrics to support your business value propositions   </li>
-        <li> Some of the worlds largest brands are using HapYak to deploy their video strategy and gain valudable user analytics to increase sales and lower costs  </li>
-      </ul>
-    </div>
-  </div>
-</div>
-  <script>
-
-    function getParameterByName(name) {
-        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-            results = regex.exec(location.search);
-        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-    }
-    var company_name = getParameterByName('companyName');
-
-    function createWelcome(company_name){
-      comp_name_split_array = company_name.split('');
-      if (comp_name_split_array[comp_name_split_array.length-1] == 's'){
-        greeting = "Kickstart " + company_name + "' video strategy today.";
-      } else if (comp_name_split_array[comp_name_split_array.length-1] != undefined) {
-        greeting = "Kickstart " + company_name + "'s video strategy today.";
-      } else if (comp_name_split_array[comp_name_split_array.length-1] == undefined) {
-        greeting = "Kickstart your video strategy today.";
-      }
-
-      document.getElementById('welcome-text').innerHTML = greeting;
-    }
-
-    $( document ).ready(function() {
-      createWelcome(company_name);
-      console.log('loading');
-    });
-
-
+  <script type="text/javascript">
+    
+    // $('.modal-box').delay(2000).fadeIn(800);
+    // $('.video-container').hover(function(){
+    //   $('.header').delay(10000).fadeIn(2000);
+    //   $('#why-hapyak').delay(10000).fadeIn(2000);
+      
+    // });
+ 
+  
   </script>
-
+    
 </body>
 </html>

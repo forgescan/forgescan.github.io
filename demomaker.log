@@ -15263,3 +15263,179 @@ DEBUG:root:i finished and updated the demo pages2015-06-23 14:48:45.876732
 DEBUG:root:heres the CWD/home/ubuntu/forgescan.github.io
 
 DEBUG:root:
+DEBUG:root:[master 59c544f] hapyak
+ Committer: root <root@ip-172-31-21-56.us-west-2.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 122 files changed, 23025 insertions(+), 39866 deletions(-)
+ rename templateHTML/{templatehtmlnew.html => templatehtml.html} (100%)
+ rewrite web/.html (95%)
+ rewrite web/AK Steel Holding Corporation/AK Steel Holding Corporation.html (95%)
+ rewrite web/Advance Auto Parts/Advance Auto Parts.html (95%)
+ rewrite web/Advanced Micro Devices/Advanced Micro Devices.html (95%)
+ rewrite web/Airgas/Airgas.html (95%)
+ rewrite web/Alaska Air Group/Alaska Air Group.html (95%)
+ rewrite web/Alleghany Corporation/Alleghany Corporation.html (95%)
+ rewrite web/Allergan/Allergan.html (95%)
+ rewrite web/American Financial Group/American Financial Group.html (95%)
+ rewrite web/Anixter International Inc/Anixter International Inc.html (95%)
+ rewrite web/Asbury Automotive Group/Asbury Automotive Group.html (95%)
+ rewrite web/Auto-Owners Insurance Group/Auto-Owners Insurance Group.html (95%)
+ rewrite web/Avery Dennison Corporation/Avery Dennison Corporation.html (95%)
+ rewrite web/Bemis Company/Bemis Company.html (95%)
+ rewrite web/Big Lots/Big Lots.html (95%)
+ rewrite web/Booz Allen Hamilton Holding Corp/Booz Allen Hamilton Holding Corp.html (95%)
+ rewrite web/Buckeye Partners/Buckeye Partners.html (95%)
+ rewrite web/CC Media Holdings/CC Media Holdings.html (95%)
+ rewrite web/CF Industries Holdings/CF Industries Holdings.html (95%)
+ rewrite web/CH2M HILL Companies/CH2M HILL Companies.html (95%)
+ rewrite web/CMS Energy Corporation/CMS Energy Corporation.html (95%)
+ rewrite web/CONSOL Energy Inc/CONSOL Energy Inc.html (95%)
+ rewrite web/Cablevision Systems Corporation/Cablevision Systems Corporation.html (95%)
+ rewrite web/Calpine Corporation/Calpine Corporation.html (95%)
+ rewrite web/Calumet Specialty Products Partners/Calumet Specialty Products Partners.html (95%)
+ rewrite web/Casey's General Stores/Casey's General Stores.html (95%)
+ rewrite web/Celanese Corporation/Celanese Corporation.html (95%)
+ rewrite web/Celgene Corporation/Celgene Corporation.html (95%)
+ rewrite web/Cliffs Natural Resources Inc/Cliffs Natural Resources Inc.html (95%)
+ rewrite web/Coach/Coach.html (95%)
+ rewrite web/Con-way Inc/Con-way Inc.html (95%)
+ rewrite web/DR Horton/DR Horton.html (95%)
+ rewrite web/DW/DW.html (95%)
+ rewrite web/Dick's Sporting Goods/Dick's Sporting Goods.html (95%)
+ rewrite web/Discovery Communications/Discovery Communications.html (95%)
+ rewrite web/Domtar Corporation/Domtar Corporation.html (95%)
+ rewrite web/Dr Pepper Snapple Group/Dr Pepper Snapple Group.html (95%)
+ rewrite web/EMCOR Group/EMCOR Group.html (95%)
+ rewrite web/Energy Future Holdings Corp/Energy Future Holdings Corp.html (95%)
+ rewrite web/Erie Insurance Group/Erie Insurance Group.html (95%)
+ rewrite web/Expeditors International of Washington/Expeditors International of Washington.html (95%)
+ rewrite web/Fidelity National Information Services/Fidelity National Information Services.html (95%)
+ rewrite web/First American Financial Corporation/First American Financial Corporation.html (95%)
+ rewrite web/Foot Locker/Foot Locker.html (95%)
+ rewrite web/Gannett Co/Gannett Co.html (95%)
+ rewrite web/General Cable Corporation/General Cable Corporation.html (95%)
+ rewrite web/Graybar Electric Company/Graybar Electric Company.html (95%)
+ rewrite web/Harbinger Group Inc/Harbinger Group Inc.html (95%)
+ rewrite web/Harley-Davidson/Harley-Davidson.html (95%)
+ rewrite web/Harris Corporation/Harris Corporation.html (95%)
+ rewrite web/Host Hotels & Resorts/Host Hotels & Resorts.html (95%)
+ rewrite web/Ingredion Incorporated/Ingredion Incorporated.html (95%)
+ rewrite web/Insight Enterprises/Insight Enterprises.html (95%)
+ rewrite web/Integrys Energy Group/Integrys Energy Group.html (95%)
+ rewrite web/Investopedia/Investopedia.html (95%)
+ rewrite web/JB Hunt Transport Services/JB Hunt Transport Services.html (95%)
+ rewrite web/JetBlue Airways Corporation/JetBlue Airways Corporation.html (95%)
+ rewrite web/Joy Global Inc/Joy Global Inc.html (95%)
+ rewrite web/Kelly Services/Kelly Services.html (95%)
+ rewrite web/Kindred Healthcare/Kindred Healthcare.html (95%)
+ rewrite web/LKQ Corporation/LKQ Corporation.html (95%)
+ rewrite web/Laboratory Corporation of America Holdings/Laboratory Corporation of America Holdings.html (95%)
+ rewrite web/Leidos Holdings Inc/Leidos Holdings Inc.html (95%)
+ rewrite web/Lennar Corporation/Lennar Corporation.html (95%)
+ rewrite web/Level 3 Communications/Level 3 Communications.html (95%)
+ rewrite web/Live Nation Entertainment/Live Nation Entertainment.html (95%)
+ rewrite web/Lorillard/Lorillard.html (95%)
+ rewrite web/MRC Global Inc/MRC Global Inc.html (95%)
+ rewrite web/Mattel/Mattel.html (95%)
+ rewrite web/McGraw Hill Financial/McGraw Hill Financial.html (95%)
+ rewrite web/MeadWestvaco Corporation/MeadWestvaco Corporation.html (95%)
+ rewrite web/Mercury/Mercury.html (95%)
+ rewrite web/Molina Healthcare/Molina Healthcare.html (95%)
+ rewrite web/Murphy Oil Corporation/Murphy Oil Corporation.html (95%)
+ rewrite web/Mutual of Omaha Insurance Company/Mutual of Omaha Insurance Company.html (95%)
+ rewrite web/NCR Corporation/NCR Corporation.html (95%)
+ rewrite web/NII Holdings/NII Holdings.html (95%)
+ rewrite web/Navy Federal Credit Union/Navy Federal Credit Union.html (95%)
+ rewrite web/NetApp/NetApp.html (95%)
+ rewrite web/Newell Rubbermaid Inc/Newell Rubbermaid Inc.html (95%)
+ rewrite web/NiSource Inc/NiSource Inc.html (95%)
+ rewrite web/Noble Energy/Noble Energy.html (95%)
+ rewrite web/O'Reilly Automotive/O'Reilly Automotive.html (95%)
+ rewrite web/Old Republic International Corporation/Old Republic International Corporation.html (95%)
+ rewrite web/Omnicare/Omnicare.html (95%)
+ rewrite web/Owens Corning/Owens Corning.html (95%)
+ rewrite web/PennWell/PennWell.html (95%)
+ rewrite web/PulteGroup/PulteGroup.html (95%)
+ rewrite web/Quanta Services/Quanta Services.html (95%)
+ rewrite web/Quintiles Transnational Holdings Inc/Quintiles Transnational Holdings Inc.html (95%)
+ rewrite web/Realogy Holdings Corp/Realogy Holdings Corp.html (95%)
+ rewrite web/Regions Financial Corporation/Regions Financial Corporation.html (95%)
+ rewrite web/Rockwell Automation/Rockwell Automation.html (95%)
+ rewrite web/Ryder System/Ryder System.html (95%)
+ rewrite web/SLM Corporation/SLM Corporation.html (95%)
+ rewrite web/SanDisk Corporation/SanDisk Corporation.html (95%)
+ rewrite web/Sanmina/Sanmina.html (95%)
+ rewrite web/Simon Property Group/Simon Property Group.html (95%)
+ rewrite web/Spectra Energy Corp/Spectra Energy Corp.html (95%)
+ rewrite web/St Jude Medical/St Jude Medical.html (95%)
+ rewrite web/Starwood Hotels & Resorts Worldwide/Starwood Hotels & Resorts Worldwide.html (95%)
+ rewrite web/Susser Holdings Corporation/Susser Holdings Corporation.html (95%)
+ rewrite web/Targa Resources Corp/Targa Resources Corp.html (95%)
+ rewrite web/The Andersons/The Andersons.html (95%)
+ rewrite web/The Blackstone Group LP/The Blackstone Group LP.html (95%)
+ rewrite web/The Charles Schwab Corporation/The Charles Schwab Corporation.html (95%)
+ rewrite web/The Clorox Company/The Clorox Company.html (95%)
+ rewrite web/The JM Smucker Company/The JM Smucker Company.html (95%)
+ rewrite web/The Jones Financial Companies/The Jones Financial Companies.html (95%)
+ rewrite web/The Western Union Company/The Western Union Company.html (95%)
+ rewrite web/Tractor Supply Company/Tractor Supply Company.html (95%)
+ rewrite web/United Natural Foods/United Natural Foods.html (95%)
+ rewrite web/United Rentals/United Rentals.html (95%)
+ rewrite web/United Stationers Inc/United Stationers Inc.html (95%)
+ rewrite web/WR Berkley Corporation/WR Berkley Corporation.html (95%)
+ rewrite web/Windstream Holdings/Windstream Holdings.html (95%)
+ rewrite web/Wyndham Worldwide Corporation/Wyndham Worldwide Corporation.html (95%)
+ rewrite web/Wynn Resorts/Wynn Resorts.html (95%)
+ rewrite web/ffdsjfajfsdklfjsdklfj/ffdsjfajfsdklfjsdklfj.html (95%)
+
+DEBUG:root:
+DEBUG:root:/home/ubuntu/forgescan.github.io
+
+DEBUG:root:warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+warning: unable to access '/home/ubuntu/.config/git/attributes': Permission denied
+To https://github.com/forgescan/forgescan.github.io
+   269c437..59c544f  master -> master
+
+DEBUG:root:got to end of git stuff
+DEBUG:root:I Pushed to git2015-06-23 14:48:50.187969
+DEBUG:root:loadingworksheet
+DEBUG:root:checkwhenupdated
+DEBUG:root:loadingworksheet
+DEBUG:root:geting updated csv
+DEBUG:root:loadingworksheet
+DEBUG:root:updating urls on sheet
+DEBUG:root:updating urls on sheet
+DEBUG:root:i finished and updated the demo pages2015-06-23 14:49:19.346553
+DEBUG:root:heres the CWD/home/ubuntu/forgescan.github.io
+
+DEBUG:root:
