@@ -5,9 +5,18 @@ sudo apt-get install python-pip
 sudo pip install google-api-python-client
 sudo pip install gspread
 
-#setup Xvfb
+#install Xvfb
+apt-get install imagemagick xvfb
 
-#set up chrome 
+
+
+#Install Chrome
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+sudo apt-get update 
+sudo apt-get install google-chrome-stable
+
+
 
 
 sudo mkdir /home/ubuntu/forgescan.github.io
@@ -15,6 +24,11 @@ sudo mkdir /home/ubuntu/forgescan.github.io
 
 sudo git clone https://github.com/forgescan/forgescan.github.io
 # so this brings in the repo
+
+
+#set up chrome #allow to run in root
+sudo rm /opt/google/chrome/google-chrome  
+sudo cp /home/ubuntu/forgescan.github.io/HAPYAKDEMOMAKERINSTALL/google-chrome /opt/google/chrome/google-chrome  
  
 
 
