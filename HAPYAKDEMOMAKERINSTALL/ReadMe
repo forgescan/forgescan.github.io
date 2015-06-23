@@ -12,11 +12,13 @@ machine github.com
 4. The google developer key needs to be added at /home/ubuntu/developerkey.json the developer 
 	key location must be updated in HAPYAKFUNCTIONS.py
 5. start Process with:
-	sudo service hapyak start 
+	sudo service hapyak start
+
+ 
 Known Bugs
-linebreaks and other commas are not screw up the parsing of the spreadsheet 
-the git repository inflates over time with garbage, eventually using up all the storage space in the system
-In Case of failure to update, if the hapyak demomaker service fails to update, ssh into the instance and send command=sudo service hapyak start
-demomaker.log writes and stores alot for easier debugging, currently this adds up to a meg or 2 per day, so hapyak service should be restarted maybe once a year 
-a bug with Amazon seems to be that reboots can occasionally make an instance unreachable, the easy solution is to stop the instance make an image of it 
+-linebreaks and other commas are not screw up the parsing of the spreadsheet 
+-the git repository inflates over time with garbage, eventually using up all the storage space in the system
+-In Case of failure to update, if the hapyak demomaker service fails to update, ssh into the instance and send command=sudo service hapyak start
+	demomaker.log writes and stores alot for easier debugging, currently this adds up to a meg or 2 per day, so hapyak service should be restarted maybe once a year 
+-a bug with Amazon seems to be that reboots can occasionally make an instance unreachable, the easy solution is to stop the instance make an image of it 
 	instance and launch another instance
