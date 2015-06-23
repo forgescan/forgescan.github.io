@@ -1,11 +1,24 @@
+#dependencies
 sudo apt-get update
 sudo apt-get install git
 sudo apt-get install python-pip
 sudo pip install google-api-python-client
 sudo pip install gspread
-sudo mkdir forgescan.github.io
+
+#setup Xvfb
+
+#set up chrome 
+
+
+sudo mkdir /home/ubuntu/forgescan.github.io
+
 
 sudo git clone https://github.com/forgescan/forgescan.github.io
+# so this brings in the repo
+ 
+
+
+#this creates the service 
 sudo update-rc.d hapyak default
 sudo chmod 777 /etc/init.d/hapyak
 sudo chmod 777 -R /home/ubuntu/forgescan.github.io
