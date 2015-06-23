@@ -1,13 +1,23 @@
 #!/usr/bin/python
 # -*- coding: cp1252 -*-
 import os
-os.chdir("/home/ubuntu/forgescan.github.io/")
-
 import logging
-
+import traceback
+import threading
+from threading import Thread
+import subprocess
+import datetime
+import time
+from threading import Timer
 from fileIO import *
 from HAPYAKFUNCTIONS import *
-import traceback
+import gspread002
+
+
+
+
+os.chdir("/home/ubuntu/forgescan.github.io/")#important when running as service cwd is /
+
 
 
 logfile=open("/home/ubuntu/forgescan.github.io/demomaker.log","w")
@@ -18,48 +28,22 @@ logging.debug("HERE I SHOULD BE LOGGING SOMTHING")
 
 
 
-from threading import Thread
 
-
-import threading
-
-
-
-
-import gspread002
-import time
-import sys
-from threading import Timer
-from multiprocessing import Process
-  
-
-
-
-import threading
-
-import ctypes
-
-import time
-import traceback
 
 
 
 THREAD_TERMINATE = 1 # Privilege level for termination
-import datetime
+
 def timeout():
 
     logging.debug("timeout, no new thread made"+str(datetime.datetime.now()))
     
-import subprocess
-#from multiprocessing import Process
-import multiprocessing
 
-#print "program got further"
-import sys
 def makeproc():
     process=Process(target=writetolog)
     process.start()
-class SheetCheckerThread():#multiprocessing.Process):
+
+class SheetCheckerThread():
 
     def __init__(self):
         self.sheetchecker=gspread002.GoogleDocsSession()
