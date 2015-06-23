@@ -6,7 +6,7 @@ import HAPYAKFUNCTIONS
 
 os.chdir("/home/ubuntu/forgescan.github.io/")
 ##screenshottaker001
-
+ 
 
 try:
     #os.system("sudo Xvfb :5 -screen 0 720x464x24 & ") #initiate virtual display buffer
