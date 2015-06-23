@@ -44,6 +44,13 @@ sudo update-rc.d hapyak default
 sudo chmod 777 /etc/init.d/hapyak
 sudo chmod 777 -R $repoPATH
 
-#git needs to be setup to login automatically and the json key must be added manually
-#so to set up git to run automatically add a 
+#1. git needs to be setup to login automatically and the json key must be added manually
+#so to set up git to run automatically add a file named .netrc in /home/ubuntu with the login info 
+#for example
 
+#machine github.com
+#       login 
+#       password 
+
+#2. the google developer key needs to be added at /home/ubuntu/developerkey.json
+ 
