@@ -10,9 +10,9 @@ import datetime
 import time
 from threading import Timer
 
-from fileIO import *
+#from fileIO import *
 from HAPYAKFUNCTIONS import *
-import gspread002
+#import gspread002
 
 
 os.chdir("/home/ubuntu/forgescan.github.io/")#important because when running as service cwd is /
