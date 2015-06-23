@@ -5,7 +5,7 @@ sudo apt-get install python-pip
 sudo pip install google-api-python-client
 sudo pip install gspread
 
-#install Xvfb
+#install Xvfb  #this is the virtual frame buffer
 apt-get install imagemagick xvfb
 
 
