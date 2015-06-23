@@ -1,10 +1,14 @@
+#!/bin/bash
+
 #dependencies
 sudo apt-get update
 sudo apt-get install git
 sudo apt-get install python-pip
 sudo pip install google-api-python-client
 sudo pip install gspread
-#!/bin/bash
+
+repoPATH="/home/ubuntu/forgescan.github.io"
+
 #install Xvfb  #this is the virtual frame buffer
 apt-get install imagemagick xvfb
 
@@ -19,7 +23,7 @@ sudo apt-get install google-chrome-stable
 
 
 
-sudo mkdir /home/ubuntu/forgescan.github.io
+sudo mkdir $repoPATH  #/home/ubuntu/forgescan.github.io
 
 
 sudo git clone https://github.com/forgescan/forgescan.github.io
@@ -27,15 +31,19 @@ sudo git clone https://github.com/forgescan/forgescan.github.io
 
 
 #set up chrome #allow to run in root
-sudo rm /opt/google/chrome/google-chrome  
-sudo cp /home/ubuntu/forgescan.github.io/HAPYAKDEMOMAKERINSTALL/google-chrome /opt/google/chrome/google-chrome  
+sudo rm /opt/google/chrome/google-chrome 
+subdir= HAPYAKDEMOMAKERINSTALL/google-chrome
+sudo cp $repoPATH/$subdir /opt/google/chrome/google-chrome  
+
  
 
 
-#this creates the service 
+#this creates the service which runs on boot
+sudo cp $repoPATH/HAPYAKDEMOMAKERINSTALL/hapyak /etc/init.d/hapyak  
 sudo update-rc.d hapyak default
 sudo chmod 777 /etc/init.d/hapyak
-sudo chmod 777 -R /home/ubuntu/forgescan.github.io
+sudo chmod 777 -R $repoPATH
 
-
+#git needs to be setup to login automatically and the json key must be added manually
+#so to set up git to run automatically add a 
 
