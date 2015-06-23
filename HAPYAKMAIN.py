@@ -14,17 +14,13 @@ from HAPYAKFUNCTIONS import *
 import gspread002
 
 
-
-
 os.chdir("/home/ubuntu/forgescan.github.io/")#important when running as service cwd is /
 
-
-
-logfile=open("/home/ubuntu/forgescan.github.io/demomaker.log","w")
+logfile=open("/home/ubuntu/forgescan.github.io/demomaker.log","w") #on restart make a new log
 logfile.close()
 
 logging.basicConfig(filename='demomaker.log',level=logging.DEBUG)
-logging.debug("HERE I SHOULD BE LOGGING SOMTHING")
+logging.debug("Logging Started")
 
 
 
@@ -32,16 +28,8 @@ logging.debug("HERE I SHOULD BE LOGGING SOMTHING")
 
 
 
-THREAD_TERMINATE = 1 # Privilege level for termination
 
-def timeout():
 
-    logging.debug("timeout, no new thread made"+str(datetime.datetime.now()))
-    
-
-def makeproc():
-    process=Process(target=writetolog)
-    process.start()
 
 class SheetCheckerThread():
 
@@ -58,7 +46,7 @@ class SheetCheckerThread():
 
         print consoleinput
         if "~UPDATESCREENSHOTS" in consoleinput:
-            os.system("sudo python screenshottaker.py &")
+            os.system("sudo python screenshottaker.py &")#launches screenshottaking process which runs through the HAPYAKCSV.csv
         if "~UPDATE~" in consoleinput:
             pass
 
@@ -78,9 +66,9 @@ class SheetCheckerThread():
             self.sheetchecker.UpdateScreenshotURLsonSheet(csv)
             demopageupdater(csv)
             print "i finished updated the demo pages"
-            logging.debug("i finished updated the demo pages"+str(datetime.datetime.now()))
+            logging.debug("i finished and updated the demo pages"+str(datetime.datetime.now()))
             gitupdate()
-            logging.debug("i finished updated the git"+str(datetime.datetime.now()))
+            logging.debug("I Pushed to git"+str(datetime.datetime.now()))
 
 def timeoutexception():
     raise
