@@ -1,6 +1,7 @@
-Deployment 
+Deployment:
+ 
 1.Launch new ubuntu instance using Ubuntu Server 14.04 LTS (HVM), SSD Volume Type - ami-5189a661  , 
-2.ssh into instance run HAPYAKDEMOMAKERINSTALL this will install the demomaker and the dependencies, it should take a while
+2.ssh into instance run HAPYAKDEMOMAKERINSTALL/HAPYAKINSTALL this will install the demomaker and the dependencies, it should take a while
 3. git needs to be setup to login automatically and the json key must be added manually
 so to set up git to run automatically add a file named .netrc in /home/ubuntu with the login info 
 for example
