@@ -27,7 +27,7 @@ logging.debug("Logging Started")
 class SheetCheckerThread():
 
     def __init__(self):
-        self.sheetchecker=gspread002.GoogleDocsSession()
+        self.sheetchecker=GoogleDocsSession()
         print self.sheetchecker.checkwhenupdated()
 
     def checksheet(self):
