@@ -11,7 +11,7 @@ import time
 
 
 specialcommands=[""]
-#'~COMPANY~',None,None,'~Logo~','~Major Hex~','~Minor Hex~'
+#'~COMPANY~',None,None,'~Logo~','~Major Hex~','~Minor Hex~' 
 
 #keywordsfunctions 
 def majorhextoRGBA(firm):
