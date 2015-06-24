@@ -56,7 +56,7 @@ try:
             time.sleep(8)
             #delays would be placed here
             os.system("sudo DISPLAY=:5 import -window root '"+cwd+"web/"+firm+"/"+firm+".png'")
-            print "sudo DISPLAY=:5 google-chrome  --kiosk --window-size=720,464 --window-position=0,0 '"+EmbeddedVideoURL+ "'&"
+            print "sudo DISPLAY=:5 google-chrome  --kiosk --window-size=1024,600 --window-position=0,0 '"+EmbeddedVideoURL+ "'&"
             print "sudo DISPLAY=:5 import -window root "+cwd+"web/"+firm+"/"+firm+".png"
             time.sleep(3)
 
