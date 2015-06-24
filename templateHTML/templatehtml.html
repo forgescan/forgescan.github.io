@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sales Template</title>
+  <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Homenaje' rel='stylesheet' type='text/css'>
+</head>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background-image: url("https://hapyak_demos.s3.amazonaws.com/Sales%20Tool/ChevronWebsite.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .pulse-button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 200px;
+      height: 60px;
+      margin: 40px;
+      background-color: #1892BF;
+      border-radius: 30px;
+      border: none;
+      box-shadow: 0 0 0 0 rgba(0, 106, 149, 0.7);
+      background-size: cover;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      -webkit-animation: pulse 1.25s 3 cubic-bezier(0.66, 0, 0, 1);
+      -moz-animation: pulse 1.25s 3 cubic-bezier(0.66, 0, 0, 1);
+      -ms-animation: pulse 1.25s 3 cubic-bezier(0.66, 0, 0, 1);
+      animation: pulse 1.25s 3 cubic-bezier(0.66, 0, 0, 1);
+  }
+
+  .pulse-button:hover {
+      -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  }
+
+  @-webkit-keyframes pulse {
+    to {
+      box-shadow: 0 0 0 45px rgba(0, 106, 149, 0);
+    }
+  }
+
+  @-moz-keyframes pulse {
+    to {
+      box-shadow: 0 0 0 45px rgba(0, 106, 149, 0);
+    }
+  }
+
+  @-ms-keyframes pulse {
+    to {
+      box-shadow: 0 0 0 45px rgba(0, 106, 149, 0);
+    }
+  }
+
+  @keyframes pulse {
+    to {
+      box-shadow: 0 0 0 45px rgba(0, 106, 149, 0);
+    }
+  }
+  
+  .pulse-button h1 {
+    font-family: 'Homenaje', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+  }
+
+  .pulse-button a {
+    text-decoration: none;
+  }
+
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: white;
+    font-weight: 300;
+    text-align: center
+  }
+  #subheader {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+  }
+  .header-container {
+    display: block;
+    text-align: center;
+    height: 130px;
+  }
+
+  .schedule-demo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+  }
+  .video-container {
+    margin-top: 20px;
+  }
+  .modal-box {
+    height: 1000px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .logo {
+    height: 60px;
+    padding: 10px
+  }
+/*  #why-hapyak {
+    display: none;
+  }*/
+  th, td {
+    width: 20%;
+    vertical-align: top;
+    text-align: center;
+    padding: 10px;
+  }
+</style>
+<body>
+  <div class="modal-box">
+    <div class="header-container">
+      <div class="pulse-button">
+      <a href="https://calendly.com/jpl/new-user-demo/" target="_blank"><h1>SCHEDULE A DEMO</h1></a>
+      </div>
+      <div class="header">
+        <img class="logo" src="https://hapyak_demos.s3.amazonaws.com/Sales%20Tool/HapYak-logo-white11.png" alt="hapyak logo" />
+        <h1>Kickstart your video strategy</h1>
+      </div>
+    </div>
+    <div class="video-container">
+      <center>
+        <iframe src="~URL~" width="720" height="464" marginwidth="0" marginheight="0" frameborder="no" scrolling="no"></iframe>
+      </center>
+    </div>
+    <div id="why-hapyak">
+      <div style="padding: 20px;">
+        <h1 id="subheader">What makes HapYak so effective</h1>
+      </div>
+      <table style="width:100%">
+        <tr>
+          <td><i class="fa fa-line-chart" style="font-size: 50px; color: white;"></i></td>
+          <td><i class="fa fa-connectdevelop" style="font-size: 50px; color: white;"></i></td> 
+          <td><i class="fa fa-html5" style="font-size: 50px; color: white;"></i></td>
+          <td><i class="fa fa-pie-chart" style="font-size: 50px; color: white;"></i></td>
+          <td><i class="fa fa-pied-piper" style="font-size: 50px; color: white;"></i></td>
+        </tr>
+        <tr>
+          <td><h2>A platform built for scaling your video strategy</h2></td>
+          <td><h2>Integration with the largest CMS, LMS, and Analytic Systems</h2></td> 
+          <td><h2>Simple tools allow immediate productivity, yet extensible enough to meet your needs into the future</h2></td>
+          <td><h2>In-depth video analytics and metrics to support your business value propositions</h2></td>
+          <td><h2>Industry leaders are using HapYak, gaining valueable user analytics to increase sales and lower costs</h2></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+<script type="text/javascript" src="//d2qrdklrsxowl2.cloudfront.net/js/hapyak.js"></script>
+<script type="text/javascript" src="//d2qrdklrsxowl2.cloudfront.net/js/hapyak.api.js"></script>
+  <script type="text/javascript">
+    
+    // $('.modal-box').delay(2000).fadeIn(800);
+    // $('.video-container').hover(function(){
+    //   $('.header').delay(10000).fadeIn(2000);
+    //   $('#why-hapyak').delay(10000).fadeIn(2000);
+      
+    // });
+ 
+  
+  </script>
+    
+</body>
+</html>
