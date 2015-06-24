@@ -9,6 +9,7 @@ os.chdir("/home/ubuntu/forgescan.github.io/")
 
 def screenshottaker(url,path):
     pass
+
 try:
     #os.system("sudo Xvfb :5 -screen 0 720x464x24 & ") #initiate virtual display buffer
     cwd=os.getcwd()
