@@ -51,8 +51,9 @@ try:
             print LandingPageURL
             firmfolder =os.listdir(cwd+'//web//'+str(firm))
             #time.sleep(1)
-            os.system("sudo DISPLAY=:5 google-chrome --incognito --kiosk --window-size=720,464 --window-position=0,0 '"+EmbeddedVideoURL+ "'&")  #--make-default-browser
-            time.sleep(5)
+            os.system("sudo DISPLAY=:5 google-chrome --incognito --kiosk --window-size=1024,600 --window-position=0,0 '"+EmbeddedVideoURL+ "'&")  #--make-default-browser
+            #windowsizewas 720,464
+            time.sleep(8)
             #delays would be placed here
             os.system("sudo DISPLAY=:5 import -window root '"+cwd+"web/"+firm+"/"+firm+".png'")
             print "sudo DISPLAY=:5 google-chrome  --kiosk --window-size=720,464 --window-position=0,0 '"+EmbeddedVideoURL+ "'&"
