@@ -26,7 +26,9 @@ try:
     for i in range(len(firms)-10):
         firm=firms[i]
         try:
-            os.system("sudo Xvfb :5 -screen 0 720x464x24 & ") #initiate virtual display buffer
+            os.system("sudo Xvfb :5 -screen 0 1024x600x24 & ") #initiate virtual display buffer
+
+            #was 720x464x24
             pass
         except:pass
 
