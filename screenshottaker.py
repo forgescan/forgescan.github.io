@@ -49,7 +49,7 @@ try:
             print firm
             print cwd+'/web/'+str(firm)
             LandingPageURL="http://forgescan.github.io/web/"+urllib.quote(firm)+"/"+urllib.quote(firm)+".html"
-            EmbeddedVideoURL=LandingPageURL
+            #EmbeddedVideoURL=LandingPageURL
             print LandingPageURL
             firmfolder =os.listdir(cwd+'//web//'+str(firm))
             #time.sleep(1)
