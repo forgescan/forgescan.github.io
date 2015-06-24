@@ -86917,3 +86917,64 @@ DEBUG:root:i finished and updated the demo pages2015-06-24 04:31:04.705593
 DEBUG:root:heres the CWD/home/ubuntu/forgescan.github.io
 
 DEBUG:root:
+DEBUG:root:[master ac6bd91] hapyak
+ Committer: root <root@ip-172-31-21-56.us-west-2.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 57 insertions(+), 1 deletion(-)
+
+DEBUG:root:
+DEBUG:root:/home/ubuntu/forgescan.github.io
+
+DEBUG:root:warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+warning: unable to access '/home/ubuntu/.config/git/attributes': Permission denied
+To https://github.com/forgescan/forgescan.github.io
+   84fa497..ac6bd91  master -> master
+
+DEBUG:root:got to end of git stuff
+DEBUG:root:I Pushed to git2015-06-24 04:31:10.143962
+INFO:oauth2client.client:access_token is expired. Now: 2015-06-24 04:31:10.144323, token_expiry: 2015-06-24 04:30:47.696738
+INFO:oauth2client.client:access_token is expired. Now: 2015-06-24 04:31:10.144407, token_expiry: 2015-06-24 04:30:47.696738
+DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1435123870, 'iat': 1435120270}
+DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzUxMjM4NzAsImlhdCI6MTQzNTEyMDI3MH0', u'KrUpKq8qWjXD6pWkuQlnAFlAMtQJfGli_PxdUtYqr1HohrQk10isUGFQnuu7pcfxex4DwcIpFATT735ugd1n6KZTsriqGaJPEZufDpDfUT9YiaAtv60IOOO3_yyhHS6b2uxXTmo86gpCtHMMDI18IXoUEcdu4T5I9hLKdPUHT2g']
+INFO:oauth2client.client:Refreshing access_token
+DEBUG:root:loadingworksheet
+DEBUG:root:checkwhenupdated
+DEBUG:root:loadingworksheet
+DEBUG:root:geting updated csv
+DEBUG:root:loadingworksheet
+DEBUG:root:updating urls on sheet
+DEBUG:root:updating urls on sheet
+DEBUG:root:i finished and updated the demo pages2015-06-24 04:31:36.317980
+DEBUG:root:heres the CWD/home/ubuntu/forgescan.github.io
+
+DEBUG:root:
