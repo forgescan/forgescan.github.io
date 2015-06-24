@@ -7,6 +7,8 @@ AWS_SECRET=awskeystore[1].split("=")[1]
 
 print awskeystore
 conn = S3Connection(AWS_KEY, AWS_SECRET)
+print conn.get_all_buckets()
+
 BUCKET="hapyakdemopagedrop"
 
 bucket = conn.get_bucket(BUCKET)
