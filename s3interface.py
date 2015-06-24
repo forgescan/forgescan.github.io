@@ -12,7 +12,7 @@ print conn.get_all_buckets()
 BUCKET="hapyakdemopagedrop"
 
 bucket = conn.get_bucket(BUCKET)
-destination = bucket.new_key()
+destination = bucket.new_key("something.html")
 destination.name = filename
 destination.set_contents_from_file(myfile)
 destination.make_public()
