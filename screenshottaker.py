@@ -26,7 +26,7 @@ try:
     for i in range(len(firms)-10):
         firm=firms[i]
         try:
-            os.system("sudo Xvfb :5 -screen 0 1024x600x24 & ") #initiate virtual display buffer
+            os.system("sudo Xvfb :5 -screen 0 1024x1200x24 & ") #initiate virtual display buffer
 
             #was 720x464x24
             pass
@@ -53,7 +53,7 @@ try:
             print LandingPageURL
             firmfolder =os.listdir(cwd+'//web//'+str(firm))
             #time.sleep(1)
-            os.system("sudo DISPLAY=:5 google-chrome  --kiosk --window-size=1024,600 --window-position=0,0 '"+EmbeddedVideoURL+ "'&")  #--make-default-browser
+            os.system("sudo DISPLAY=:5 google-chrome  --kiosk --window-size=1024,1200 --window-position=0,0 '"+EmbeddedVideoURL+ "'&")  #--make-default-browser
             #windowsizewas 720,464  and had argument --incognito
             time.sleep(8)
             #delays would be placed here
