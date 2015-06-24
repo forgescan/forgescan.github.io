@@ -15,6 +15,6 @@ myhtml=open("/home/ubuntu/forgescan.github.io/templateHTML/templatehtml.html")
 
 bucket = conn.get_bucket(BUCKET)
 destination = bucket.new_key("something.html")
-destination.name = "something.html"
+destination.name = "PNGs/something.html"
 destination.set_contents_from_file(myhtml)
 destination.make_public()
