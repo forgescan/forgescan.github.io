@@ -38,7 +38,7 @@ class SheetCheckerThread():
             self.sheetchecker.updatecell("V2",str("Command Recieved"))
 
         print consoleinput
-        if "~UPDATESCREENSHOTS" in consoleinput:
+        if "~UPDATESCREENSHOTS~" in consoleinput:
             os.system("sudo python screenshottaker.py &")#launches screenshottaking process which runs through the HAPYAKCSV.csv
         if "~UPDATE~" in consoleinput:
             pass
