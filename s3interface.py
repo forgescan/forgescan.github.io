@@ -1,5 +1,5 @@
 from boto.s3.connection import S3Connection
-awskeystore=open("/root/home/ubuntu/rootkey.csv","r")
+awskeystore=open("/home/ubuntu/rootkey.csv","r")
 awskeystore=awskeystore.read()
 print awskeystore
 conn = S3Connection(AWS_KEY, AWS_SECRET)
