@@ -35,7 +35,8 @@ try:
         if firm[2]!='' and firm[3]!='': #commas in company names screw everything up
             print firm[2]
 
-            EmbeddedVideoURL=HAPYAKFUNCTIONS.URLbuilder(firm)
+            #EmbeddedVideoURL=HAPYAKFUNCTIONS.URLbuilder(firm) #this was for close up of video like jim wanted
+
 
             firm=firm[0]
 
@@ -46,6 +47,7 @@ try:
             print firm
             print cwd+'/web/'+str(firm)
             LandingPageURL="http://forgescan.github.io/web/"+urllib.quote(firm)+"/"+urllib.quote(firm)+".html"
+            EmbeddedVideoURL=LandingPageURL
             print LandingPageURL
             firmfolder =os.listdir(cwd+'//web//'+str(firm))
             #time.sleep(1)
