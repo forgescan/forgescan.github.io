@@ -81,8 +81,8 @@
 .popcorn-contents .popcorn-contents-title {
 /*1A75CF  17D*/      
   color: http://newsroomrydercom/sites/rydernewshqbusinesswirecom/files/logo/image/Ryder-Blk-Red250x72png;
-  background-color: rgba(26, 117, 207, .5);
-  border-top: solid 4px ~Minor Hex~ !important;
+  background-color: rgba(229, 24, 55, 0.8);
+  border-top: solid 4px #E51837 !important;
 }
 
 /*        RADIUS        */
@@ -103,13 +103,13 @@
 .hapyak-contents-column1.expanded {
   /*background: rgba(0, 0, 0, 0.6);*/
   color: http://newsroomrydercom/sites/rydernewshqbusinesswirecom/files/logo/image/Ryder-Blk-Red250x72png;
-  background-color: rgba(26, 117, 207, .5);
+  background-color: rgba(229, 24, 55, 0.8);
 }
 
 /*        CLOSE BUTTON  */
 .hapyak-contents-column1 .popcorn-contents-close {
   top: 0px;
-  background-color: rgba(26, 117, 207, .5);
+  background-color: rgba(229, 24, 55, 0.8);
   color: http://newsroomrydercom/sites/rydernewshqbusinesswirecom/files/logo/image/Ryder-Blk-Red250x72png;
   padding: 15px 16px 6px 8px;
   height: 33px;
@@ -149,7 +149,7 @@
 /* ------------------------------------------------------------ */
 /*        POP COMMENT SETTINGS  */
 .hapyak-annotation-container .popcorn-pop.hapyak-theme-black {
-  background-color: rgba(26, 117, 207, .5);
+  background-color: rgba(229, 24, 55, 0.8);
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
@@ -172,13 +172,13 @@
 /* ------------------------------------------------------------ */
 /*        HOT LINK SETTINGS  */
 .popcorn-hotlink {
-  background-color: rgba(26, 117, 207, .5);
+  background-color: rgba(229, 24, 55, 0.8);
   color: http://newsroomrydercom/sites/rydernewshqbusinesswirecom/files/logo/image/Ryder-Blk-Red250x72png;
   /*background: none;*/
 }
 
 .popcorn-hotlink:hover {
-  background: rgba(26, 117, 207, .5);
+  background: rgba(229, 24, 55, 0.8);
 }
 
 /* ------------------------------------------------------------ */
@@ -208,7 +208,7 @@
 
 /*        QUIZ BUTTONS  */
 .hapyak-player .hapyak-quiz-builder .btn {
-  /*background: ~Minor Hex~;*/
+  /*background: #E51837;*/
   background: #202020;
   
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdlYzhmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNTc0ZTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -240,7 +240,7 @@
 }
 
 .hapyak-player .hapyak-quiz-builder .btn:hover {
-  /*background: ~Minor Hex~;*/
+  /*background: #E51837;*/
   background: #202020;
 
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdlYzhmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNTc0ZTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -372,7 +372,7 @@ div.full-frame-image[style] {
 
 .welcome-text {
   color: http://newsroomrydercom/sites/rydernewshqbusinesswirecom/files/logo/image/Ryder-Blk-Red250x72png !important;
-  background: ~Minor Hex~ !important;
+  background: #E51837 !important;
   /*color: #202020 !important;
   background: none !important;*/
 }
@@ -388,7 +388,7 @@ background-color: http://newsroomrydercom/sites/rydernewshqbusinesswirecom/files
 border-radius: 10px;
 
 /*
-  background-color: ~Minor Hex~ !important;
+  background-color: #E51837 !important;
   /*background-color: #202020 !important;*/
   width: 135px !important;
   height: 90px;
