@@ -80,7 +80,7 @@
 /*        COLORS        */
 .popcorn-contents .popcorn-contents-title {
 /*1A75CF  17D*/      
-  color: ~Major Hex~;
+  color: http://newsroomrydercom/sites/rydernewshqbusinesswirecom/files/logo/image/Ryder-Blk-Red250x72png;
   background-color: rgba(26, 117, 207, .5);
   border-top: solid 4px ~Minor Hex~ !important;
 }
@@ -102,7 +102,7 @@
 /*        COLORS        */
 .hapyak-contents-column1.expanded {
   /*background: rgba(0, 0, 0, 0.6);*/
-  color: ~Major Hex~;
+  color: http://newsroomrydercom/sites/rydernewshqbusinesswirecom/files/logo/image/Ryder-Blk-Red250x72png;
   background-color: rgba(26, 117, 207, .5);
 }
 
@@ -110,7 +110,7 @@
 .hapyak-contents-column1 .popcorn-contents-close {
   top: 0px;
   background-color: rgba(26, 117, 207, .5);
-  color: ~Major Hex~;
+  color: http://newsroomrydercom/sites/rydernewshqbusinesswirecom/files/logo/image/Ryder-Blk-Red250x72png;
   padding: 15px 16px 6px 8px;
   height: 33px;
 }
@@ -122,7 +122,7 @@
 /*        LIST COLORS AND BULLETS  */
 .hapyak-contents-column1 .popcorn-contents-list > li:hover,
 .hapyak-contents-column1 .popcorn-contents-list > li.active {
-  color: ~Major Hex~;
+  color: http://newsroomrydercom/sites/rydernewshqbusinesswirecom/files/logo/image/Ryder-Blk-Red250x72png;
   /*list-style-image: none */
 }
 
@@ -141,7 +141,7 @@
   /*border-radius: 0px;*/
   /*cursor: default;*/
   /*margin-bottom: 27px;*/
-  color: ~Major Hex~;
+  color: http://newsroomrydercom/sites/rydernewshqbusinesswirecom/files/logo/image/Ryder-Blk-Red250x72png;
 }
 
 /* ------------------------------------------------------------ */
@@ -164,7 +164,7 @@
   /*padding: 9px 12px;*/
   /*text-align: center;*/
   /*FDBB30  is code recorded*/
-  color: ~Major Hex~;
+  color: http://newsroomrydercom/sites/rydernewshqbusinesswirecom/files/logo/image/Ryder-Blk-Red250x72png;
 }
 
 /* ------------------------------------------------------------ */
@@ -173,7 +173,7 @@
 /*        HOT LINK SETTINGS  */
 .popcorn-hotlink {
   background-color: rgba(26, 117, 207, .5);
-  color: ~Major Hex~;
+  color: http://newsroomrydercom/sites/rydernewshqbusinesswirecom/files/logo/image/Ryder-Blk-Red250x72png;
   /*background: none;*/
 }
 
@@ -198,7 +198,7 @@
 
 /*        QUIZ FONT COLOR  */
 .hapyak-player .hapyak-quiz-builder {
-  color: ~Major Hex~;
+  color: http://newsroomrydercom/sites/rydernewshqbusinesswirecom/files/logo/image/Ryder-Blk-Red250x72png;
 }
 
 /*        SET ALIGNMENT OF QUIZ TEXT  */
@@ -235,7 +235,7 @@
   -webkit-user-select: none;
   -o-user-select: none;
   user-select: none;
-  /*color: ~Major Hex~;*/
+  /*color: http://newsroomrydercom/sites/rydernewshqbusinesswirecom/files/logo/image/Ryder-Blk-Red250x72png;*/
   /*text-shadow: 0 -1px 0 #3574E3;*/
 }
 
@@ -329,12 +329,12 @@ div.full-frame-image[style] {
 /* ------------------------------------------------------------ */
 /*        HIGHLIGHT ANNTOATION  */
 .btn-border {
-  border: 2px solid #~Major Hex~ !important;
+  border: 2px solid #http://newsroomrydercom/sites/rydernewshqbusinesswirecom/files/logo/image/Ryder-Blk-Red250x72png !important;
   transition: 0.2s ease;
 }
 
 .btn-border:active {
-  border: 3px solid #~Major Hex~ !important;
+  border: 3px solid #http://newsroomrydercom/sites/rydernewshqbusinesswirecom/files/logo/image/Ryder-Blk-Red250x72png !important;
   transition: 0.2s ease;
 }
 
@@ -371,7 +371,7 @@ div.full-frame-image[style] {
 }
 
 .welcome-text {
-  color: ~Major Hex~ !important;
+  color: http://newsroomrydercom/sites/rydernewshqbusinesswirecom/files/logo/image/Ryder-Blk-Red250x72png !important;
   background: ~Minor Hex~ !important;
   /*color: #202020 !important;
   background: none !important;*/
@@ -382,7 +382,7 @@ div.full-frame-image[style] {
 /* Style for Play Button BG */
 width: 100px;
 height: 50px;
-background-color: ~Major Hex~; /*change to passed in main color*/
+background-color: http://newsroomrydercom/sites/rydernewshqbusinesswirecom/files/logo/image/Ryder-Blk-Red250x72png; /*change to passed in main color*/
 -moz-border-radius: 10px;
 -webkit-border-radius: 10px;
 border-radius: 10px;
