@@ -37,7 +37,7 @@ try:
         if firm[2]!='' and firm[3]!='': #commas in company names screw everything up
             print firm[2]
 
-            #EmbeddedVideoURL=HAPYAKFUNCTIONS.URLbuilder(firm) #this was for close up of video like jim wanted
+            EmbeddedVideoURL=HAPYAKFUNCTIONS.URLbuilder(firm) #this was for close up of video like jim wanted
 
 
             firm=firm[0]
@@ -49,13 +49,13 @@ try:
             print firm
             print cwd+'/web/'+str(firm)
             LandingPageURL="http://forgescan.github.io/web/"+urllib.quote(firm)+"/"+urllib.quote(firm)+".html"
-            EmbeddedVideoURL=LandingPageURL
+            #EmbeddedVideoURL=LandingPageURL
             print LandingPageURL
             firmfolder =os.listdir(cwd+'//web//'+str(firm))
             #time.sleep(1)
             os.system("sudo DISPLAY=:5 google-chrome  --kiosk --window-size=1024,1200 --window-position=0,0 '"+EmbeddedVideoURL+ "'&")  #--make-default-browser
             #windowsizewas 720,464  and had argument --incognito
-            time.sleep(30)
+            time.sleep(5)
             #delays would be placed here
             os.system("sudo DISPLAY=:5 import -window root '"+cwd+"web/"+firm+"/"+firm+".png'")
             print "sudo DISPLAY=:5 google-chrome  --kiosk --window-size=1024,600 --window-position=0,0 '"+EmbeddedVideoURL+ "'&"
