@@ -1,7 +1,7 @@
 from boto.s3.connection import S3Connection
 awskeystore=open("/home/ubuntu/rootkey.csv","r")
 awskeystore=awskeystore.read()
-awskeystore=awskeystore.split("""\n""")
+awskeystore=awskeystore.replace('''\r''',"").split("""\n""")
 AWS_KEY=awskeystore[0].split("=")[1]
 AWS_SECRET=awskeystore[1].split("=")[1]
 
