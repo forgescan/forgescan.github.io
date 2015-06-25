@@ -87,7 +87,7 @@ def makeGUID(firm):
     return str(uuid.uuid5(namespace,firm["Company"]))
 #print makeGUID(sheetdict[0]["Company"])
 #sheetchecker.iterateandreplace("GUID",makeGUID)
-print uuid.uuid5(uuid.uuid1(),sheetdict[0]["Company"])
+print uuid.uuid5(uuid.uuid1(),sheetdict[0]["Company"]).type()
 """
 cell_list = sheetchecker.currentworksheet.range('T3:T10')
 #print cell_list
