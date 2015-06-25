@@ -523,7 +523,9 @@ class GoogleDocsSessionv2():
                     #errorlogging
                 #cell_list+="<Cell R"+str(firmcount)+"C"+str(column)+" '"+str(value)+"'>"
             for i in range(0,len(self.sheetdict)-1):  #gives us a tuple of an index and value
-                cell_list[i].value = value_list[i]    #use the index on cell_list and the val from cell_values
+                try:
+                    cell_list[i].value = value_list[i]    #use the index on cell_list and the val from cell_values
+                except:pass
             #del cell_list[0]
 
             self.currentworksheet.update_cells(cell_list)
