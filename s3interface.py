@@ -48,13 +48,13 @@ class S3session():
             filetype=filename.split(".")[-1]
             print filename
             print filetype
-            
+
             directory="unknown"
-            if filetype==".png":
+            if filetype=="png":
                 directory="media"
-            if filetype==".html":
+            if filetype=="html":
                 directory="html"
-            if filetype==".css":
+            if filetype=="css":
                 directory="css"
             filetobeuploaded=open(localfiledump+filename,"r")
             destination=self.Bucket.new_key(filename)
