@@ -26,8 +26,10 @@ cwd='/home/ubuntu/forgescan.github.io'
 def makeGUID(firm):
     namespace=uuid.uuid1()
     print firm["Company"]
-    return uuid.uuid5(uuid.uuid1(),firm["Company"]).hex
-
+    if firm["GUID"]=="" or firm["GUID"]==None:
+        return uuid.uuid5(uuid.uuid1(),firm["Company"]).hex
+    else:
+        return firm["GUID"]
 ###########################################################################################################################
 def fileIn(relativeaddress):
     filein=open(str(relativeaddress),"r")
