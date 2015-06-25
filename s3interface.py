@@ -64,8 +64,9 @@ class S3session():
 
             return 1
         except:
-            logging.error("s3 upload failed"+str(traceback.format_exc()))
-            print "s3 upload failed"+str(traceback.format_exc())
+            error="s3 uploadfailed"+str(traceback.format_exc())
+            logging.error(error)
+            print error
             return -1
 
 
