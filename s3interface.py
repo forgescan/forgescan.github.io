@@ -6,7 +6,7 @@ demomaker_config=(open("demomaker.cfg","r").read())
 config = ConfigParser.RawConfigParser(allow_no_value=True)
 config.readfp(io.BytesIO(demomaker_config))
 
-awskeystore=open(config.get("config","path"),"r")
+awskeystore=open(config.get("config","pathtoS3key"),"r")
 awskeystore=awskeystore.read()
 awskeystore=awskeystore.replace('''\r''',"").split("""\n""")
 AWS_KEY=awskeystore[0].split("=")[1]
