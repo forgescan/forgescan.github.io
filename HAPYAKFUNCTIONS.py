@@ -20,8 +20,15 @@ config.readfp(io.BytesIO(demomaker_config))
 
 
 cwd='/home/ubuntu/forgescan.github.io'
+###########################################################################################################################
+#functions to be pushed through iterate and replace they take in firm dictionary and do work on the spreadsheet and the s3
 
+def makeGUID(firm):
+    namespace=uuid.uuid1()
+    print firm["Company"]
+    return uuid.uuid5(uuid.uuid1(),firm["Company"]).hex
 
+###########################################################################################################################
 def fileIn(relativeaddress):
     filein=open(str(relativeaddress),"r")
     filein=filein.read()
@@ -537,9 +544,6 @@ class GoogleDocsSessionv2():
             return -1
         #print cell_list
         #print value_list
-def makeGUID(firm):
-    namespace=uuid.uuid1()
-    print firm["Company"]
-    return uuid.uuid5(uuid.uuid1(),firm["Company"]).hex
+
     
 
