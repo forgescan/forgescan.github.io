@@ -84,6 +84,8 @@ def firmdicttolist(firm):# for backwards compatibility with previous code
     firmlistout=[]
 
     for key in keylist:
+        print key
+        
         print firm[key]
         firmlistout.append(firm[key])
     return firmlistout
