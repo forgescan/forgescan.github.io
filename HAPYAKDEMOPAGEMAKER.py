@@ -88,13 +88,13 @@ def firmdicttolist(firm):# for backwards compatibility with previous code
 
     return firmlistout
 
-def cssmaker(firm):
+def cssmakerv2(firm):
     firm2=firmdicttolist(firm)
 
     print firm2
 
 
-"""
+
     locationoftemplateCSS="templateCSS/templatecss.css"
     templatecss=fileIn(locationoftemplateCSS)
 
@@ -104,10 +104,13 @@ def cssmaker(firm):
     updatedtemplate=updatedtemplate.replace("~majorhextoRGBA~",majorhextoRGBA(firm))
     updatedtemplate=updatedtemplate.replace("~minorhextoRGBA~",minorhextoRGBA(firm))
     #any other replaces can be added here
+    fileout=open("/web/"+firm["GUID"]+".css", "w")
+    fileout.write(updatedtemplate)
+    fileout.close()
 
     hapyakfileOut(firm,".css",updatedtemplate)
-    """
-sheetchecker.iteratethroughfirms(cssmaker)
+    
+sheetchecker.iteratethroughfirms(cssmakerv2)
 
 #sheetchecker.iterateandreplace("GUID",return1)
 
