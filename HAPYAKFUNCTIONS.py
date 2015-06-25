@@ -11,7 +11,7 @@ from oauth2client.client import SignedJwtAssertionCredentials
 import logging
 import ConfigParser
 import io
-
+import uuid
 
 demomaker_config=(open("demomaker.cfg","r").read())
 config = ConfigParser.RawConfigParser(allow_no_value=True)
@@ -537,5 +537,9 @@ class GoogleDocsSessionv2():
             return -1
         #print cell_list
         #print value_list
+def makeGUID(firm):
+    namespace=uuid.uuid1()
+    print firm["Company"]
+    return uuid.uuid5(uuid.uuid1(),firm["Company"]).hex
     
 
