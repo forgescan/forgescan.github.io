@@ -493,13 +493,13 @@ class GoogleDocsSessionv2():
     def iterateandreplace(self,keyword, function): #runs through current worksheet replacing all cells according to specific function that its given
         try:
             column=str(self.currentworksheet.find(keyword)).split("R1C")[1].split(' ')[0]
-            print column
+            #print column
             if column=="":
                 raise
             column=int(column)
             columnletter=self.currentworksheet.get_addr_int(1,column )[0]
             firmlength=len(self.sheetdict)
-            print columnletter
+            #print columnletter
             cell_list = self.currentworksheet.range(columnletter+"2:"+columnletter+str(firmlength-1))
 
             #cell_list=[]
@@ -535,7 +535,7 @@ class GoogleDocsSessionv2():
             logging.error(error)
             print error
             return -1
-        print cell_list
-        print value_list
+        #print cell_list
+        #print value_list
     
 
