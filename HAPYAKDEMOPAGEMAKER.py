@@ -48,9 +48,9 @@ def iterateandreplace(keyword, function, worksheet):
         value_list=[]
         firmcount=0
         for firm in sheetdict:
-            if firmcount==0:
-                firmcount+=1
-                continue
+            #if firmcount==0:
+            #    firmcount+=1
+            #    continue
 
 
             try:
