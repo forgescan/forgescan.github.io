@@ -23,8 +23,9 @@ S3session=s3interface.S3session()
 sheetchecker=GoogleDocsSessionv2()
 
 print sheetchecker.checkwhenupdated()
-sheet=sheetchecker.currentworksheet.get_all_records()
-print len(sheet)
+for i in range(10):
+    sheet=sheetchecker.currentworksheet.get_all_records()
+    print len(sheet)
 
 
 
