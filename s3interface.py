@@ -54,12 +54,12 @@ class S3session():
             if filetype==".css":
                 directory="css"
             filetobeuploaded=open(localfiledump+filename,"r")
-            destination=bucket.new_key(filename)
+            destination=self.Bucket.new_key(filename)
             destination.name=directory+"/"+filename
             destination.set_contents_from_file(filetobeuploaded)
             destination.make_public()
             filetobeuploaded.close()
-            
+
             return 1
         except:
             logging.error("s3 upload failed"+str(traceback.format_exc()))
