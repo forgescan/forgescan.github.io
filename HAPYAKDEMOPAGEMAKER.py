@@ -55,12 +55,15 @@ def iterateandreplace(keyword, function, worksheet):
 
             try:
                 firmcount+=1
-                value_list+=str(function(firm))
+                value_list.append(function(firm))
                 pass
                 #addoutput to list
             except:
                 firmcount+=1
-                value_list+=""
+                value_list.append("")
+                error="iterate and replace failed "+str(traceback.format_exc())
+                logging.error(error)
+                print error
                 pass
                 #addfailedtolist
                 #errorlogging
