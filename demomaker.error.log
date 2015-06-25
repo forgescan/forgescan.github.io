@@ -27551,3 +27551,14 @@ DEBUG:boto:<?xml version="1.0" encoding="UTF-8"?>
 DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1435253939, 'iat': 1435250339}
 DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzUyNTM5MzksImlhdCI6MTQzNTI1MDMzOX0', u'ZpU5EFQaWbIBcnT9qy1Ern7QeZdnlwp7Qx3kxf9KMd_LQ3mgNLl8bqGMt0SB5-FgYeXcLwqdn_3SudqyLP7X6eFXQi_NZoSHzx3JWX2cNI7lfzI5kZBEvw3EaUokpevVuN2P1ra3p8IL_NEqSodnNgE1lI9rFlFO2QtOSjHvteA']
 INFO:oauth2client.client:Refreshing access_token
+DEBUG:root:checkwhenupdated
+DEBUG:root:loadingworksheet
+ERROR:root:iterate and replace failed Traceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 522, in iterateandreplace
+    value_list.append(function(firm))
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 30, in makeGUID
+    return uuid.uuid5(uuid.uuid1(),firm["Company"]).hex
+  File "/usr/lib/python2.7/uuid.py", line 567, in uuid5
+    hash = sha1(namespace.bytes + name).digest()
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xb5 in position 0: ordinal not in range(128)
+
