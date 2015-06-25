@@ -1102,3 +1102,68 @@ ERROR:root:iterate and replace failed Traceback (most recent call last):
     value_list+=None
 TypeError: 'NoneType' object is not iterable
 
+DEBUG:boto:Using access key provided by client.
+DEBUG:boto:Using secret key provided by client.
+DEBUG:boto:path=/
+DEBUG:boto:auth_path=/hapyakdemopagedrop/
+DEBUG:boto:path=/?max-keys=0
+DEBUG:boto:auth_path=/hapyakdemopagedrop/?max-keys=0
+DEBUG:boto:Method: GET
+DEBUG:boto:Path: /?max-keys=0
+DEBUG:boto:Data: 
+DEBUG:boto:Headers: {}
+DEBUG:boto:Host: hapyakdemopagedrop.s3.amazonaws.com
+DEBUG:boto:Port: 443
+DEBUG:boto:Params: {}
+DEBUG:boto:establishing HTTPS connection: host=hapyakdemopagedrop.s3.amazonaws.com, kwargs={'port': 443, 'timeout': 70}
+DEBUG:boto:Token: None
+DEBUG:boto:StringToSign:
+GET
+
+
+Thu, 25 Jun 2015 14:49:42 GMT
+/hapyakdemopagedrop/
+DEBUG:boto:Signature:
+AWS AKIAILL4JI45EBVCWLXQ:foGzFj+hiE887x+XZeJCzon1i8Q=
+DEBUG:boto:<?xml version="1.0" encoding="UTF-8"?>
+<ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>hapyakdemopagedrop</Name><Prefix></Prefix><Marker></Marker><MaxKeys>0</MaxKeys><IsTruncated>false</IsTruncated></ListBucketResult>
+DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1435247382, 'iat': 1435243782}
+DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzUyNDczODIsImlhdCI6MTQzNTI0Mzc4Mn0', u'bqR6krSLOAQFA5i-kOuAYHFnFXq8EUem95i-n_O1Zj78Pu7rAFt4-8F2UYQ19WFVo8koa78hgJJHxGtAZn6WbLkPiHs8uoYbzhOWNTHHgW_jwEjiQ0o0axw0p6ZU2nEX9gXV8VLfTYixRjR3ZE2wSSdWdZedzp8XpoWynAygLxE']
+INFO:oauth2client.client:Refreshing access_token
+DEBUG:root:checkwhenupdated
+DEBUG:root:loadingworksheet
+ERROR:root:iterate and replace failed Traceback (most recent call last):
+  File "HAPYAKDEMOPAGEMAKER.py", line 68, in iterateandreplace
+    for i, val in enumerate(cell_values):  #gives us a tuple of an index and value
+NameError: global name 'cell_values' is not defined
+
+DEBUG:boto:Using access key provided by client.
+DEBUG:boto:Using secret key provided by client.
+DEBUG:boto:path=/
+DEBUG:boto:auth_path=/hapyakdemopagedrop/
+DEBUG:boto:path=/?max-keys=0
+DEBUG:boto:auth_path=/hapyakdemopagedrop/?max-keys=0
+DEBUG:boto:Method: GET
+DEBUG:boto:Path: /?max-keys=0
+DEBUG:boto:Data: 
+DEBUG:boto:Headers: {}
+DEBUG:boto:Host: hapyakdemopagedrop.s3.amazonaws.com
+DEBUG:boto:Port: 443
+DEBUG:boto:Params: {}
+DEBUG:boto:establishing HTTPS connection: host=hapyakdemopagedrop.s3.amazonaws.com, kwargs={'port': 443, 'timeout': 70}
+DEBUG:boto:Token: None
+DEBUG:boto:StringToSign:
+GET
+
+
+Thu, 25 Jun 2015 14:50:22 GMT
+/hapyakdemopagedrop/
+DEBUG:boto:Signature:
+AWS AKIAILL4JI45EBVCWLXQ:RGWGRrBVO9LiKoBIzCz1aYdKgQ0=
+DEBUG:boto:<?xml version="1.0" encoding="UTF-8"?>
+<ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>hapyakdemopagedrop</Name><Prefix></Prefix><Marker></Marker><MaxKeys>0</MaxKeys><IsTruncated>false</IsTruncated></ListBucketResult>
+DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1435247422, 'iat': 1435243822}
+DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzUyNDc0MjIsImlhdCI6MTQzNTI0MzgyMn0', u'g1KRxitnF8YJ4mqBpfmXjkPrDs3JoEWMRSe8OoELle7rsCiUJSvu-4wm7ojTOSTXCB7w1tAMyxA4A2qnNZbl7RQHukAVvV-kb93wi8AoHfiZBuI5rVsA9I15x8WJOVKMCsd-CVqqlNCZ6x4_Zxgk8GGIF56rP7nHPnyNrUQd9eY']
+INFO:oauth2client.client:Refreshing access_token
+DEBUG:root:checkwhenupdated
+DEBUG:root:loadingworksheet

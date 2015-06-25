@@ -65,7 +65,7 @@ def iterateandreplace(keyword, function, worksheet):
                 #addfailedtolist
                 #errorlogging
             #cell_list+="<Cell R"+str(firmcount)+"C"+str(column)+" '"+str(value)+"'>"
-        for i, val in enumerate(cell_values):  #gives us a tuple of an index and value
+        for i, val in enumerate(value_list):  #gives us a tuple of an index and value
             cell_list[i].value = val    #use the index on cell_list and the val from cell_values
         worksheet.update_cells(cell_list)
         #export list to desired column of sheet
@@ -74,6 +74,8 @@ def iterateandreplace(keyword, function, worksheet):
         logging.error(error)
         print error
         return -1
+    print cell_list
+    print value_list
 
 iterateandreplace("GUID",return1,worksheet)
 """
