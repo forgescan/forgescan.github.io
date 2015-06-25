@@ -547,3 +547,33 @@ DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiI
 INFO:oauth2client.client:Refreshing access_token
 DEBUG:root:checkwhenupdated
 DEBUG:root:loadingworksheet
+DEBUG:boto:Using access key provided by client.
+DEBUG:boto:Using secret key provided by client.
+DEBUG:boto:path=/
+DEBUG:boto:auth_path=/hapyakdemopagedrop/
+DEBUG:boto:path=/?max-keys=0
+DEBUG:boto:auth_path=/hapyakdemopagedrop/?max-keys=0
+DEBUG:boto:Method: GET
+DEBUG:boto:Path: /?max-keys=0
+DEBUG:boto:Data: 
+DEBUG:boto:Headers: {}
+DEBUG:boto:Host: hapyakdemopagedrop.s3.amazonaws.com
+DEBUG:boto:Port: 443
+DEBUG:boto:Params: {}
+DEBUG:boto:establishing HTTPS connection: host=hapyakdemopagedrop.s3.amazonaws.com, kwargs={'port': 443, 'timeout': 70}
+DEBUG:boto:Token: None
+DEBUG:boto:StringToSign:
+GET
+
+
+Thu, 25 Jun 2015 13:36:09 GMT
+/hapyakdemopagedrop/
+DEBUG:boto:Signature:
+AWS AKIAILL4JI45EBVCWLXQ:OB1q1hcy5bqLE6qE8/r9PZt3VAU=
+DEBUG:boto:<?xml version="1.0" encoding="UTF-8"?>
+<ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>hapyakdemopagedrop</Name><Prefix></Prefix><Marker></Marker><MaxKeys>0</MaxKeys><IsTruncated>false</IsTruncated></ListBucketResult>
+DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1435242969, 'iat': 1435239369}
+DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzUyNDI5NjksImlhdCI6MTQzNTIzOTM2OX0', u'GZiVuO1ou1Tpdkp33BPPaBTw9BdgRCHtEoCq4sugbvd3LfMPjvYHKsx4texF8c75HPvqdEqvPRYmme0ZHocQLUi9RhgUPkGTSIrfw_XwgoZQ5YgrYMh_kTgGGdy1tsqPV9E0u5ZbOUQ7Cl2C1x0WGIdmKzNn7ynZh5PQ8LnN55E']
+INFO:oauth2client.client:Refreshing access_token
+DEBUG:root:checkwhenupdated
+DEBUG:root:loadingworksheet
