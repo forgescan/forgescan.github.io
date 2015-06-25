@@ -27,7 +27,8 @@ print sheetchecker.checkwhenupdated()
 #    sheet=sheetchecker.currentworksheet.get_all_records()
 #    print len(sheet)
 sheet=sheetchecker.currentworksheet.get_all_records()
-print sheet[0]
+print sheet[0]["Website"]
+
 
 
 
