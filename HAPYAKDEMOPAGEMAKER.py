@@ -21,7 +21,9 @@ S3session=s3interface.S3session()
 #create GUID for each firm
 #so check if sheet is updated
 sheetchecker=GoogleDocsSessionv2()
+
 print sheetchecker.checkwhenupdated()
+print sheetchecker.currentworksheet.get_all_records()
 
 
 
