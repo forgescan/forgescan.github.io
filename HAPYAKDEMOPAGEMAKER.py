@@ -11,7 +11,7 @@ config = ConfigParser.RawConfigParser(allow_no_value=True)
 config.readfp(io.BytesIO(demomaker_config))
 
 ###starterrorlogging
-logging.basicConfig(filename=config.get("config","pathtolog"),level=logging.DEBUG)
+logging.basicConfig(filename=config.get("config","pathtoerrorlog"),level=logging.DEBUG)
 
 #initiates stuff
 fileuploader=s3interface.S3session
