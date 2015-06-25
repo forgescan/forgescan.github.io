@@ -80,6 +80,27 @@ def iterateandreplace(keyword, function, worksheet):
     print cell_list
     print value_list
 
+def cssmaker(firm):
+    dictfirm=firm
+    firm=firm.values()
+    print firm
+
+
+    """
+    locationoftemplateCSS="templateCSS/templatecss.css"
+    templatecss=fileIn(locationoftemplateCSS)
+
+    CSSKEYWORDS=['~COMPANY~',None,None,'~Logo~','~Major Hex~','~Minor Hex~']
+    updatedtemplate=SplitandReplace(CSSKEYWORDS,firm,templatecss)
+    #hex to rgba
+    updatedtemplate=updatedtemplate.replace("~majorhextoRGBA~",majorhextoRGBA(firm))
+    updatedtemplate=updatedtemplate.replace("~minorhextoRGBA~",minorhextoRGBA(firm))
+    #any other replaces can be added here
+
+    hapyakfileOut(firm,".css",updatedtemplate)
+    """
+sheetchecker.iterateandreplace("T",cssmaker)
+
 #sheetchecker.iterateandreplace("GUID",return1)
 
 
