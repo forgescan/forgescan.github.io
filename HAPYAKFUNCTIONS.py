@@ -500,7 +500,7 @@ class GoogleDocsSessionv2():
         except Exception:
             logging.debug(str(traceback.format_exc()))
             print(traceback.format_exc())
-    def iteratethroughworksheet(self,function):
+    def iteratethroughfirms(self,function):
         for firm in self.sheetdict:
             try:
                 function(firm)
@@ -508,7 +508,7 @@ class GoogleDocsSessionv2():
                 error="iterate and replace failed "+str(traceback.format_exc())
                 logging.error(error)
                 print error
-                return -1
+                #return -1
 
 
     def iterateandreplace(self,keyword, function): #runs through current worksheet replacing all cells according to specific function that its given
