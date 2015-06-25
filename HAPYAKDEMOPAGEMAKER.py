@@ -16,10 +16,13 @@ logging.basicConfig(filename=config.get("config","pathtoerrorlog"),level=logging
 
 #initiates stuff
 S3session=s3interface.S3session()
+#print S3session.uploadfile("templatehtml.html")
 
+#create GUID for each firm
+#so check if sheet is updated
+sheetchecker=GoogleDocsSessionv2()
+print sheetchecker.checkwhenupdated()
 
-
-print S3session.uploadfile("templatehtml.html")
 
 
 
