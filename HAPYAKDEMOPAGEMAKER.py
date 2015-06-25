@@ -55,7 +55,7 @@ def iterateandreplace(keyword, function, worksheet):
 
             try:
                 firmcount+=1
-                value_list+=function(firm)
+                value_list+=str(function(firm))
                 pass
                 #addoutput to list
             except:
