@@ -34,7 +34,7 @@ class S3session():
         #initiates connection
         self.S3conn=S3Connection(self.AWS_KEY,self.AWS_SECRET)
         #self.currentbucketname=(config.get("config","defaultbucket"))
-        self.Bucket=S3conn.get_bucket(config.get("config","defaultbucket"))
+        self.Bucket=self.S3conn.get_bucket(config.get("config","defaultbucket"))
 
 
 
