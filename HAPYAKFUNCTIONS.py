@@ -505,7 +505,7 @@ class GoogleDocsSessionv2():
             #cell_list=[]
             value_list=[]
             firmcount=0
-            for firm in sheetdict:
+            for firm in self.sheetdict:
 
                 try:
                     firmcount+=1
