@@ -33,9 +33,10 @@ def iterateandreplace(keyword, function, sheet):
     listt=[]
     for firm in sheet:
         try:
+            pass
             #addoutput to list
         except:
-
+            pass
             #addfailedtolist
             #errorlogging
     #export list to desired column of sheet
