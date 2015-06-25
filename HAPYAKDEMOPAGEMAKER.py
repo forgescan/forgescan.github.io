@@ -5,6 +5,7 @@ import s3interface
 import logging
 import ConfigParser
 import io
+import uuid
 
 ###accesses config file
 demomaker_config=(open("demomaker.cfg","r").read())
@@ -79,8 +80,8 @@ def iterateandreplace(keyword, function, worksheet):
     print cell_list
     print value_list
 
-sheetchecker.iterateandreplace("GUID",return1)
-import uuid
+#sheetchecker.iterateandreplace("GUID",return1)
+
 def makeGUID(firm):
     namespace=uuid.uuid1()
     return str(uuid.uuid5(namespace,firm["Company"]))
