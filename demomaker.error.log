@@ -1021,3 +1021,14 @@ DEBUG:boto:<?xml version="1.0" encoding="UTF-8"?>
 DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1435246961, 'iat': 1435243361}
 DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzUyNDY5NjEsImlhdCI6MTQzNTI0MzM2MX0', u'roeBtHjiHcn2XjyOK5eUDCFCXMb-TEzzfVvA_JJvxo8-1E7cB7l4SppVWuFzBaaTSukum_5A3nCqyp9x1Uu1utGv6xUX_wF-r86GRn352eIPijahUU6eUc3EpI9_weHuJ2PUzQwCstKh9TxV40fs57CubtoZ8NT3QSDJioPliDs']
 INFO:oauth2client.client:Refreshing access_token
+DEBUG:root:checkwhenupdated
+DEBUG:root:loadingworksheet
+ERROR:root:iterate and replace failed Traceback (most recent call last):
+  File "HAPYAKDEMOPAGEMAKER.py", line 67, in iterateandreplace
+    worksheet.update_cells(cell_list)
+  File "/usr/local/lib/python2.7/dist-packages/gspread/models.py", line 482, in update_cells
+    feed = self._create_update_feed(cell_list)
+  File "/usr/local/lib/python2.7/dist-packages/gspread/models.py", line 459, in _create_update_feed
+    SubElement(entry, 'batch:id').text = cell.element.find(
+AttributeError: 'str' object has no attribute 'element'
+
