@@ -490,7 +490,7 @@ class GoogleDocsSessionv2():
         except Exception:
             logging.debug(str(traceback.format_exc()))
             print(traceback.format_exc())
-    def iterateandreplace(self,keyword, function):
+    def iterateandreplace(self,keyword, function): #runs through current worksheet replacing all cells according to specific function that its given
         try:
             column=str(self.currentworksheet.find(keyword)).split("R1C")[1].split(' ')[0]
             print column
