@@ -27,9 +27,18 @@ print sheetchecker.checkwhenupdated()
 #    sheet=sheetchecker.currentworksheet.get_all_records()
 #    print len(sheet)
 sheet=sheetchecker.currentworksheet.get_all_records()
+
 print sheet[0]["Website"]
+def iterateandreplace(keyword, function, sheet):
+    listt=[]
+    for firm in sheet:
+        try:
+            #addoutput to list
+        except:
 
-
+            #addfailedtolist
+            #errorlogging
+    #export list to desired column of sheet
 
 
 
