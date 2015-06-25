@@ -68,8 +68,10 @@ def iterateandreplace(keyword, function, worksheet):
                 #addfailedtolist
                 #errorlogging
             #cell_list+="<Cell R"+str(firmcount)+"C"+str(column)+" '"+str(value)+"'>"
-        for i, val in enumerate(value_list):  #gives us a tuple of an index and value
-            cell_list[i].value = val    #use the index on cell_list and the val from cell_values
+        for i in range(1,len(sheetdict)):  #gives us a tuple of an index and value
+            cell_list[i].value = value_list[i]    #use the index on cell_list and the val from cell_values
+        del cell_list[0]
+        
         worksheet.update_cells(cell_list)
         #export list to desired column of sheet
     except:
