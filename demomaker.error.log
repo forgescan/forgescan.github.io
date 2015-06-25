@@ -307,3 +307,123 @@ DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiI
 INFO:oauth2client.client:Refreshing access_token
 DEBUG:root:checkwhenupdated
 DEBUG:root:loadingworksheet
+DEBUG:boto:Using access key provided by client.
+DEBUG:boto:Using secret key provided by client.
+DEBUG:boto:path=/
+DEBUG:boto:auth_path=/hapyakdemopagedrop/
+DEBUG:boto:path=/?max-keys=0
+DEBUG:boto:auth_path=/hapyakdemopagedrop/?max-keys=0
+DEBUG:boto:Method: GET
+DEBUG:boto:Path: /?max-keys=0
+DEBUG:boto:Data: 
+DEBUG:boto:Headers: {}
+DEBUG:boto:Host: hapyakdemopagedrop.s3.amazonaws.com
+DEBUG:boto:Port: 443
+DEBUG:boto:Params: {}
+DEBUG:boto:establishing HTTPS connection: host=hapyakdemopagedrop.s3.amazonaws.com, kwargs={'port': 443, 'timeout': 70}
+DEBUG:boto:Token: None
+DEBUG:boto:StringToSign:
+GET
+
+
+Thu, 25 Jun 2015 13:23:34 GMT
+/hapyakdemopagedrop/
+DEBUG:boto:Signature:
+AWS AKIAILL4JI45EBVCWLXQ:4Cu1ZFApX15G9nDuEyvgVT5PdRY=
+DEBUG:boto:<?xml version="1.0" encoding="UTF-8"?>
+<ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>hapyakdemopagedrop</Name><Prefix></Prefix><Marker></Marker><MaxKeys>0</MaxKeys><IsTruncated>false</IsTruncated></ListBucketResult>
+DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1435242214, 'iat': 1435238614}
+DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzUyNDIyMTQsImlhdCI6MTQzNTIzODYxNH0', u'EHjJ7quN8cc0KS5ci_dqIkq7_z9usexRRIQco22ZnGin9SRakdKYOdDy3x59mO1v141FCAThfLS5-rjIDh45w09zvrP1-PTE1ojeeOhxcK_AVzeUp1cxgjtKMlX_vLL-bfqdPes9573PnPw029y9-wzmThP0VGhbPS_5wS0bY0s']
+INFO:oauth2client.client:Refreshing access_token
+DEBUG:root:checkwhenupdated
+DEBUG:root:loadingworksheet
+DEBUG:boto:Using access key provided by client.
+DEBUG:boto:Using secret key provided by client.
+DEBUG:boto:path=/
+DEBUG:boto:auth_path=/hapyakdemopagedrop/
+DEBUG:boto:path=/?max-keys=0
+DEBUG:boto:auth_path=/hapyakdemopagedrop/?max-keys=0
+DEBUG:boto:Method: GET
+DEBUG:boto:Path: /?max-keys=0
+DEBUG:boto:Data: 
+DEBUG:boto:Headers: {}
+DEBUG:boto:Host: hapyakdemopagedrop.s3.amazonaws.com
+DEBUG:boto:Port: 443
+DEBUG:boto:Params: {}
+DEBUG:boto:establishing HTTPS connection: host=hapyakdemopagedrop.s3.amazonaws.com, kwargs={'port': 443, 'timeout': 70}
+DEBUG:boto:Token: None
+DEBUG:boto:StringToSign:
+GET
+
+
+Thu, 25 Jun 2015 13:23:40 GMT
+/hapyakdemopagedrop/
+DEBUG:boto:Signature:
+AWS AKIAILL4JI45EBVCWLXQ:eBgo80u1Vgw3w7l+YNHjH5A16Fc=
+DEBUG:boto:<?xml version="1.0" encoding="UTF-8"?>
+<ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>hapyakdemopagedrop</Name><Prefix></Prefix><Marker></Marker><MaxKeys>0</MaxKeys><IsTruncated>false</IsTruncated></ListBucketResult>
+DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1435242220, 'iat': 1435238620}
+DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzUyNDIyMjAsImlhdCI6MTQzNTIzODYyMH0', u'pcuz3lVe8dSwci7s3sYmms6Ijc5Vt2xTm71jl9NtunDHdXdVEc3D5hAOYml2NJvDNOZXudGm7rAKMz4zjSgXb8qPkHIZIOyFFWaoI6mQwJw6dICeQV9_RowjZTplHUOzQZNEI6SOCvVULGC-we4dDWSE00df9pe_0ZwLDEGm2uA']
+INFO:oauth2client.client:Refreshing access_token
+DEBUG:root:checkwhenupdated
+DEBUG:root:loadingworksheet
+DEBUG:boto:Using access key provided by client.
+DEBUG:boto:Using secret key provided by client.
+DEBUG:boto:path=/
+DEBUG:boto:auth_path=/hapyakdemopagedrop/
+DEBUG:boto:path=/?max-keys=0
+DEBUG:boto:auth_path=/hapyakdemopagedrop/?max-keys=0
+DEBUG:boto:Method: GET
+DEBUG:boto:Path: /?max-keys=0
+DEBUG:boto:Data: 
+DEBUG:boto:Headers: {}
+DEBUG:boto:Host: hapyakdemopagedrop.s3.amazonaws.com
+DEBUG:boto:Port: 443
+DEBUG:boto:Params: {}
+DEBUG:boto:establishing HTTPS connection: host=hapyakdemopagedrop.s3.amazonaws.com, kwargs={'port': 443, 'timeout': 70}
+DEBUG:boto:Token: None
+DEBUG:boto:StringToSign:
+GET
+
+
+Thu, 25 Jun 2015 13:23:45 GMT
+/hapyakdemopagedrop/
+DEBUG:boto:Signature:
+AWS AKIAILL4JI45EBVCWLXQ:HIDW4pmfyniolxHkwBTFOH9dm8A=
+DEBUG:boto:<?xml version="1.0" encoding="UTF-8"?>
+<ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>hapyakdemopagedrop</Name><Prefix></Prefix><Marker></Marker><MaxKeys>0</MaxKeys><IsTruncated>false</IsTruncated></ListBucketResult>
+DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1435242225, 'iat': 1435238625}
+DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzUyNDIyMjUsImlhdCI6MTQzNTIzODYyNX0', u'QH3sYhLgTKnrPoBNxQw6KUHKBo_z3cv6q0SaC48AQQcrsNBRF2JfuK1FrpsyocWQcB0cVCqdFJIhaB6zFnwjGge62Zbr3Gy9aWTPBFl-GpnA5gKn18KzMJgRIZjvsjvIOLyEmw3d74RMkKLiHdoNCTJmudHZKufm0ZL_Q-GgMSU']
+INFO:oauth2client.client:Refreshing access_token
+DEBUG:root:checkwhenupdated
+DEBUG:root:loadingworksheet
+DEBUG:boto:Using access key provided by client.
+DEBUG:boto:Using secret key provided by client.
+DEBUG:boto:path=/
+DEBUG:boto:auth_path=/hapyakdemopagedrop/
+DEBUG:boto:path=/?max-keys=0
+DEBUG:boto:auth_path=/hapyakdemopagedrop/?max-keys=0
+DEBUG:boto:Method: GET
+DEBUG:boto:Path: /?max-keys=0
+DEBUG:boto:Data: 
+DEBUG:boto:Headers: {}
+DEBUG:boto:Host: hapyakdemopagedrop.s3.amazonaws.com
+DEBUG:boto:Port: 443
+DEBUG:boto:Params: {}
+DEBUG:boto:establishing HTTPS connection: host=hapyakdemopagedrop.s3.amazonaws.com, kwargs={'port': 443, 'timeout': 70}
+DEBUG:boto:Token: None
+DEBUG:boto:StringToSign:
+GET
+
+
+Thu, 25 Jun 2015 13:23:51 GMT
+/hapyakdemopagedrop/
+DEBUG:boto:Signature:
+AWS AKIAILL4JI45EBVCWLXQ:3EzYCYHvfSTF/n94boWnscFttYE=
+DEBUG:boto:<?xml version="1.0" encoding="UTF-8"?>
+<ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>hapyakdemopagedrop</Name><Prefix></Prefix><Marker></Marker><MaxKeys>0</MaxKeys><IsTruncated>false</IsTruncated></ListBucketResult>
+DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1435242231, 'iat': 1435238631}
+DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzUyNDIyMzEsImlhdCI6MTQzNTIzODYzMX0', u'qDUPgmBTwVqMae2r3x9sMix2AKF_fyJmd0ZnfttGW5oB_BbZcGHTWXwopRyXDfaKVfjfNjnYsTDi_Aa7xL75gmBpgiefV-3Gi6P8kNhhV__cYnc3SXnH9Y9GNqI8iSlprKZ6f_A0-I3WQCebIQozNlkuFg7ncHqpPxC53Wk2tQY']
+INFO:oauth2client.client:Refreshing access_token
+DEBUG:root:checkwhenupdated
+DEBUG:root:loadingworksheet
