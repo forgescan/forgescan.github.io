@@ -46,8 +46,7 @@ class S3session():
         try:
             localfiledump=config.get("config","pathtolocalfiledump")
             filetype=filename.split(".")[-1]
-            print filename
-            print filetype
+
 
             directory="unknown"
             if filetype=="png":
@@ -66,6 +65,7 @@ class S3session():
             return 1
         except:
             logging.error("s3 upload failed"+str(traceback.format_exc()))
+            print "s3 upload failed"+str(traceback.format_exc())
             return -1
 
 

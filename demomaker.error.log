@@ -213,3 +213,67 @@ x-amz-acl:public-read
 /hapyakdemopagedrop/unknown/templatehtml.html?acl
 DEBUG:boto:Signature:
 AWS AKIAILL4JI45EBVCWLXQ:0Sqcv+W08UMc1Pj4rlWCi3bZUFY=
+DEBUG:boto:Using access key provided by client.
+DEBUG:boto:Using secret key provided by client.
+DEBUG:boto:path=/
+DEBUG:boto:auth_path=/hapyakdemopagedrop/
+DEBUG:boto:path=/?max-keys=0
+DEBUG:boto:auth_path=/hapyakdemopagedrop/?max-keys=0
+DEBUG:boto:Method: GET
+DEBUG:boto:Path: /?max-keys=0
+DEBUG:boto:Data: 
+DEBUG:boto:Headers: {}
+DEBUG:boto:Host: hapyakdemopagedrop.s3.amazonaws.com
+DEBUG:boto:Port: 443
+DEBUG:boto:Params: {}
+DEBUG:boto:establishing HTTPS connection: host=hapyakdemopagedrop.s3.amazonaws.com, kwargs={'port': 443, 'timeout': 70}
+DEBUG:boto:Token: None
+DEBUG:boto:StringToSign:
+GET
+
+
+Thu, 25 Jun 2015 12:43:29 GMT
+/hapyakdemopagedrop/
+DEBUG:boto:Signature:
+AWS AKIAILL4JI45EBVCWLXQ:yZFL8bYDnmns2wyVMPH4IbGyZX0=
+DEBUG:boto:<?xml version="1.0" encoding="UTF-8"?>
+<ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>hapyakdemopagedrop</Name><Prefix></Prefix><Marker></Marker><MaxKeys>0</MaxKeys><IsTruncated>false</IsTruncated></ListBucketResult>
+DEBUG:boto:path=/html/templatehtml.html
+DEBUG:boto:auth_path=/hapyakdemopagedrop/html/templatehtml.html
+DEBUG:boto:Method: PUT
+DEBUG:boto:Path: /html/templatehtml.html
+DEBUG:boto:Data: 
+DEBUG:boto:Headers: {'Content-Length': '5464', 'Content-MD5': 'QRH17GPnIGY3CadbDO5f2w==', 'Content-Type': 'text/html', 'Expect': '100-Continue', 'User-Agent': 'Boto/2.20.1 Python/2.7.6 Linux/3.13.0-48-generic'}
+DEBUG:boto:Host: hapyakdemopagedrop.s3.amazonaws.com
+DEBUG:boto:Port: 443
+DEBUG:boto:Params: {}
+DEBUG:boto:Token: None
+DEBUG:boto:StringToSign:
+PUT
+QRH17GPnIGY3CadbDO5f2w==
+text/html
+Thu, 25 Jun 2015 12:43:29 GMT
+/hapyakdemopagedrop/html/templatehtml.html
+DEBUG:boto:Signature:
+AWS AKIAILL4JI45EBVCWLXQ:slx9H/kH9ONSvyLaxRAkBg+NkXM=
+DEBUG:boto:path=/html/templatehtml.html
+DEBUG:boto:auth_path=/hapyakdemopagedrop/html/templatehtml.html
+DEBUG:boto:path=/html/templatehtml.html?acl
+DEBUG:boto:auth_path=/hapyakdemopagedrop/html/templatehtml.html?acl
+DEBUG:boto:Method: PUT
+DEBUG:boto:Path: /html/templatehtml.html?acl
+DEBUG:boto:Data: 
+DEBUG:boto:Headers: {'x-amz-acl': 'public-read'}
+DEBUG:boto:Host: hapyakdemopagedrop.s3.amazonaws.com
+DEBUG:boto:Port: 443
+DEBUG:boto:Params: {}
+DEBUG:boto:Token: None
+DEBUG:boto:StringToSign:
+PUT
+
+
+Thu, 25 Jun 2015 12:43:29 GMT
+x-amz-acl:public-read
+/hapyakdemopagedrop/html/templatehtml.html?acl
+DEBUG:boto:Signature:
+AWS AKIAILL4JI45EBVCWLXQ:YITBBZKIrduUUkRm1uJHpNMIk/M=
