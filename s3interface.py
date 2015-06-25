@@ -2,7 +2,7 @@ from boto.s3.connection import S3Connection
 
 import ConfigParser
 import io
-demomaker_config=("demomaker.cfg","r")
+demomaker_config=(open("demomaker.cfg","r").read())
 config = ConfigParser.RawConfigParser(allow_no_value=True)
 config.readfp(io.BytesIO(demomaker_config))
 
