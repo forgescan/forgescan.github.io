@@ -1,6 +1,7 @@
 import logging
 import ConfigParser
 import io
+from HAPYAKFUNCTIONS import *
 
 ###accesses config file
 """
