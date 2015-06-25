@@ -80,6 +80,10 @@ def iterateandreplace(keyword, function, worksheet):
     print value_list
 
 sheetchecker.iterateandreplace("GUID",return1)
+import uuid
+def makeGUID(firm):
+    namespace=uuid.uuid1()
+    return str(uuid.uuid5(namespace,firm["Company"]))
 """
 cell_list = sheetchecker.currentworksheet.range('T3:T10')
 #print cell_list
