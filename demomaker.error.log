@@ -1,1 +1,2 @@
- 
+ DEBUG:boto:Using access key provided by client.
+DEBUG:boto:Using secret key provided by client.
