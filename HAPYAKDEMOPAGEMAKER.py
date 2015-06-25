@@ -82,7 +82,7 @@ def iterateandreplace(keyword, function, worksheet):
 
 def cssmaker(firm):
     dictfirm=firm
-    firm=firm.values()
+    firm=firm.items()
     print firm
 
 
