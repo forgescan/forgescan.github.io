@@ -9,6 +9,9 @@ import gspread
 import os
 from oauth2client.client import SignedJwtAssertionCredentials
 import logging
+import ConfigParser
+import io
+
 
 demomaker_config=(open("demomaker.cfg","r").read())
 config = ConfigParser.RawConfigParser(allow_no_value=True)

@@ -30,7 +30,7 @@ try:
             os.system("""sudo sed -i 's/"exited_cleanly": false/"exited_cleanly": true/' /root/.config/google-chrome/Default/Preferences""")
             os.system("""sudo sed -i 's/"exit_type": "Crashed"/"exit_type": "None"/' /root/.config/google-chrome/Default/Preferences""")
             os.system("""sudo sed -i 's/Crashed/None/' /root/.config/google-chrome/Default/Preferences""")
-            
+
             #the 2 lines above should fix chrome
             #was 720x464x24
             pass
