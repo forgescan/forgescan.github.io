@@ -67,7 +67,7 @@ def iterateandreplace(keyword, function, worksheet):
         print error
         return -1
 
-iterateandreplace("Guid",return1,worksheet)
+iterateandreplace("GUID",return1,worksheet)
 """
 cell_list = sheetchecker.currentworksheet.range('T3:T10')
 #print cell_list
