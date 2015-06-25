@@ -85,7 +85,8 @@ def iterateandreplace(keyword, function, worksheet):
 def makeGUID(firm):
     namespace=uuid.uuid1()
     print firm["Company"]
-    return uuid.uuid5(uuid.UUID(),firm["Company"]).hex
+    return "1"
+    #return uuid.uuid5(uuid.UUID(),firm["Company"]).hex
 #print makeGUID(sheetdict[0]["Company"])
 sheetchecker.iterateandreplace("GUID",makeGUID)
 #print str(uuid.uuid5(uuid.uuid1(),sheetdict[0]["Company"]).hex)
