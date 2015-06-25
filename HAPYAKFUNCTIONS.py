@@ -502,6 +502,7 @@ class GoogleDocsSessionv2():
             print(traceback.format_exc())
     def iteratethroughfirms(self,function):
         for firm in self.sheetdict:
+            print firm
             try:
                 function(firm)
             except:
