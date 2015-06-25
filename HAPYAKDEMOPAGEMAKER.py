@@ -1,4 +1,5 @@
 #v2. Makes the demopages
+from HAPYAKFUNCTIONS import *
 import os
 import s3interface
 import logging
