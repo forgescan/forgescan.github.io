@@ -1,4 +1,3 @@
-
 import logging
 import ConfigParser
 import io
@@ -9,7 +8,7 @@ config = ConfigParser.RawConfigParser(allow_no_value=True)
 config.readfp(io.BytesIO(demomaker_config))
 
 ###starterrorlogging
-logging.basicConfig(filename=config.get("config","pathtolog"),level=logging.DEBUG)
+logging.basicConfig(filename=config.get("config","pathtolog"),level=logging.ERROR)
 
 
 #produces AWS_KEY and Secret
@@ -66,7 +65,7 @@ class S3session():
 
 
 
-
+"""
 print awskeystore
 conn = S3Connection(AWS_KEY, AWS_SECRET)
 print conn.get_all_buckets()
@@ -80,3 +79,4 @@ destination = bucket.new_key("something.html")
 destination.name = "PNGs/something.html"
 destination.set_contents_from_file(myhtml)
 destination.make_public()
+"""
