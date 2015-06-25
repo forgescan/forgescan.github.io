@@ -28,9 +28,15 @@ print S3session.uploadfile("templatehtml.html")
 
 """
 while 1:
+
     try:
         #checks for change to the spreadsheet
         #if change occurs //
+
     except:
+        error="s3 uploadfailed"+str(traceback.format_exc())
+        logging.error(error)
+        print error
+        return -1
         #logs error to log and restarts
 """
