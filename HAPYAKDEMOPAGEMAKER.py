@@ -87,7 +87,7 @@ def firmdicttolist(firm):# for backwards compatibility with previous code
     return firmlistout
 
 def cssmaker(firm):
-    firm2=firmdicttolist(firm)
+    firm=firmdicttolist(firm)
 
     print firm
 
@@ -105,7 +105,7 @@ def cssmaker(firm):
 
     hapyakfileOut(firm,".css",updatedtemplate)
     """
-sheetchecker.iterateandreplace("T",cssmaker)
+sheetchecker.iteratethroughfirms(cssmaker)
 
 #sheetchecker.iterateandreplace("GUID",return1)
 
