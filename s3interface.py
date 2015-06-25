@@ -58,6 +58,8 @@ class S3session():
             destination.name=directory+"/"+filename
             destination.set_contents_from_file(filetobeuploaded)
             destination.make_public()
+            filetobeuploaded.close()
+            
             return 1
         except:
             logging.error("s3 upload failed"+str(traceback.format_exc()))
