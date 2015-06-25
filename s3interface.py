@@ -39,21 +39,25 @@ class S3session():
         return S3conn.get_all_buckets()
 
     def uploadtoS3(self,filename):#specifically for demomaker, uploads to page folder corresponding to the file type
-        localfiledump=config.get("config","pathtolocalfiledump")
-        filetype=filename.split(".")[-1]
-        directory="unknown"
-        if filetype==".png":
-            directory="media"
-        if filetype==".html":
-            directory="html"
-        if filetype==".css":
-            directory="css"
-        filetobeuploaded=open(localfiledump+filename,"r")
-        destination=bucket.new_key(filename)
-        destination.name=directory+"/"+filename
-        destination.set_contents_from_file(filetobeuploaded)
-        destination.make_public()
-
+        try:
+            localfiledump=config.get("config","pathtolocalfiledump")
+            filetype=filename.split(".")[-1]
+            directory="unknown"
+            if filetype==".png":
+                directory="media"
+            if filetype==".html":
+                directory="html"
+            if filetype==".css":
+                directory="css"
+            filetobeuploaded=open(localfiledump+filename,"r")
+            destination=bucket.new_key(filename)
+            destination.name=directory+"/"+filename
+            destination.set_contents_from_file(filetobeuploaded)
+            destination.make_public()
+            return 1
+        except:
+            #logerror
+            return -1
 
 
 
