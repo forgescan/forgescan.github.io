@@ -49,7 +49,7 @@ try:
 except: pass#Exception:print(traceback.format_exc())
 print cell_list
 
-#self.currentworksheet.update_cells(cell_list)
+sheetchecker.currentworksheet.update_cells(cell_list)
 
 
 """
