@@ -1,5 +1,12 @@
 from boto.s3.connection import S3Connection
-awskeystore=open("/home/ubuntu/rootkey.csv","r")
+
+import ConfigParser
+import io
+demomaker_config=("demomaker.cfg","r")
+config = ConfigParser.RawConfigParser(allow_no_value=True)
+config.readfp(io.BytesIO(demomaker_config))
+
+awskeystore=open(config.get("config","path"),"r")
 awskeystore=awskeystore.read()
 awskeystore=awskeystore.replace('''\r''',"").split("""\n""")
 AWS_KEY=awskeystore[0].split("=")[1]
@@ -16,5 +23,5 @@ myhtml=open("/home/ubuntu/forgescan.github.io/templateHTML/templatehtml.html")
 bucket = conn.get_bucket(BUCKET)
 destination = bucket.new_key("something.html")
 destination.name = "PNGs/something.html"
-destination.set_contents_from_file(myhtml) 
+destination.set_contents_from_file(myhtml)
 destination.make_public()
