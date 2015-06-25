@@ -34,7 +34,8 @@ def return1():
 worksheet=sheetchecker.currentworksheet
 def iterateandreplace(keyword, function, worksheet):
     try:
-        column=sheetchecker.currentworksheet.find(keyword).split("R1C")[1].split(' ')[0]
+        column=str(sheetchecker.currentworksheet.find(keyword)).split("R1C")[1].split(' ')[0]
+        print column
         if column=="":
             raise
 
