@@ -79,7 +79,7 @@ def iterateandreplace(keyword, function, worksheet):
     print cell_list
     print value_list
 
-sheetchecker.currentworksheet.iterateandreplace("GUID",return1)
+sheetchecker.iterateandreplace("GUID",return1)
 """
 cell_list = sheetchecker.currentworksheet.range('T3:T10')
 #print cell_list
