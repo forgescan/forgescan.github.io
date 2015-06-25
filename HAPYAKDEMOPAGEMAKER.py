@@ -79,14 +79,20 @@ def iterateandreplace(keyword, function, worksheet):
         return -1
     print cell_list
     print value_list
+def firmdicttolist(firm):# for backwards compatibility with previous code
+    keylist=['Company','Website','Video','Logo','Major Hex','Minor Hex','First #1','Last #1','Email #1','First #2','Last #2','Email #2','First #3','Last #3','Email #3','TEMPLATE','LandingPageURLs','ScreenShot URLs','GUID','T'],'Last Time Updated'
+    firmlistout=[]
+    for key in keylist:
+        firmlistout.append(firm[key])
+    return firmlistout
 
 def cssmaker(firm):
-    dictfirm=firm
-    firm=firm.items()
+    firm=firmdicttolist(firm)
+    
     print firm
 
 
-    """
+"""
     locationoftemplateCSS="templateCSS/templatecss.css"
     templatecss=fileIn(locationoftemplateCSS)
 
