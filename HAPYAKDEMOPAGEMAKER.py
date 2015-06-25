@@ -30,7 +30,8 @@ sheet=sheetchecker.currentworksheet.get_all_records()
 
 print sheet[0]["Website"]
 def iterateandreplace(keyword, function, sheet):
-    listt=[]
+    #cell_list=
+    outpulist=[]
     for firm in sheet:
         try:
             pass
@@ -42,6 +43,7 @@ def iterateandreplace(keyword, function, sheet):
     #export list to desired column of sheet
 cell_list = sheetchecker.currentworksheet.range('T3:T10')
 #print cell_list
+print sheetchecker.currentworksheet.find("GUID")
 cell_values = [2321,4324,6564,2434]#self.urllandingpages
 try:
     for i, val in enumerate(cell_values):  #gives us a tuple of an index and value
