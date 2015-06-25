@@ -40,7 +40,7 @@ def iterateandreplace(keyword, function, sheet):
             #addfailedtolist
             #errorlogging
     #export list to desired column of sheet
-cell_list = sheetchecker.currentworksheet.range('T2:T'+str(self.firmlength-10))
+cell_list = sheetchecker.currentworksheet.range('T2:T10')
 print cell_list
 #cell_values = self.urllandingpages
 try:
