@@ -87,8 +87,8 @@ def firmdicttolist(firm):# for backwards compatibility with previous code
     return firmlistout
 
 def cssmaker(firm):
-    firm=firmdicttolist(firm)
-    
+    firm2=firmdicttolist(firm)
+
     print firm
 
 
