@@ -85,3 +85,67 @@ ERROR:root:s3 upload failedTraceback (most recent call last):
     destination=bucket.new_key(filename)
 NameError: global name 'bucket' is not defined
 
+DEBUG:boto:Using access key provided by client.
+DEBUG:boto:Using secret key provided by client.
+DEBUG:boto:path=/
+DEBUG:boto:auth_path=/hapyakdemopagedrop/
+DEBUG:boto:path=/?max-keys=0
+DEBUG:boto:auth_path=/hapyakdemopagedrop/?max-keys=0
+DEBUG:boto:Method: GET
+DEBUG:boto:Path: /?max-keys=0
+DEBUG:boto:Data: 
+DEBUG:boto:Headers: {}
+DEBUG:boto:Host: hapyakdemopagedrop.s3.amazonaws.com
+DEBUG:boto:Port: 443
+DEBUG:boto:Params: {}
+DEBUG:boto:establishing HTTPS connection: host=hapyakdemopagedrop.s3.amazonaws.com, kwargs={'port': 443, 'timeout': 70}
+DEBUG:boto:Token: None
+DEBUG:boto:StringToSign:
+GET
+
+
+Thu, 25 Jun 2015 12:40:27 GMT
+/hapyakdemopagedrop/
+DEBUG:boto:Signature:
+AWS AKIAILL4JI45EBVCWLXQ:wU/8dbmhB99SrtOgT51UV2MAPcU=
+DEBUG:boto:<?xml version="1.0" encoding="UTF-8"?>
+<ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>hapyakdemopagedrop</Name><Prefix></Prefix><Marker></Marker><MaxKeys>0</MaxKeys><IsTruncated>false</IsTruncated></ListBucketResult>
+DEBUG:boto:path=/unknown/templatehtml.html
+DEBUG:boto:auth_path=/hapyakdemopagedrop/unknown/templatehtml.html
+DEBUG:boto:Method: PUT
+DEBUG:boto:Path: /unknown/templatehtml.html
+DEBUG:boto:Data: 
+DEBUG:boto:Headers: {'Content-Length': '5464', 'Content-MD5': 'QRH17GPnIGY3CadbDO5f2w==', 'Content-Type': 'text/html', 'Expect': '100-Continue', 'User-Agent': 'Boto/2.20.1 Python/2.7.6 Linux/3.13.0-48-generic'}
+DEBUG:boto:Host: hapyakdemopagedrop.s3.amazonaws.com
+DEBUG:boto:Port: 443
+DEBUG:boto:Params: {}
+DEBUG:boto:Token: None
+DEBUG:boto:StringToSign:
+PUT
+QRH17GPnIGY3CadbDO5f2w==
+text/html
+Thu, 25 Jun 2015 12:40:27 GMT
+/hapyakdemopagedrop/unknown/templatehtml.html
+DEBUG:boto:Signature:
+AWS AKIAILL4JI45EBVCWLXQ:I2HNVdW5cFQvOWw3VyIG9h21l6M=
+DEBUG:boto:path=/unknown/templatehtml.html
+DEBUG:boto:auth_path=/hapyakdemopagedrop/unknown/templatehtml.html
+DEBUG:boto:path=/unknown/templatehtml.html?acl
+DEBUG:boto:auth_path=/hapyakdemopagedrop/unknown/templatehtml.html?acl
+DEBUG:boto:Method: PUT
+DEBUG:boto:Path: /unknown/templatehtml.html?acl
+DEBUG:boto:Data: 
+DEBUG:boto:Headers: {'x-amz-acl': 'public-read'}
+DEBUG:boto:Host: hapyakdemopagedrop.s3.amazonaws.com
+DEBUG:boto:Port: 443
+DEBUG:boto:Params: {}
+DEBUG:boto:Token: None
+DEBUG:boto:StringToSign:
+PUT
+
+
+Thu, 25 Jun 2015 12:40:27 GMT
+x-amz-acl:public-read
+/hapyakdemopagedrop/unknown/templatehtml.html?acl
+DEBUG:boto:Signature:
+AWS AKIAILL4JI45EBVCWLXQ:lolHL1pw+98797qr269Kr+kyiIA=
