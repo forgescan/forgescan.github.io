@@ -10,6 +10,11 @@ import os
 from oauth2client.client import SignedJwtAssertionCredentials
 import logging
 
+demomaker_config=(open("demomaker.cfg","r").read())
+config = ConfigParser.RawConfigParser(allow_no_value=True)
+config.readfp(io.BytesIO(demomaker_config))
+#####configuration made here
+
 
 cwd='/home/ubuntu/forgescan.github.io'
 
