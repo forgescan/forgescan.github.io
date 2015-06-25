@@ -127,6 +127,7 @@ def cssmaker(firm):
 
 
 
+
     
 def htmlmaker(firm):
     locationoftemplateHTML="templateHTML/templatehtml.html"
