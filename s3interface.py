@@ -50,6 +50,9 @@ class S3session():
             directory="css"
         filetobeuploaded=open(localfiledump+filename,"r")
         destination=bucket.new_key(filename)
+        destination.name=directory+"/"+filename
+        destination.set_contents_from_file(filetobeuploaded)
+        destination.make_public()
 
 
 
