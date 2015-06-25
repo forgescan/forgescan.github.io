@@ -16,6 +16,9 @@ logging.basicConfig(filename=config.get("config","pathtoerrorlog"),level=logging
 
 #initiates stuff
 S3session=s3interface.S3session()
+
+
+
 print S3session.uploadfile("templatehtml.html")
 
 
