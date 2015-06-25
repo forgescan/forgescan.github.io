@@ -40,13 +40,13 @@ def iterateandreplace(keyword, function, sheet):
             #addfailedtolist
             #errorlogging
     #export list to desired column of sheet
-cell_list = sheetchecker.currentworksheet.range('T2:T10')
+cell_list = sheetchecker.currentworksheet.range('A2:T10')
 print cell_list
 #cell_values = self.urllandingpages
-try:
-    for i, val in enumerate(cell_values):  #gives us a tuple of an index and value
-        cell_list[i].value = val    #use the index on cell_list and the val from cell_values
-except: pass#Exception:print(traceback.format_exc())
+#try:
+#    for i, val in enumerate(cell_values):  #gives us a tuple of an index and value
+#        cell_list[i].value = val    #use the index on cell_list and the val from cell_values
+#except: pass#Exception:print(traceback.format_exc())
 self.currentworksheet.update_cells(cell_list)
 
 
