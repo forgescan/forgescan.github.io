@@ -40,10 +40,11 @@ def iterateandreplace(keyword, function, worksheet):
             raise
         column=int(column)
         columnletter=worksheet.get_addr_int(1,column )[0]
+        firmlength=len(sheetdict)
         print columnletter
-        cell_list = sheetchecker.currentworksheet.range('T3:T10')
+        cell_list = sheetchecker.currentworksheet.range(columnletter+"2:"+columnletter+str(firmlength-1))
 
-        cell_list=[]
+        #cell_list=[]
         value_list=[]
         firmcount=0
         for firm in sheetdict:
@@ -54,16 +55,18 @@ def iterateandreplace(keyword, function, worksheet):
 
             try:
                 firmcount+=1
-                value=function(firm)
+                valuelist+=function(firm)
                 pass
                 #addoutput to list
             except:
                 firmcount+=1
-                value=None
+                valuelist+=None
                 pass
                 #addfailedtolist
                 #errorlogging
-            cell_list+="<Cell R"+str(firmcount)+"C"+str(column)+" '"+str(value)+"'>"
+            #cell_list+="<Cell R"+str(firmcount)+"C"+str(column)+" '"+str(value)+"'>"
+        for i, val in enumerate(cell_values):  #gives us a tuple of an index and value
+            cell_list[i].value = val    #use the index on cell_list and the val from cell_values
         worksheet.update_cells(cell_list)
         #export list to desired column of sheet
     except:
