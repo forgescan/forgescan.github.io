@@ -42,7 +42,7 @@ class S3session():
     def listallbuckets(self):
         return S3conn.get_all_buckets()
 
-    def uploadtoS3(self,filename):#specifically for demomaker, uploads to page folder corresponding to the file type
+    def uploadfile(self,filename):#specifically for demomaker, uploads to page folder corresponding to the file type
         try:
             localfiledump=config.get("config","pathtolocalfiledump")
             filetype=filename.split(".")[-1]
