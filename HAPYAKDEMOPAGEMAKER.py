@@ -26,21 +26,49 @@ print sheetchecker.checkwhenupdated()
 #for i in range(10):
 #    sheet=sheetchecker.currentworksheet.get_all_records()
 #    print len(sheet)
-sheet=sheetchecker.currentworksheet.get_all_records()
+sheetdict=sheetchecker.currentworksheet.get_all_records()
 
-print sheet[0]["Website"]
-def iterateandreplace(keyword, function, sheet):
-    #cell_list=
-    outpulist=[]
-    for firm in sheet:
-        try:
-            pass
-            #addoutput to list
-        except:
-            pass
-            #addfailedtolist
-            #errorlogging
-    #export list to desired column of sheet
+print sheetdict[0]["Website"]
+def return1():
+    return "one"
+worksheet=sheetchecker.currentworksheet
+def iterateandreplace(keyword, function, worksheet):
+    try:
+        column=sheetchecker.currentworksheet.find(keyword).split("R1C")[1].split(' ')[0]
+        if column=="":
+            raise
+
+        cell_list=[]
+        value_list=[]
+        firmcount=0
+        for firm in sheetdict:
+            if firmcount==0:
+                firmcount+=1
+                continue
+
+
+            try:
+                firmcount+=1
+                value=function(firm)
+                pass
+                #addoutput to list
+            except:
+                firmcount+=1
+                value=None
+                pass
+                #addfailedtolist
+                #errorlogging
+            cell_list+="<Cell R"+str(firmcount)+"C"+str(column)+" '"+str(value)+"'>"
+        worksheet.update_cells(cell_list)
+        #export list to desired column of sheet
+    except:
+        error="iterate and replace failed "+str(traceback.format_exc())
+        logging.error(error)
+        print error
+        return -1
+
+iterateandreplace("Guid",return1,worksheet)
+"""
 cell_list = sheetchecker.currentworksheet.range('T3:T10')
 #print cell_list
 print sheetchecker.currentworksheet.find("GUID")
@@ -52,7 +80,7 @@ except: pass#Exception:print(traceback.format_exc())
 print cell_list
 
 sheetchecker.currentworksheet.update_cells(cell_list)
-
+"""
 
 """
 while 1:
