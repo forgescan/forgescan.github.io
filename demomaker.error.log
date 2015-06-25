@@ -7035,3 +7035,31 @@ DEBUG:boto:<?xml version="1.0" encoding="UTF-8"?>
 DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1435249421, 'iat': 1435245821}
 DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzUyNDk0MjEsImlhdCI6MTQzNTI0NTgyMX0', u'moYyFT9oQJ79wssII-_T3CpyGxCjNqF8dudy8RmtAq-qUv-jYcxufwKU3_eUNKT5kykboWhCQg158rbQCIEKLKdOrwPIowotav_fgtuUg2UolXUL067OUfvxP7IFEIugD6tkpLYu_WQHWBuStSsnZNz73_yjPFXB6oy8i4bYZq4']
 INFO:oauth2client.client:Refreshing access_token
+DEBUG:boto:Using access key provided by client.
+DEBUG:boto:Using secret key provided by client.
+DEBUG:boto:path=/
+DEBUG:boto:auth_path=/hapyakdemopagedrop/
+DEBUG:boto:path=/?max-keys=0
+DEBUG:boto:auth_path=/hapyakdemopagedrop/?max-keys=0
+DEBUG:boto:Method: GET
+DEBUG:boto:Path: /?max-keys=0
+DEBUG:boto:Data: 
+DEBUG:boto:Headers: {}
+DEBUG:boto:Host: hapyakdemopagedrop.s3.amazonaws.com
+DEBUG:boto:Port: 443
+DEBUG:boto:Params: {}
+DEBUG:boto:establishing HTTPS connection: host=hapyakdemopagedrop.s3.amazonaws.com, kwargs={'port': 443, 'timeout': 70}
+DEBUG:boto:Token: None
+DEBUG:boto:StringToSign:
+GET
+
+
+Thu, 25 Jun 2015 15:24:48 GMT
+/hapyakdemopagedrop/
+DEBUG:boto:Signature:
+AWS AKIAILL4JI45EBVCWLXQ:g2Wp+OwcabYxK0RlqjvN7ph7+Rs=
+DEBUG:boto:<?xml version="1.0" encoding="UTF-8"?>
+<ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>hapyakdemopagedrop</Name><Prefix></Prefix><Marker></Marker><MaxKeys>0</MaxKeys><IsTruncated>false</IsTruncated></ListBucketResult>
+DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1435249488, 'iat': 1435245888}
+DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzUyNDk0ODgsImlhdCI6MTQzNTI0NTg4OH0', u'CFyZA2yBHhC9TF-9SpzCDexBOIbDc9Vfwx3zpqidLGsB2-WQFU1DV1c8I5CZvpElnCX5w8tmwV7G50Y7k6GN0hTnzhDJOGNz2XFz5-9h691vDNHBCDb7_qM3dnUm7ojaZYj8Llh9lFyJ-5naWjRlc5kdv2vVoyhGy8qOn7VFcm0']
+INFO:oauth2client.client:Refreshing access_token
