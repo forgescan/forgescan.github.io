@@ -383,11 +383,13 @@ class GoogleDocsSessionv2():
         self.currentworksheet=self.session.open("Copy of Template Videos").sheet1
         self.lastworksheetupdate=""
         self.currentcsv=""
+        self.sheetdict=self.currentworksheet.get_all_records()
 
     def login(self):
         self.session= gspread.authorize(self.credentials)
     def getupdatedcsv(self):
         logging.debug("geting updated csv")
+        self.sheetdict=self.currentworksheet.get_all_records()
 
         self.login()
         self.loadworksheet()
@@ -399,14 +401,18 @@ class GoogleDocsSessionv2():
         fileout.close()
 
         return self.currentcsv
+
     def loadworksheet(self):#,currentworksheet):
         logging.debug("loadingworksheet")
         self.currentworksheet=self.session.open("Copy of Template Videos").sheet1  #lazy cludge fix later
+        self.sheetdict=self.currentworksheet.get_all_records()
         #return self.session.open(self.current
     def updatecell(self,cell,string):
         self.login()
         self.loadworksheet()
         self.currentworksheet.update_acell(cell,string)#requires cell as string "A5"
+    def updateworksheetdict(self):
+        self.sheetdict=self.currentworksheet.get_all_records()
     def checkwhenupdated(self):
         logging.debug("checkwhenupdated")
         self.login()
@@ -484,5 +490,50 @@ class GoogleDocsSessionv2():
         except Exception:
             logging.debug(str(traceback.format_exc()))
             print(traceback.format_exc())
+    def iterateandreplace(self,keyword, function):
+        try:
+            column=str(self.currentworksheet.find(keyword)).split("R1C")[1].split(' ')[0]
+            print column
+            if column=="":
+                raise
+            column=int(column)
+            columnletter=self.currentworksheet.get_addr_int(1,column )[0]
+            firmlength=len(self.sheetdict)
+            print columnletter
+            cell_list = self.currentworksheet.range(columnletter+"2:"+columnletter+str(firmlength-1))
+
+            #cell_list=[]
+            value_list=[]
+            firmcount=0
+            for firm in sheetdict:
+
+                try:
+                    firmcount+=1
+                    value_list.append(function(firm))
+                    pass
+                    #addoutput to list
+                except:
+                    firmcount+=1
+                    value_list.append("")
+                    error="iterate and replace failed "+str(traceback.format_exc())
+                    logging.error(error)
+                    print error
+                    pass
+                    #addfailedtolist
+                    #errorlogging
+                #cell_list+="<Cell R"+str(firmcount)+"C"+str(column)+" '"+str(value)+"'>"
+            for i in range(0,len(sheetdict)-1):  #gives us a tuple of an index and value
+                cell_list[i].value = value_list[i]    #use the index on cell_list and the val from cell_values
+            #del cell_list[0]
+
+            self.currentworksheet.update_cells(cell_list)
+            #export list to desired column of sheet
+        except:
+            error="iterate and replace failed "+str(traceback.format_exc())
+            logging.error(error)
+            print error
+            return -1
+        print cell_list
+        print value_list
     
 
