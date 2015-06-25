@@ -15,8 +15,12 @@ config.readfp(io.BytesIO(demomaker_config))
 logging.basicConfig(filename=config.get("config","pathtoerrorlog"),level=logging.DEBUG)
 
 #initiates stuff
-fileuploader=s3interface.S3session()
-print fileuploader
+S3session=s3interface.S3session()
+print S3session.uploadfile("templatehtml.html")
+
+
+
+
 
 
 """
