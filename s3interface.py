@@ -1,5 +1,5 @@
 
-
+import logging
 import ConfigParser
 import io
 
@@ -7,6 +7,9 @@ import io
 demomaker_config=(open("demomaker.cfg","r").read())
 config = ConfigParser.RawConfigParser(allow_no_value=True)
 config.readfp(io.BytesIO(demomaker_config))
+
+###starterrorlogging
+logging.basicConfig(filename=config.get("config","pathtolog"),level=logging.DEBUG)
 
 
 #produces AWS_KEY and Secret
@@ -56,7 +59,7 @@ class S3session():
             destination.make_public()
             return 1
         except:
-            #logerror
+            logging.error("s3 upload failed"+str(traceback.format_exc()))
             return -1
 
 
