@@ -55,12 +55,12 @@ def iterateandreplace(keyword, function, worksheet):
 
             try:
                 firmcount+=1
-                valuelist+=function(firm)
+                value_list+=function(firm)
                 pass
                 #addoutput to list
             except:
                 firmcount+=1
-                valuelist+=None
+                value_list+=None
                 pass
                 #addfailedtolist
                 #errorlogging
