@@ -49,10 +49,6 @@ def iterateandreplace(keyword, function, worksheet):
         value_list=[]
         firmcount=0
         for firm in sheetdict:
-            #if firmcount==0:
-            #    firmcount+=1
-            #    continue
-
 
             try:
                 firmcount+=1
@@ -83,7 +79,7 @@ def iterateandreplace(keyword, function, worksheet):
     print cell_list
     print value_list
 
-iterateandreplace("GUID",return1,worksheet)
+worksheet.iterateandreplace("GUID",return1)
 """
 cell_list = sheetchecker.currentworksheet.range('T3:T10')
 #print cell_list
