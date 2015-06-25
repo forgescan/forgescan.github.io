@@ -60,7 +60,7 @@ def iterateandreplace(keyword, function, worksheet):
                 #addoutput to list
             except:
                 firmcount+=1
-                value_list+=None
+                value_list+=""
                 pass
                 #addfailedtolist
                 #errorlogging
