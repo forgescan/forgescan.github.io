@@ -46,6 +46,9 @@ class S3session():
         try:
             localfiledump=config.get("config","pathtolocalfiledump")
             filetype=filename.split(".")[-1]
+            print filename
+            print filetype
+            
             directory="unknown"
             if filetype==".png":
                 directory="media"
