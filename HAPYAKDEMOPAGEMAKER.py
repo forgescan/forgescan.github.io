@@ -38,6 +38,10 @@ def iterateandreplace(keyword, function, worksheet):
         print column
         if column=="":
             raise
+        column=int(column)
+        columnletter=get_addr_int(1,column )[0]
+        print columnletter
+        cell_list = sheetchecker.currentworksheet.range('T3:T10')
 
         cell_list=[]
         value_list=[]
