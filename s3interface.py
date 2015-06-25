@@ -3,13 +3,14 @@ import ConfigParser
 import io
 
 ###accesses config file
+"""
 demomaker_config=(open("demomaker.cfg","r").read())
 config = ConfigParser.RawConfigParser(allow_no_value=True)
 config.readfp(io.BytesIO(demomaker_config))
 
 ###starterrorlogging
-logging.basicConfig(filename=config.get("config","pathtolog"),level=logging.ERROR)
-
+logging.basicConfig(filename=config.get("config","pathtoerrorlog"),level=logging.ERROR)
+"""
 
 #produces AWS_KEY and Secret
 awskeystore=open(config.get("config","pathtoS3key"),"r")
