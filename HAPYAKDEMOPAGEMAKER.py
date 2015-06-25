@@ -80,11 +80,11 @@ def iterateandreplace(keyword, function, worksheet):
     print cell_list
     print value_list
 def firmdicttolist(firm):# for backwards compatibility with previous code
-    keylist=['Company','Website','Video','Logo','Major Hex','Minor Hex','First #1','Last #1','Email #1','First #2','Last #2','Email #2','First #3','Last #3','Email #3','TEMPLATE','LandingPageURLs','ScreenShot URLs','GUID','T'],'Last Time Updated'
+    keylist=['Company','Website','Video','Logo','Major Hex','Minor Hex','First #1','Last #1','Email #1','First #2','Last #2','Email #2','First #3','Last #3','Email #3','TEMPLATE','LandingPageURLs','ScreenShot URLs','GUID','T']#,'Last Time Updated'
     firmlistout=[]
 
-    for keyindex in range(len(keylist)):
-        key=keylist[keyindex]
+    for key in keylist:
+        
         print key
         print "heres the key"
 
