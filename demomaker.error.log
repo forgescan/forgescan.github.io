@@ -27585,3 +27585,19 @@ Thu, 25 Jun 2015 16:41:41 GMT
 /hapyakdemopagedrop/
 DEBUG:boto:Signature:
 AWS AKIAILL4JI45EBVCWLXQ:FUQXexQ4rMlaJ1xVtda9TQPvH5M=
+DEBUG:boto:<?xml version="1.0" encoding="UTF-8"?>
+<ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>hapyakdemopagedrop</Name><Prefix></Prefix><Marker></Marker><MaxKeys>0</MaxKeys><IsTruncated>false</IsTruncated></ListBucketResult>
+DEBUG:oauth2client.client:{'iss': u'205443885400-cdl80r1q3am00nv1tnont4i2urafla3j@developer.gserviceaccount.com', 'scope': 'https://spreadsheets.google.com/feeds', 'aud': 'https://accounts.google.com/o/oauth2/token', 'exp': 1435254101, 'iat': 1435250501}
+DEBUG:oauth2client.crypt:[u'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9', u'eyJpc3MiOiIyMDU0NDM4ODU0MDAtY2RsODByMXEzYW0wMG52MXRub250NGkydXJhZmxhM2pAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vc3ByZWFkc2hlZXRzLmdvb2dsZS5jb20vZmVlZHMiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzUyNTQxMDEsImlhdCI6MTQzNTI1MDUwMX0', u'FrFyW9OQ7zFO5CVOxDrgow6W_Ln7Na4MVJXYoz-39pzTlFOOblW2MqELy4_iquN22unHZgowGtJJkdroUFbMCIXLK1Ogc-bOb2wUEGGMRyyQdokDkcPi2BV9vsmaAsSpn9riDpUPyTx2EVVU-7n5RihM6phy7LtK_vl1-NXKaTk']
+INFO:oauth2client.client:Refreshing access_token
+DEBUG:root:checkwhenupdated
+DEBUG:root:loadingworksheet
+ERROR:root:iterate and replace failed Traceback (most recent call last):
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 522, in iterateandreplace
+    value_list.append(function(firm))
+  File "/home/ubuntu/forgescan.github.io/HAPYAKFUNCTIONS.py", line 30, in makeGUID
+    return uuid.uuid5(uuid.uuid1(),firm["Company"]).hex
+  File "/usr/lib/python2.7/uuid.py", line 567, in uuid5
+    hash = sha1(namespace.bytes + name).digest()
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc6 in position 2: ordinal not in range(128)
+
