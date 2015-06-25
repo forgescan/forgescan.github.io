@@ -29,7 +29,7 @@ print sheetchecker.checkwhenupdated()
 sheetdict=sheetchecker.currentworksheet.get_all_records()
 
 print sheetdict[0]["Website"]
-def return1():
+def return1(firm):
     return "one"
 worksheet=sheetchecker.currentworksheet
 def iterateandreplace(keyword, function, worksheet):
